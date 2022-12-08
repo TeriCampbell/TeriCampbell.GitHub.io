@@ -13,8 +13,8 @@ This project explored factors related to the success of a sales and marketing ca
 
 ---
 #### [Massachusetts Student Success Analysis](/sample_project)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-Tolulope is the best
+<img src="images/MA_Student_Success_Image.png?raw=true"/> 
+Tableau Dashboard Project: Massachusetts Public School Data
 
 ---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
