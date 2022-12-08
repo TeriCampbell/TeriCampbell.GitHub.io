@@ -15,8 +15,8 @@ For this project, I explored what a good analytics PowerPoint presentation shoul
 
 ---
 #### [Marketing Analysis](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
-<img src="images/FirstPortfolioProjectPost.png?raw=true"/>
-((https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/))
+<img src="images/FirstPortfolioProjectPost.png?raw=true"/> 
+
 #### Sales Marketing Analysis: Food Ordering and Delivery Service
 This project explored factors related to the success of a sales and marketing campaign for a food delivery service.  I wanted to know how the most recent marketing campaign impacted customers' spending preferences in order to inform marketing decisions.
 
