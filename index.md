@@ -4,6 +4,14 @@
 
 ### General Analytics Projects
 
+---
+#### [Marketing Analysis](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
+[<img src="images/FirstPortfolioProjectPost.png?raw=true"/>](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/) 
+
+#### [Sales Marketing Analysis: Food Ordering and Delivery Service](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
+This project explored factors related to the success of a sales and marketing campaign for a food delivery service.  I wanted to know how the most recent marketing campaign impacted customers' spending preferences in order to inform marketing decisions.
+
+---
 #### [Internal Blog Post Project](/sample_project)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 Tolulope is the best
