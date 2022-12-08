@@ -1,6 +1,17 @@
-## This can be a template for an internal prject
+## Massachusetts Student Success Analysis
 
-**Project description:** You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
+**Project description:** This project looks at public school data for the state of Massachusetts with the purpose of increasing college admissions.
+
+I started by uploading the MA_Public_Schools_2017 Excel file into Tableau Public anaylsis and visualizaiton 
+
+Prompt:  You are recently hired by the State of Massachusetts to analyze their education data. The school superintendent is looking for the following:
+
+A report to show the school board the state of the school system 
+How does class size affect college admission?
+What are the top math schools in the state?
+What schools are struggling the most?
+
+You can use this template to create projects in the future. Simply duplicate the page and change the text and images. 
 
 Be sure to follow *The Interesting Project Template* as shown in [**The Data Science Project Studio**](https://www.datacareerjumpstart.com/products/the-data-science-project-studio/categories/2150357707/posts/2158441592). 
 
