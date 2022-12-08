@@ -1,5 +1,5 @@
 title: Teri Campbell # your name (or website title) here
-logo: Teri_Head_Shot.png # your photo (or logo) here
+logo: <img src="images/Teri_Head_Shot.png?raw=true"/> # your photo (or logo) here 
 description: > # your text below (remove <br> elements if you don't need line breaks)
   Data Informed Healthcare Business Entrepreneur
   <br><br>
