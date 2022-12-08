@@ -1,4 +1,4 @@
-# My Data Analytics Portfolio
+# Data Analytics Portfolio
 
 ---
 
@@ -14,9 +14,9 @@ Tolulope is the best
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
 
 ---
-#### [External Link Project](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
+#### [External Link Project](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
 [<img src="images/21 Days To Data Challenge What I've Learned Cover.png?raw=true"/>](https://www.linkedin.com/pulse/what-i-learned-21-days-data-avery-smith)
-My final write up for Avery Smith's 21 Days To Data project covering New York City crime data. 
+Sales Marketing Analysis: Food Ordering and Delivery Service
 
 ---
 
