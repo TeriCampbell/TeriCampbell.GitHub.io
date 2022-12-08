@@ -14,8 +14,8 @@ Tolulope is the best
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
 
 ---
-#### [Marketing Analysis]
-<img src="FirstPortfolioProjectPost.png"/>((https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/))
+#### [External Link Project](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
+<img src="FirstPortfolioProjectPost.png?raw=true"/>((https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/))
 Sales Marketing Analysis: Food Ordering and Delivery Service
 
 ---
