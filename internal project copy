@@ -15,7 +15,7 @@ The overarching question proposed is whether or not the State should build more 
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
 
 A scan of college attendees by zip code
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="Distribution of College Attendees.png?raw=true"/>
 
 ##ANALYSIS
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
