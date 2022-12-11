@@ -15,18 +15,19 @@ If you have children, you may wonder what causes one child to succeed and anothe
 Come take a peek into this analysis and see how that belief may be unfounded, or at least a story not fully told.
 
 Stay tuned to the end and let me know if you agree that perhaps our measures of "success" may need updating.
-
+<br><br>
 ---
 #### [Marketing Analysis](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
 [<img src="images/FirstPortfolioProjectPost.png?raw=true"/>](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/) 
 
 #### [Sales Marketing Analysis: Food Ordering and Delivery Service](https://www.linkedin.com/pulse/creating-my-first-portfolio-article-teri-campbell/)
 This project explored factors related to the success of a sales and marketing campaign for a food delivery service.  I wanted to know how the most recent marketing campaign impacted customers' spending preferences in order to inform marketing decisions.
+<br><br>
 ---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
 <img src="images/21 Days To Data Challenge.png?raw=true"/>
 For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
-
+<br><br>
 ---
 ### Category Name 2
 
