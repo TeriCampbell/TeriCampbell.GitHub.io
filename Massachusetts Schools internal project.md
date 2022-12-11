@@ -1,5 +1,5 @@
 # Massachusetts Student Success Analysis
-
+<br>br>
 ## INTRODUCTION
 
 **Project description:** The efficacy of our education system can be a topic of debate, as can the means by which we measure how well a given state is able to educate its children.
@@ -22,7 +22,7 @@ A scan of college attendees by zip code
 <img src="images/Distribution of College Attendees.png?raw=true"/>
 <br><br>
 ## ANALYSIS
-<br><br>
+
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
@@ -58,7 +58,7 @@ Now that these schools have been identified, educators in the high performing sc
 
 
 ## RESULTS AND RECOMMENDATIONS
-<br><br>
+
 <img src="images/Dashboard_Massachusetts Student Success Evaluation.png?raw=true"/>
 
 Based on the above analysis, the following recommendations are indicated:
@@ -68,7 +68,6 @@ Based on the above analysis, the following recommendations are indicated:
 -Partner with educators in the identified schools that are best at teaching math to improve programs in the low performing schools.
 
 ## CONCLUSION
-
 The state has some good starting points for making positive changes to the educational system. 
 <br><br>
 There is room to dig deeper into regional access to resources and other factors that may contribute to lower measures of success.
