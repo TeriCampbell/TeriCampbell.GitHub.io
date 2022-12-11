@@ -5,8 +5,6 @@
 ### Analytics Projects
 
 ---
-Massachusetts Schools internal project
-#### [Massachusetts Student Success Analysis](/Massachusetts Schools internal project.md)
 [<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
 [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
 
