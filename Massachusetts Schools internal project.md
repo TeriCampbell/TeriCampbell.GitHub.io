@@ -8,11 +8,11 @@ The overarching question proposed is whether or not the State should build more 
 
 **What I Learned**
 <br><br>
--Class size is not a good isolated determinant of student success
+* Class size is not a good isolated determinant of student success
 <br><br>
--Economically disadvantaged students are less likely to attend college
+* Economically disadvantaged students are less likely to attend college
 <br><br>
--Schools with fewer english language learner students had increased college attendance representation
+* Schools with fewer english language learner students had increased college attendance representation
 
 <br><br>
 ## DATA
