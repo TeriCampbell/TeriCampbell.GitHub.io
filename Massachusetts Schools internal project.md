@@ -37,19 +37,19 @@ My next task was to assess the impact of class size on college attendance rates.
 <br><br>
 On initial observation, I saw a bit of an increase in college attendance as class size increased up to around 20 students per class. But, digging deeper and filtering for economic status, it is noted that economically disadvantaged youths have a decreased college attendance rate as compared to their counterparts.
 <br><br>
-<img src="images/%CollegeVsClassSize_Image.png?raw=true"/>
+<img src="images/PercentCollegeVsClassSize_Image.png?raw=true"/>
 Percent of College Attendees in Relation to Class Size
 
 <br><br>
 Looking deeper at the impact of economic disadvantage:
 <br><br>
-<img src="images/%CollegeVsEconomicDisadvantage_Image.png?raw=true"/>
+<img src="images/PercentCollegeVsEconomicDisadvantage_Image.png?raw=true"/>
 Percent of Economically Disadvantaged Students who Attend College
 
 <br><br>
 Clearly this shows that the schools with fewer disadvantaged students have higher rates of college attendance. Further, the students who were English language learners (ELL) in this group were less likely to attend college.
 <br><br>
-<img src="images/%CollegeVsELL_Image.png?raw=true"/>
+<img src="images/PercentCollegeVsELL_Image.png?raw=true"/>
 Percent of English Language Learners who Attend College
 <br><br>
 It is noted that the fewer ELL students are in a class, the greater the college attendance rate; however, economic status is distributed broadly across the percentage of college attendees when we isolate for ELL students as an isolated group.
