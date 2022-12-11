@@ -48,8 +48,7 @@ It is noted that the fewer ELL students are in a class, the greater the college 
 The assumption made in this challenge is that passing 4th grade math scores are correlated with increased student success.
 The next analysis looks at which schools had over 50% passing math grades in the 4th grade.
 
-'''4th grade math top performers image'''
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/SchoolsPassingMath_Image.png?raw=true"/>
 
 Now that these schools have been identified, educators in the high performing schools can be identified.
 
