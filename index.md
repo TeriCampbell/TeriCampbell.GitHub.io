@@ -18,16 +18,9 @@ This project explored factors related to the success of a sales and marketing ca
 
 If you have children, you may wonder what causes one child to succeed and another to struggle.  
 
-
-
-Like myself, you may have heard that smaller class size is important for helping your child to succeed.  
-
-
+Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
 Come take a peek into this analysis and see how that belief may be unfounded, or at least a story not fully told.
-
-
 Stay tuned to the end and let me know if you agree that perhaps our measures of "success" may need updating.
-
 
 ---
 #### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
