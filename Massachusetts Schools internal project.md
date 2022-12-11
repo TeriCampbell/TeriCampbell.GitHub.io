@@ -1,5 +1,5 @@
 # Massachusetts Student Success Analysis
-<br>br>
+ 
 ## INTRODUCTION
 
 **Project description:** The efficacy of our education system can be a topic of debate, as can the means by which we measure how well a given state is able to educate its children.
