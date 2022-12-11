@@ -17,18 +17,20 @@ The overarching question proposed is whether or not the State should build more 
 ## DATA
 
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
-
+<br><br>
 A scan of college attendees by zip code
 <img src="images/Distribution of College Attendees.png?raw=true"/>
 
 <br><br>
 ## ANALYSIS
-
+<br><br>
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
+>br><br>
 The above visualization shows school graduation rates from lowest to highest. Data for one school, Curtis-Tufts High School, which notably has a 0% graduation rate, was filtered from analysis of graduation rates. The school is an alternative high school for students from Medford High School. Graduating Students received degrees from Medford High School. I also filtered out null graduation values so that data from primary schools would not interfere with the results.
 <br><br>
+
 My next task was to assess the impact of class size on college attendance rates.
 <br><br>
 On initial observation, I saw a bit of an increase in college attendance as class size increased up to around 20 students per class. But, digging deeper and filtering for economic status, it is noted that economically disadvantaged youths have a decreased college attendance rate as compared to their counterparts.
