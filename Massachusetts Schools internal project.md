@@ -5,13 +5,12 @@
 **Project description:** The efficacy of our education system can be a topic of debate, as can the means by which we measure how well a given state is able to educate its children.
 This project focused on a dataset for the State, or rather The Commonwealth, of Massachusetts for the year 2017. The number of students who attend college after finishing high school was defined as the measure of success. Additionally, the data challenge asks the analyst to perform the analysis on the assumption that 4th grade math scores are a good indicator of academic success.
 The overarching question proposed is whether or not the State should build more schools.
-
 <br><br>
 **What I Learned**
 * Class size is not a good isolated determinant of student success
-<br><br>
+
 * Economically disadvantaged students are less likely to attend college
-<br><br>
+
 * Schools with fewer english language learner students had increased college attendance representation
 
 <br><br>
