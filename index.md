@@ -12,9 +12,9 @@
 This project explored factors related to the success of a sales and marketing campaign for a food delivery service.  I wanted to know how the most recent marketing campaign impacted customers' spending preferences in order to inform marketing decisions.
 
 ---
-#### [Massachusetts Student Success Analysis](/sample_project)
-[<img src="images/MA_Student_Success_Image.png?raw=true"/>](/sample_project)
-[Massachusetts Public School Data Project](/sample_project)
+#### [Massachusetts Student Success Analysis](/Massachusetts Schools internal project)
+[<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
+[Massachusetts Public School Data Project](/Massachusetts Schools internal project)
 
 
 ---
