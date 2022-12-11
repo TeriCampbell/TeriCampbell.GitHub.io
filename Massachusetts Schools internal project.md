@@ -7,7 +7,7 @@ This project focused on a dataset for the State, or rather The Commonwealth, of 
 The overarching question proposed is whether or not the State should build more schools.
 
 **What I Learned**
-<br><br>
+
 * Class size is not a good isolated determinant of student success
 <br><br>
 * Economically disadvantaged students are less likely to attend college
