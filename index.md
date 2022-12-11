@@ -24,20 +24,6 @@ Stay tuned to the end and let me know if you agree that perhaps our measures of 
 This project explored factors related to the success of a sales and marketing campaign for a food delivery service.  I wanted to know how the most recent marketing campaign impacted customers' spending preferences in order to inform marketing decisions.
 <br><br>
 ---
-#### [Linked File Project](/files/Day 12 - 21 days to data.pdf)
-<img src="images/21 Days To Data Challenge.png?raw=true"/>
-For this project, I explored what a good analytics PowerPoint presentation should entail. It talks about main talking points, how to tie data to the business value, and much more. 
-<br><br>
----
-### Category Name 2
-
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
-
----
 
 
 
