@@ -15,13 +15,12 @@ The overarching question proposed is whether or not the State should build more 
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
 
 A scan of college attendees by zip code
-<img src="Distribution of College Attendees.png?raw=true"/>
+<img src="images/Distribution of College Attendees.png?raw=true"/>
 
 ##ANALYSIS
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
 
-'''insert pic, Low grad %'''
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
 
 The above visualization shows school graduation rates from lowest to highest. Data for one school, Curtis-Tufts High School, which notably has a 0% graduation rate, was filtered from analysis of graduation rates. The school is an alternative high school for students from Medford High School. Graduating Students received degrees from Medford High School. I also filtered out null graduation values so that data from primary schools would not interfere with the results.
 
