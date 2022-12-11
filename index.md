@@ -16,10 +16,7 @@ This project explored factors related to the success of a sales and marketing ca
 [<img src="images/MA_Student_Success_Image.png?raw=true"/>](/files/Massachusetts Schools internal project)
 [Massachusetts Public School Data Project](/files/Massachusetts Schools internal project)
 
-If you have children, you may wonder what causes one child to succeed and another to struggle. 
-
-
-Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
+If you have children, you may wonder what causes one child to succeed and another to struggle. Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
 
 Come take a peek into this analysis and see how that belief may be unfounded, or at least a story not fully told.
 
