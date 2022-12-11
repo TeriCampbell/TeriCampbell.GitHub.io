@@ -28,8 +28,7 @@ My next task was to assess the impact of class size on college attendance rates.
 
 On initial observation, I saw a bit of an increase in college attendance as class size increased up to around 20 students per class. But, digging deeper and filtering for economic status, it is noted that economically disadvantaged youths have a decreased college attendance rate as compared to their counterparts.
 
-'''Percent college vs class size'''
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="images/%CollegeVsClassSize_Image.png?raw=true"/>
 Percent of College Attendees in Relation to Class Size
 
 
