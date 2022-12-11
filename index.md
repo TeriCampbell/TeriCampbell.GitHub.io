@@ -13,7 +13,7 @@ This project explored factors related to the success of a sales and marketing ca
 
 ---
 Massachusetts Schools internal project
-#### [Massachusetts Student Success Analysis](/Massachusetts Schools internal project/Massachusetts Schools internal project)
+#### [Massachusetts Student Success Analysis](/https://github.com/TeriCampbell/TeriCampbell.GitHub.io/blob/c5c853676d3b3f43f2e94776f225673629ab7972/Massachusetts%20Schools%20internal%20project)
 [<img src="images/MA_Student_Success_Image.png?raw=true"/>](/files/Massachusetts Schools internal project)
 [Massachusetts Public School Data Project](/files/Massachusetts Schools internal project)
 
