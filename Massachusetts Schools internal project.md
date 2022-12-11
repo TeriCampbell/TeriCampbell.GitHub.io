@@ -3,7 +3,9 @@
 ## INTRODUCTION
 
 **Project description:** The efficacy of our education system can be a topic of debate, as can the means by which we measure how well a given state is able to educate its children.
+<br><br>
 This project focused on a dataset for the State, or rather The Commonwealth, of Massachusetts for the year 2017. The number of students who attend college after finishing high school was defined as the measure of success. Additionally, the data challenge asks the analyst to perform the analysis on the assumption that 4th grade math scores are a good indicator of academic success.
+<br><br>
 The overarching question proposed is whether or not the State should build more schools.
 <br><br>
 **What I Learned**
@@ -27,7 +29,7 @@ A scan of college attendees by zip code
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
->br><br>
+<br><br>
 The above visualization shows school graduation rates from lowest to highest. Data for one school, Curtis-Tufts High School, which notably has a 0% graduation rate, was filtered from analysis of graduation rates. The school is an alternative high school for students from Medford High School. Graduating Students received degrees from Medford High School. I also filtered out null graduation values so that data from primary schools would not interfere with the results.
 <br><br>
 
