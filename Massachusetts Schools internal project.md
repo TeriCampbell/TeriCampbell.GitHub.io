@@ -15,7 +15,7 @@ The overarching question proposed is whether or not the State should build more 
 -Schools with fewer english language learner students had increased college attendance representation
 
 ## DATA
-<br><br>
+
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
 
 A scan of college attendees by zip code
