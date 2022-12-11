@@ -14,12 +14,14 @@ The overarching question proposed is whether or not the State should build more 
 <br><br>
 -Schools with fewer english language learner students had increased college attendance representation
 
+<br><br>
 ## DATA
 
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
 
 A scan of college attendees by zip code
 <img src="images/Distribution of College Attendees.png?raw=true"/>
+
 <br><br>
 ## ANALYSIS
 
@@ -56,7 +58,7 @@ The next analysis looks at which schools had over 50% passing math grades in the
 <br><br>
 Now that these schools have been identified, educators in the high performing schools can be identified.
 
-
+<br><br>
 ## RESULTS AND RECOMMENDATIONS
 
 <img src="images/Dashboard_Massachusetts Student Success Evaluation.png?raw=true"/>
@@ -67,6 +69,7 @@ Based on the above analysis, the following recommendations are indicated:
 -Further analysis of students who are English Language Learners is indicated to target best interventions as economic status is only one factor identified.
 -Partner with educators in the identified schools that are best at teaching math to improve programs in the low performing schools.
 
+<br><br>
 ## CONCLUSION
 The state has some good starting points for making positive changes to the educational system. 
 <br><br>
