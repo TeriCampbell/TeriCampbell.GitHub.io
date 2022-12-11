@@ -6,19 +6,23 @@
 This project focused on a dataset for the State, or rather The Commonwealth, of Massachusetts for the year 2017. The number of students who attend college after finishing high school was defined as the measure of success. Additionally, the data challenge asks the analyst to perform the analysis on the assumption that 4th grade math scores are a good indicator of academic success.
 The overarching question proposed is whether or not the State should build more schools.
 
-###What I Learned
+**What I Learned**
+<br><br>
 -Class size is not a good isolated determinant of student success
+<br><br>
 -Economically disadvantaged students are less likely to attend college
+<br><br>
 -Schools with fewer english language learner students had increased college attendance representation
 
-##DATA
+## DATA
 <br><br>
 I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
 
 A scan of college attendees by zip code
 <img src="images/Distribution of College Attendees.png?raw=true"/>
 <br><br>
-##ANALYSIS
+## ANALYSIS
+<br><br>
 The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
@@ -53,7 +57,7 @@ The next analysis looks at which schools had over 50% passing math grades in the
 Now that these schools have been identified, educators in the high performing schools can be identified.
 
 
-##RESULTS AND RECOMMENDATIONS
+## RESULTS AND RECOMMENDATIONS
 <br><br>
 <img src="images/Dashboard_Massachusetts Student Success Evaluation.png?raw=true"/>
 
@@ -63,7 +67,7 @@ Based on the above analysis, the following recommendations are indicated:
 -Further analysis of students who are English Language Learners is indicated to target best interventions as economic status is only one factor identified.
 -Partner with educators in the identified schools that are best at teaching math to improve programs in the low performing schools.
 
-##CONCLUSION
+## CONCLUSION
 
 The state has some good starting points for making positive changes to the educational system. 
 <br><br>
