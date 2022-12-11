@@ -72,8 +72,3 @@ Monitoring math scores and college admissions are one way to measure "success", 
 
 
 
-
-### 2. You can add any images you'd like. 
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
