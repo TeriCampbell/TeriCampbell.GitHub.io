@@ -74,14 +74,14 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/4Table_who_has_most_loans_in_India.png?raw=true"/>   
 
 <br><br>
-#### Zooming back out; What percentage of the original loan amount must be paid by region?
+#### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 <br><br>
-#### Top percentages of original loan scheduled for repayment by region/country--Specific to Country?
+#### Are the top percentages of unpaid loan amounts in India?
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
@@ -89,19 +89,12 @@ The data set contained 1,109,994 rows and 30 fields
 
 
 <br><br>
-#### Next I explored which country was the most recent to make a payment
+#### Finally, I explored which country was the most recent to make a payment
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
-
-<br><br>
-#### Finally I explored which region had the largest percentage of outstanding balance due
-<br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
-<br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 
 
