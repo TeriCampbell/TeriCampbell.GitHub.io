@@ -57,7 +57,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/SQL3_most_frequent_projects_India.png?raw=true"/>  
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+<img src="images/3Table_most_frequent_projects_India.png?raw=true"/>   
 
 <br><br>
 ### ----y---- has the most loans (also from country with most outstanding)
