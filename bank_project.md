@@ -76,9 +76,9 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
-<img src="images/6SQL_percent_loan_outstanding.png?raw=true"/>  
-<br><br>
 <img src="images/Table6_Percent_loan_outstanding.png?raw=true"/>  
+<br><br>
+<img src="images/6SQL_percent_loan_outstanding.png?raw=true"/>  
 
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
