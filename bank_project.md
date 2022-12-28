@@ -2,9 +2,11 @@
  
 ## INTRODUCTION
 
-**Project description:** The IDA......
+**Project description:** The Historical Data for The International Development Association (IDA).  
+The IDA Statement of Credits and Grants provides data on "publicly guaranteed debt extended by the World Bank Group.  The IDA provides developmental credits, grants, and guarantees to its recipient member countries to help meet their development needs.  Credits from IDA are at concessional rates.  Data are in U.S. dollars calculated using historical rates."
+
 <br><br>
-The goal of this project was to gain insights from loans (credits) extended by the International Development Association (IDA) thought the World Bank Group.   
+The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
 “The International Bank for Reconstruction and Development (IBRD) lends to governments of middle-income and creditworthy low-income countries.
 The International Development Association (IDA) provides interest-free loans – called credits – and grants to governments of the poorest countries.
 Together, IBRD and IDA make up the World Bank.”
@@ -13,8 +15,6 @@ Together, IBRD and IDA make up the World Bank.”
 I expected to see that…countries that ____ were slower, less likely, whatever to pay back their loans
 I expect lower income countries would borrow at higher rates
 
-<br><br>
-The overarching question proposed is whether or not the State should build more schools.
 <br><br>
 **What I Learned**
 * finding 1
@@ -27,65 +27,72 @@ The overarching question proposed is whether or not the State should build more 
 ## DATA
 
 The “IDA Statement of Credits and Grants-Historical Data” data set was downloaded from world bank.org
-You can access the data here:  https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx
+The data can be founc here:  https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx
 
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
-??any weird cleaning issues?
+The data set contained 1,109,994 rows and 30 fields
 
-The data set contains 1,109,994 rows and 30 fields
-
-<br><br>
-A scan of college attendees by zip code NOT FOR THIS PROJECT
-<img src="images/Distribution of College Attendees.png?raw=true"/>  CHANGE THIS PIC
 
 <br><br>
 ## ANALYSIS
 
 <br><br>
-I started by looking at.... 
+First I wanted to know, what were the 10 amounts due? 
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
-<br><br>
-results show... (maybe even give a pic of first few lines)
-<br><br>
-
-BE SURE TO INCLUDE ANY RELEVANT VIZ' FROM EXCEL AND EXPLAIN THAT YOU IMPORTED TABLES INTO EXCEL TO CREATE VIZ'
-
-Next I....
-<br><br>
-On initial observation, I saw a bit of an increase in college attendance as class size increased up to around 20 students per class. But, digging deeper and filtering for economic status, it is noted that economically disadvantaged youths have a decreased college attendance rate as compared to their counterparts.
-<br><br>
-<img src="images/PercentCollegeVsClassSize_Image.png?raw=true"/>
-Percent of College Attendees in Relation to Class Size
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
 
 <br><br>
-Looking deeper at the impact of economic disadvantage:
+Then which countries had the greatest outstanding amount
 <br><br>
-<img src="images/PercentCollegeVsEconomicDisadvantage_Image.png?raw=true"/>
-Percent of Economically Disadvantaged Students who Attend College
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
 
 <br><br>
-Clearly this shows that the schools with fewer disadvantaged students have higher rates of college attendance. Further, the students who were English language learners (ELL) in this group were less likely to attend college.
+There are ---x--- total transactions from ---y---- which was found to have the most outstanding 
 <br><br>
-<img src="images/PercentCollegeVsELL_Image.png?raw=true"/>
-Percent of English Language Learners who Attend College
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
 <br><br>
-It is noted that the fewer ELL students are in a class, the greater the college attendance rate; however, economic status is distributed broadly across the percentage of college attendees when we isolate for ELL students as an isolated group.
+----y---- has the most loans (also from country with most outstanding)
 <br><br>
-The assumption made in this challenge is that passing 4th grade math scores are correlated with increased student success.
-The next analysis looks at which schools had over 50% passing math grades in the 4th grade.
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
 <br><br>
-<img src="images/SchoolsPassingMath_Image.png?raw=true"/>
+Then total transactions per country (is this redundant to above?)
 <br><br>
-Now that these schools have been identified, educators in the high performing schools can be identified.
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
+<br><br>
+Top percentages of original loan scheduled for repayment by region/country
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
+
+<br><br>
+Next I explored which country was the most recent to make a payment
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
+
+<br><br>
+Finally I explored which region had the largest percentage of outstanding balance due
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+
+
 
 <br><br>
 ## RESULTS AND RECOMMENDATIONS
 
-<img src="images/Dashboard_Massachusetts Student Success Evaluation.png?raw=true"/>  CHANGE IMAGE.  GOOD TO INCLUDE EXCEL VIZ'  MAYBE A DASHBOARD PIC
-
-Based on the above analysis, the following recommendations are indicated:
+Based on the above analysis reveals the following:
 *  these areas had the most loans.  region and specific country
 *  biggest borrowers (region and country) who owes the most?
 *  percentage owed after x years
@@ -95,10 +102,7 @@ Based on the above analysis, the following recommendations are indicated:
 <br><br>
 ## CONCLUSION
 
-Lending assessment reveals trends .... 
+The above insights could be used to further the stated goal of helping meet developing countries needs.  
+
 <br><br>
-Further exploration of....
-
-Monitoring interest rates and .... 
-
-Further monitoring factors such as  
+Further research to understand barriers met by loan recipients could provide deeper understanding of each regions specific needs.
