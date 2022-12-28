@@ -46,11 +46,17 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/1Table_top_10_amt_due.png?raw=true"/> 
 
 <br><br>
-#### Then which countries had the greatest outstanding amount
+#### Then which countries had the greatest outstanding amount?
 <br><br>
 <img src="images/SQL2_Max_owed_to_IDA.png?raw=true"/>    
 <br><br>
 <img src="images/2Table_max_owed_to_IDA.png?raw=true"/>   
+
+#### Which countries had the greatest number of transactions? ---------
+<br><br>
+<img src="images/SQL2_Max_owed_to_IDA.png?raw=true"/>    
+<br><br>
+<img src="images/2Table_max_owed_to_IDA.png?raw=true"/> 
 
 <br><br>
 #### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
@@ -58,6 +64,7 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/SQL3_most_frequent_projects_India.png?raw=true"/>  
 <br><br>
 <img src="images/3Table_most_frequent_projects_India.png?raw=true"/>   
+
 
 <br><br>
 #### Which entity or entities hold the most loan amounts in India?
