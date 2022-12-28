@@ -39,7 +39,7 @@ The data set contained 1,109,994 rows and 30 fields
 ## ANALYSIS
 
 <br><br>
-### First I wanted to know, what were the 10 amounts due? 
+### First I wanted to know, what were the greatest amounts due? 
 <br><br>
 <img src="images/SQL1_top_10_amt_due.png?raw=true"/>  
 <br><br>
