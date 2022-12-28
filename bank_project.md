@@ -49,7 +49,7 @@ First I wanted to know, what were the 10 amounts due?
 Then which countries had the greatest outstanding amount
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/2Table_max_owed_to_IDA.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
 
 <br><br>
 There are ---x--- total transactions from ---y---- which was found to have the most outstanding 
