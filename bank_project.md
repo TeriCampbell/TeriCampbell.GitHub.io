@@ -53,9 +53,9 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/2Table_max_owed_to_IDA.png?raw=true"/>   
 
 <br><br>
-### There are ---x--- total transactions from ---y---- which was found to have the most outstanding 
+### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<img src="images/SQL3_most_frequent_projects_India.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
 
