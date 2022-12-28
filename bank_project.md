@@ -52,11 +52,11 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/2Table_max_owed_to_IDA.png?raw=true"/>   
 
-#### Which countries had the greatest number of transactions? -------
+#### Which countries had the greatest number of transactions?
 <br><br>
 <img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true"/>    
 <br><br>
-<img src="images/2Table_max_owed_to_IDA.png?raw=true"/> 
+<img src="images/3BTable_Greatest_Number_of_Transactions.png?raw=true"/> 
 
 <br><br>
 #### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
@@ -74,14 +74,14 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/4Table_who_has_most_loans_in_India.png?raw=true"/>   
 
 <br><br>
-#### Then total transactions per country (is this redundant to above?)
+#### Zooming back out; What percentage of the original loan amount must be paid by region?
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 <br><br>
-#### Top percentages of original loan scheduled for repayment by region/country
+#### Top percentages of original loan scheduled for repayment by region/country--Specific to Country?
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
