@@ -60,7 +60,7 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/3Table_most_frequent_projects_India.png?raw=true"/>   
 
 <br><br>
-### The most loan amounts in India are held by the Controller of Aid Accounts & Audit
+### Which entity/entities hold the most loan amounts in India?
 <br><br>
 <img src="images/SQL4_who_has_most_loans_in_India.png?raw=true"/>   
 <br><br>
@@ -103,7 +103,7 @@ The data set contained 1,109,994 rows and 30 fields
 
 The above analysis reveals the following:
 *  these areas had the most loans.  region and specific country
-*  biggest borrowers (region and country) who owes the most?
+*  biggest borrowers (region and country) who owes the most?  The most loan amounts in India are held by the Controller of Aid Accounts & Audit
 *  percentage owed after x years
 *  loans with higher/lower interest took longer to pay off?  Or some other cool finding
 *  any groups that were higher risk to lend to?
