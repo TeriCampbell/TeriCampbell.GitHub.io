@@ -41,7 +41,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 First I wanted to know, what were the 10 amounts due? 
 <br><br>
-<img src="images/SQL1_top_10_amt_due.png alt="images/SQL1_top_10_amt_due.png" width="50%"?raw=true"/>  
+<img src="images/SQL1_top_10_amt_due.png?raw=true"/>  
 <br><br>
 <img src="images/1Table_top_10_amt_due.png?raw=true"/> 
 
