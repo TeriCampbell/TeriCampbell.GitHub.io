@@ -9,7 +9,7 @@ The IDA Statement of Credits and Grants provides data on "publicly guaranteed de
 The International Development Association (IDA) provides interest-free loans – called credits – and grants to governments of the poorest countries.
 Together, IBRD and IDA make up the World Bank.”
 <br><br>
-##The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
+### The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
  
 <br><br>
 **HYPOTHESIS:  **
