@@ -64,7 +64,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/SQL4_who_has_most_loans_in_India.png?raw=true"/>   
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+<img src="images/4Table_who_has_most_loans_in_India.png?raw=true"/>   
 
 <br><br>
 ### Then total transactions per country (is this redundant to above?)
