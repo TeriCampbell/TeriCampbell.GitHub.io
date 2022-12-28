@@ -76,7 +76,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<img src="images/6SQL_percent_loan_outstanding.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
