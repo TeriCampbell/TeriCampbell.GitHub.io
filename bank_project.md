@@ -39,21 +39,21 @@ The data set contained 1,109,994 rows and 30 fields
 ## ANALYSIS
 
 <br><br>
-### First I wanted to know, what were the greatest amounts due? 
+#### First I wanted to know, what were the greatest amounts due? 
 <br><br>
 <img src="images/SQL1_top_10_amt_due.png?raw=true"/>  
 <br><br>
 <img src="images/1Table_top_10_amt_due.png?raw=true"/> 
 
 <br><br>
-### Then which countries had the greatest outstanding amount
+#### Then which countries had the greatest outstanding amount
 <br><br>
 <img src="images/SQL2_Max_owed_to_IDA.png?raw=true"/>    
 <br><br>
 <img src="images/2Table_max_owed_to_IDA.png?raw=true"/>   
 
 <br><br>
-### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
+#### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
 <br><br>
 <img src="images/SQL3_most_frequent_projects_India.png?raw=true"/>  
 <br><br>
@@ -67,22 +67,14 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/4Table_who_has_most_loans_in_India.png?raw=true"/>   
 
 <br><br>
-### Then total transactions per country (is this redundant to above?)
+#### Then total transactions per country (is this redundant to above?)
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 <br><br>
-### Top percentages of original loan scheduled for repayment by region/country
-<br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
-<br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
-
-
-<br><br>
-### Next I explored which country was the most recent to make a payment
+#### Top percentages of original loan scheduled for repayment by region/country
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
@@ -90,7 +82,15 @@ The data set contained 1,109,994 rows and 30 fields
 
 
 <br><br>
-### Finally I explored which region had the largest percentage of outstanding balance due
+#### Next I explored which country was the most recent to make a payment
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+
+
+<br><br>
+#### Finally I explored which region had the largest percentage of outstanding balance due
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
@@ -102,7 +102,8 @@ The data set contained 1,109,994 rows and 30 fields
 ## RESULTS AND RECOMMENDATIONS
 
 The above analysis reveals the following:
-*  these areas had the most loans.  region and specific country
+*  India has the greatest outstanding loan amounts 
+*  India also has the largest number of transactions
 *  biggest borrowers (region and country) who owes the most?  The most loan amounts in India are held by the Controller of Aid Accounts & Audit
 *  percentage owed after x years
 *  loans with higher/lower interest took longer to pay off?  Or some other cool finding
