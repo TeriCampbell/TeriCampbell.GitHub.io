@@ -60,7 +60,7 @@ The data set contained 1,109,994 rows and 30 fields
 <img src="images/3Table_most_frequent_projects_India.png?raw=true"/>   
 
 <br><br>
-### Which entity/entities hold the most loan amounts in India?
+#### Which entity or entities hold the most loan amounts in India?
 <br><br>
 <img src="images/SQL4_who_has_most_loans_in_India.png?raw=true"/>   
 <br><br>
