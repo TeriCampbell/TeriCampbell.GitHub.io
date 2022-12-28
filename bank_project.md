@@ -4,7 +4,6 @@
 
 **Project description:** The Historical Data for The International Development Association (IDA).  
 The IDA Statement of Credits and Grants provides data on "publicly guaranteed debt extended by the World Bank Group.  The IDA provides developmental credits, grants, and guarantees to its recipient member countries to help meet their development needs.  Credits from IDA are at concessional rates.  Data are in U.S. dollars calculated using historical rates."
-
 <br><br>
 The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
 “The International Bank for Reconstruction and Development (IBRD) lends to governments of middle-income and creditworthy low-income countries.
@@ -92,7 +91,7 @@ Finally I explored which region had the largest percentage of outstanding balanc
 <br><br>
 ## RESULTS AND RECOMMENDATIONS
 
-Based on the above analysis reveals the following:
+The above analysis reveals the following:
 *  these areas had the most loans.  region and specific country
 *  biggest borrowers (region and country) who owes the most?
 *  percentage owed after x years
@@ -103,6 +102,5 @@ Based on the above analysis reveals the following:
 ## CONCLUSION
 
 The above insights could be used to further the stated goal of helping meet developing countries needs.  
-
 <br><br>
 Further research to understand barriers met by loan recipients could provide deeper understanding of each regions specific needs.
