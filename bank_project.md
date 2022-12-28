@@ -28,7 +28,7 @@ I expect lower income countries would borrow at higher rates
 ## DATA
 
 The “IDA Statement of Credits and Grants-Historical Data” data set was downloaded from world bank.org
-The data can be founc here:  https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx
+The data can be found here:  https://finances.worldbank.org/Loans-and-Credits/IDA-Statement-Of-Credits-and-Grants-Historical-Dat/tdwh-3krx
 
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
