@@ -83,7 +83,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<img src="images/SQL7_Top_percent_outstanding.png?raw=true"/>  
 <br><br>
 <img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
 
