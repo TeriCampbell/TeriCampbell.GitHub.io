@@ -39,55 +39,62 @@ The data set contained 1,109,994 rows and 30 fields
 ## ANALYSIS
 
 <br><br>
-First I wanted to know, what were the 10 amounts due? 
+### First I wanted to know, what were the 10 amounts due? 
 <br><br>
 <img src="images/SQL1_top_10_amt_due.png?raw=true"/>  
 <br><br>
 <img src="images/1Table_top_10_amt_due.png?raw=true"/> 
 
 <br><br>
-Then which countries had the greatest outstanding amount
+### Then which countries had the greatest outstanding amount
 <br><br>
-<img src="images/SQL2_Max_owed_to_IDA.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
-<img src="images/2Table_max_owed_to_IDA.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/SQL2_Max_owed_to_IDA.png?raw=true"/>    
+<br><br>
+<img src="images/2Table_max_owed_to_IDA.png?raw=true"/>   
 
 <br><br>
-There are ---x--- total transactions from ---y---- which was found to have the most outstanding 
+### There are ---x--- total transactions from ---y---- which was found to have the most outstanding 
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
 
 <br><br>
-----y---- has the most loans (also from country with most outstanding)
+### ----y---- has the most loans (also from country with most outstanding)
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
 
 <br><br>
-Then total transactions per country (is this redundant to above?)
+### Then total transactions per country (is this redundant to above?)
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query?  
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 <br><br>
-Top percentages of original loan scheduled for repayment by region/country
+### Top percentages of original loan scheduled for repayment by region/country
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
-
-
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 <br><br>
-Next I explored which country was the most recent to make a payment
-<br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
 
 
 <br><br>
-Finally I explored which region had the largest percentage of outstanding balance due
+### Next I explored which country was the most recent to make a payment
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL query? 
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  CHANGE THIS PIC, SQL results? 
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>   
+
+
+<br><br>
+### Finally I explored which region had the largest percentage of outstanding balance due
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<br><br>
+<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
 
 
 
