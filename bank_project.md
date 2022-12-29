@@ -15,7 +15,9 @@ Together, IBRD and IDA make up the World Bank.”
 **What I Learned**
 * India has both the greatest outstanding loan amounts and greatest number of recorded transactions
 
-* Most loan amounts in India are held by "Controller of Aid Accounts & Audit"
+* Most loan amounts in India are held by "Controller of Aid Accounts & Audit" 
+
+* Top project categories for loans in India include telecommunications, social safety nets, and infrastructure
 
 * Despite having the largest outstanding loan totals, India does not appear in the top 10 for longest held loans.
 
@@ -102,13 +104,14 @@ Looks like they are not
 The above analysis reveals the following:
 *  India has the greatest outstanding loan amounts 
 *  India also has the largest number of transactions
+*  Top project categories for loans in India include telecommunications, social safety nets, and infrastructure
 *  The greatest loan amounts in India are held by the Controller of Aid Accounts & Audit
 *  India does not appear in the top 10 for longest loan duration.  In fact, India appears once in 9th place for the shortest duration loan.
 
 <br><br>
 ## CONCLUSION
 
-The above insights could be used to further the stated goal of helping meet developing countries needs.  
+The above insights could be used to further the stated goal of helping meet developing countries needs. 
 <br><br>
 Following trends over time for countries receiving loans could reveal successes and failures in the lending process and is worth further exploration.
 <br><br>
