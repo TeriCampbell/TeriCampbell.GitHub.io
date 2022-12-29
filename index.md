@@ -7,8 +7,8 @@
 ---
 
 [<img src="images/[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/IDA internal project)
-[IDA Loans, a SQLProject](/Massachusetts Schools internal project)?raw=true"/>](/Massachusetts Schools internal project)
-[Massachusetts Public School Data Project](/Massachusetts Schools internal project)
+[IDA Loans, a SQLProject](/bank_project.md)?raw=true"/>](/bank_project.md)
+[Massachusetts Public School Data Project](/bank_project.md)
 
 ------
 
