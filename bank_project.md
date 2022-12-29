@@ -73,7 +73,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "70%"/>  
 <br><br>
-<img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "50%"/>  
+<img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "60%"/>  
 
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
