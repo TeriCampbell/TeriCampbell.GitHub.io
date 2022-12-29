@@ -10,17 +10,12 @@ The International Development Association (IDA) provides interest-free loans –
 Together, IBRD and IDA make up the World Bank.”
 <br><br>
 ### The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
- 
-<br><br>
-**HYPOTHESIS:  **
-I expected to see that…countries that ____ were slower, less likely, whatever to pay back their loans
-I expect lower income countries would borrow at higher rates
 
 <br><br>
 **What I Learned**
-* finding 1
+* India has both the greatest outstanding loan amounts and greatest number of recorded transactions
 
-* finding 2
+* Most loan amounts in India are held by "Controller of Aid Accounts & Audit"
 
 * finding 3
 
@@ -56,48 +51,46 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/>    
 <br><br>
-<img src="images/3BTable_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/> 
+<img src="images/3BTable_Greatest_Number_of_Transactions.png?raw=true" width = "60%"/> 
 
 <br><br>
 #### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
 <br><br>
 <img src="images/SQL3_most_frequent_projects_India.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/3Table_most_frequent_projects_India.png?raw=true" width = "50%"/>   
-
+<img src="images/3Table_most_frequent_projects_India.png?raw=true" width = "60%"/>   
 
 <br><br>
 #### Which entity or entities hold the most loan amounts in India?
 <br><br>
 <img src="images/SQL4_who_has_most_loans_in_India.png?raw=true" width = "50%"/>   
 <br><br>
-<img src="images/4Table_who_has_most_loans_in_India.png?raw=true" width = "50%"/>   
+<img src="images/4Table_who_has_most_loans_in_India.png?raw=true" width = "60%"/>   
 
 <br><br>
 #### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
 <img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "50%"/>  
+<img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "60%"/>  
 
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
 <br><br>
 <img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/7Table_top_percent_outstanding.png?raw=true" width = "50%"/>   
-
+<img src="images/7Table_top_percent_outstanding.png?raw=true" width = "60%"/>   
 
 <br><br>
 #### Finally, I explored which countries had the longest and shortest scheduled loan duration
 <br><br>
 <img src="images/Longest Loan Times.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/Table Longest Loan Times.png?raw=true" width = "50%"/>  
+<img src="images/Table Longest Loan Times.png?raw=true" width = "60%"/>  
 <br><br>
 <img src="images/Shortest Loan Times.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/Table Shortest Loan Times.png?raw=true" width = "50%"/>  
+<img src="images/Table Shortest Loan Times.png?raw=true" width = "60%"/>  
 
 
 <br><br>
