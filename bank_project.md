@@ -109,7 +109,7 @@ The above analysis reveals the following:
 *  India does not appear in the top 10 for longest loan duration; In fact, India appears once in 9th place for the shortest duration loan.
 
 <br><br>
-## CONCLUSION
+## CONCLUSION AND RECOMMENDATIONS
 
 The above insights could be used to further the stated goal of helping meet developing countries needs. 
 <br><br>
