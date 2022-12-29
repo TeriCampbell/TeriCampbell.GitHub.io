@@ -54,14 +54,14 @@ The data set contained 1,109,994 rows and 30 fields
 
 #### Which countries had the greatest number of transactions?
 <br><br>
-<img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true" width = "40%"/>    
+<img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/>    
 <br><br>
 <img src="images/3BTable_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/> 
 
 <br><br>
 #### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
 <br><br>
-<img src="images/SQL3_most_frequent_projects_India.png?raw=true" width = "40%"/>  
+<img src="images/SQL3_most_frequent_projects_India.png?raw=true" width = "50%"/>  
 <br><br>
 <img src="images/3Table_most_frequent_projects_India.png?raw=true" width = "50%"/>   
 
@@ -69,21 +69,21 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Which entity or entities hold the most loan amounts in India?
 <br><br>
-<img src="images/SQL4_who_has_most_loans_in_India.png?raw=true" width = "40%"/>   
+<img src="images/SQL4_who_has_most_loans_in_India.png?raw=true" width = "50%"/>   
 <br><br>
 <img src="images/4Table_who_has_most_loans_in_India.png?raw=true" width = "50%"/>   
 
 <br><br>
 #### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
-<img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "40%"/>  
+<img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "50%"/>  
 <br><br>
 <img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "50%"/>  
 
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
 <br><br>
-<img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "40%"/>  
+<img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "50%"/>  
 <br><br>
 <img src="images/7Table_top_percent_outstanding.png?raw=true" width = "50%"/>   
 
@@ -91,11 +91,11 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Finally, I explored which countries had the longest and shortest scheduled loan duration
 <br><br>
-<img src="images/Longest Loan Times.png?raw=true" width = "40%"/>  
+<img src="images/Longest Loan Times.png?raw=true" width = "50%"/>  
 <br><br>
 <img src="images/Table Longest Loan Times.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/Shortest Loan Times.png?raw=true" width = "40%"/>  
+<img src="images/Shortest Loan Times.png?raw=true" width = "50%"/>  
 <br><br>
 <img src="images/Table Shortest Loan Times.png?raw=true" width = "50%"/>  
 
