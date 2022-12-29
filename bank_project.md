@@ -41,7 +41,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### First I wanted to know, what were the greatest amounts due? 
 <br><br>
-<img src="images/SQL1_top_10_amt_due.png?raw=true" width = "50%"/>  
+<img src="images/SQL1_top_10_amt_due.png?raw=true" width = "25%"/>  
 <br><br>
 <img src="images/1Table_top_10_amt_due.png?raw=true"/> 
 
