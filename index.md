@@ -6,9 +6,11 @@
 
 ---
 
-[<img src="images/[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/IDA internal project)
+[<img src="images/[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project.md)
 [IDA Loans, a SQLProject](/bank_project.md)?raw=true"/>](/bank_project.md)
 [IDA Loans Project](/bank_project.md)
+
+The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.
 
 ------
 
