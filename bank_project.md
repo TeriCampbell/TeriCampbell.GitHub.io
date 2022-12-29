@@ -85,9 +85,9 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Finally, I explored which countries had the longest and shortest scheduled loan duration
 <br><br>
-<img src="images/Longest Loan Times.png?raw=true" width = "70%"/>  
+<img src="images/Longest Loan Times.png?raw=true" width = "7\80%"/>  
 <br><br>
-<img src="images/Table Longest Loan Times.png?raw=true" width = "30%"/>  
+<img src="images/Table Longest Loan Times.png?raw=true" width = "25%"/>  
 <br><br>
 <img src="images/Shortest Loan Times.png?raw=true" width = "70%"/>  
 <br><br>
