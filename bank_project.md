@@ -80,7 +80,8 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "70%"/>  
 <br><br>
-<img src="images/7Table_top_percent_outstanding.png?raw=true" width = "55%"/> 
+<img src="images/7Table_top_percent_outstanding.png?raw=true" width = "60%"/> 
+<br><br>
 Looks like they are not
 
 <br><br>
