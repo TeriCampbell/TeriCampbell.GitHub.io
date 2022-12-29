@@ -89,13 +89,15 @@ The data set contained 1,109,994 rows and 30 fields
 
 
 <br><br>
-#### Finally, I explored which country was the most recent to make a payment
+#### Finally, I explored which countries had the longest and shortest scheduled loan duration
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
+<img src="images/Longest Loan Times.png?raw=true"/>  
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>  
-
-
+<img src="images/Table Longest Loan Times.png?raw=true"/>  
+<br><br>
+<img src="images/Shortest Loan Times.png?raw=true"/>  
+<br><br>
+<img src="images/Table Shortest Loan Times.png?raw=true"/>  
 
 
 <br><br>
