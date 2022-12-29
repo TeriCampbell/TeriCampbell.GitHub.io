@@ -6,6 +6,10 @@
 
 ---
 
+[<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
+[Massachusetts Public School Data Project](/Massachusetts Schools internal project)
+
+
 The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.
 
 ------
