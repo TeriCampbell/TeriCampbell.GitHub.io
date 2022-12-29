@@ -6,16 +6,16 @@
 
 ---
 
-[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/Massachusetts Schools internal project)
-[Massachusetts Public School Data Project](/Massachusetts Schools internal project)
+[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project)
+#### [Banking Analysis Public SQL Project](/bank_project)
 
 
 The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.
-
+<br><br>
 ------
 
 [<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
-[Massachusetts Public School Data Project](/Massachusetts Schools internal project)
+#### [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
 
 If you have children, you may wonder what causes one child to succeed and another to struggle. Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
 
