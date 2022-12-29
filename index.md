@@ -7,7 +7,7 @@
 ---
 
 [<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project)
-#### [Banking Analysis Public SQL Project](/bank_project)
+#### [Banking Analysis SQL Project](/bank_project)
 
 The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.
 <br><br>
