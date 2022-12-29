@@ -71,14 +71,14 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 #### Zooming back out; What percentage of the original loan amount remains unpaid by region?
 <br><br>
-<img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "60%"/>  
+<img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "70%"/>  
 <br><br>
 <img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "50%"/>  
 
 <br><br>
 #### Are the top percentages of unpaid loan amounts in India?
 <br><br>
-<img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "60%"/>  
+<img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "70%"/>  
 <br><br>
 <img src="images/7Table_top_percent_outstanding.png?raw=true" width = "50%"/>   
 
@@ -87,11 +87,11 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/Longest Loan Times.png?raw=true" width = "70%"/>  
 <br><br>
-<img src="images/Table Longest Loan Times.png?raw=true" width = "40%"/>  
+<img src="images/Table Longest Loan Times.png?raw=true" width = "30%"/>  
 <br><br>
 <img src="images/Shortest Loan Times.png?raw=true" width = "70%"/>  
 <br><br>
-<img src="images/Table Shortest Loan Times.png?raw=true" width = "40%"/>  
+<img src="images/Table Shortest Loan Times.png?raw=true" width = "30%"/>  
 
 
 <br><br>
