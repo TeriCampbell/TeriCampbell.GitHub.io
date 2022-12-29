@@ -2,7 +2,7 @@
  
 ## INTRODUCTION
 
-**Project description:** The Historical Data for The International Development Association (IDA).  <br><br>
+**Project description:** Historical Data for The International Development Association (IDA)  <br><br>
 The IDA Statement of Credits and Grants provides data on "publicly guaranteed debt extended by the World Bank Group.  The IDA provides developmental credits, grants, and guarantees to its recipient member countries to help meet their development needs.  Credits from IDA are at concessional rates.  Data are in U.S. dollars calculated using historical rates."
 <br><br>
 “The International Bank for Reconstruction and Development (IBRD) lends to governments of middle-income and creditworthy low-income countries.
