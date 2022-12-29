@@ -6,8 +6,8 @@
 
 ---
 
-[<img src="images/[<img src="images/MA_Student_Success_Image.png?raw=true"/>](/IDA internal project)
-[Massachusetts Public School Data Project](/Massachusetts Schools internal project)?raw=true"/>](/Massachusetts Schools internal project)
+[<img src="images/[<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/IDA internal project)
+[IDA Loans, a SQLProject](/Massachusetts Schools internal project)?raw=true"/>](/Massachusetts Schools internal project)
 [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
 
 ------
