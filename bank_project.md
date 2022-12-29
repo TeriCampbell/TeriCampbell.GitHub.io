@@ -106,7 +106,7 @@ The above analysis reveals the following:
 *  India also has the largest number of transactions
 *  Top project categories for loans in India include telecommunications, social safety nets, and infrastructure
 *  The greatest loan amounts in India are held by the Controller of Aid Accounts & Audit
-*  India does not appear in the top 10 for longest loan duration.  In fact, India appears once in 9th place for the shortest duration loan.
+*  India does not appear in the top 10 for longest loan duration; In fact, India appears once in 9th place for the shortest duration loan.
 
 <br><br>
 ## CONCLUSION
