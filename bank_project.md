@@ -47,7 +47,7 @@ The data set contained 1,109,994 rows and 30 fields
 <br><br>
 <img src="images/2Table_max_owed_to_IDA.png?raw=true" width = "50%"/>   
 
-(br><br>
+<br><br>
 #### Which countries had the greatest number of transactions?
 <br><br>
 <img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/>    
