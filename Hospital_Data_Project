@@ -4,21 +4,23 @@
 
 **Project description:**  This project explored Hospital Data, focusing on diabetic patients in 130 US Hospitals  <br><br>
 <br><br>
-“The International Bank for Reconstruction and Development (IBRD) lends to governments of middle-income and creditworthy low-income countries.
-The International Development Association (IDA) provides interest-free loans – called credits – and grants to governments of the poorest countries.
-Together, IBRD and IDA make up the World Bank.”
+Hospital readmissions within 30 days of patient discharge can be costly as well as an indication of an inadequate treatment plan.
+<br><br>
+Greater length of hospital stay can also have a financial impact on the facility due to insurance reimbursement systems such as Medicare’s prospective payment system.
+<br><br>
+Balancing length of stay with risk of readmission is important for hospital administration and policy.
 <br><br>
 ### The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
 
 <br><br>
 **What I Learned**
-* India has both the greatest outstanding loan amounts and greatest number of recorded transactions
+* 1
 
-* Most loan amounts in India are held by "Controller of Aid Accounts & Audit" 
+* 2 
 
-* Top project categories for loans in India include telecommunications, social safety nets, and infrastructure
+* 3
 
-* Despite having the largest outstanding loan totals, India does not appear in the top 10 for longest held loans.
+* 4
 
 <br><br>
 ## DATA
@@ -28,14 +30,14 @@ The data can be found here:  https://www.kaggle.com/code/iabhishekofficial/predi
 
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
-The data set contained x rows and 50 fields
+The data set contained 101,766 rows and 50 fields
 
 
 <br><br>
 ## ANALYSIS
 
 <br><br>
-#### First I wanted to know, what were the greatest amounts due? 
+#### First I wanted to know,  ? 
 <br><br>
 <img src="images/SQL1_top_10_amt_due.png?raw=true" width = "40%"/>  
 <br><br>
