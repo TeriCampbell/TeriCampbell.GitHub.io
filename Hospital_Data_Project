@@ -10,7 +10,7 @@ Greater length of hospital stay can also have a financial impact on the facility
 <br><br>
 Balancing length of stay with risk of readmission is important for hospital administration and policy.
 <br><br>
-### The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.   
+### This project was focused on gaining insights related to patient demographics and correlations to length of stay.    
 
 <br><br>
 **What I Learned**
@@ -31,6 +31,8 @@ The data can be found here:  https://www.kaggle.com/code/iabhishekofficial/predi
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
 The data set contained 101,766 rows and 50 fields
+
+More detail about this dataset can be found here:  https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#
 
 
 <br><br>
