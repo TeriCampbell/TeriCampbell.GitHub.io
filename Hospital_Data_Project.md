@@ -34,11 +34,11 @@ The data set contains 101,766 rows and 50 fields
 
 This data set contains 10 years (1999-2008) of data collected from 130 US hospitals. Information included in this data meets the following requirements:
 
-*An inpatient encounter is defined as a hospital admission
-*The admission includes a diabetic encounter
-*Length of stay between 1 and 14 days 
-*The admission period included recorded laboratory test
-*The admission period included the administration of medications
+* An inpatient encounter is defined as a hospital admission
+* The admission includes a diabetic encounter
+* Length of stay between 1 and 14 days 
+* The admission period included recorded laboratory test
+* The admission period included the administration of medications
 
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
