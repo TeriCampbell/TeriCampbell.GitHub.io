@@ -14,13 +14,15 @@ Balancing length of stay with risk of readmission is important for hospital admi
 
 <br><br>
 **What I Learned**
-* 1
+* The majority of hospital admissions are less than 7 days
 
-* 2 
+* Patients who have longer than 1 week hospital stays have a somewhat greater average number of diagnoses
 
-* 3
+* The medical specialties that perform the most procedures on average, do not necessarily have the largest number of patients
 
-* 4
+* On average, the number of procedures performed increases the longer a patient is in hospital
+
+* There is evidence of racial differences in medical care provided
 
 <br><br>
 ## DATA
@@ -28,104 +30,118 @@ Balancing length of stay with risk of readmission is important for hospital admi
 The “diabetic_data” data set was downloaded from Kaggle
 The data can be found here:  https://www.kaggle.com/code/iabhishekofficial/prediction-on-hospital-readmission/data?select=diabetic_data.csv
 
+The data set contains 101,766 rows and 50 fields
+
+This data set contains 10 years (1999-2008) of data collected from 130 US hospitals. Information included in this data meets the following requirements:
+
+*An inpatient encounter is defined as a hospital admission
+*The admission includes a diabetic encounter
+*Length of stay between 1 and 14 days 
+*The admission period included recorded laboratory test
+*The admission period included the administration of medications
+
 Data was cleaned, filtered, and analyzed using PostgreSQL
 
-The data set contained 101,766 rows and 50 fields
-
 More detail about this dataset can be found here:  https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008#
-<br><br>
-This data set contains 10 years (1999-2008) of data collected from 130 US hospitals. 
-Information included in this data meets the following requirements:
-
-* An inpatient encounter is defined as a hospital admission
-* The admission includes a diabetic encounter
-* Length of stay between 1 and 14 days 
-* The admission period included recorded laboratory test
-* The admission period included the administration of medications
-
 
 <br><br>
 ## ANALYSIS
 
 <br><br>
-#### First I wanted to know,  ? 
+#### First, a look at the distribution of time spent in the hospital:
+ 
 <br><br>
-<img src="images/SQL1_top_10_amt_due.png?raw=true" width = "40%"/>  
+<img src="images/HealthSQL1.png?raw=true" width = "40%"/>  
 <br><br>
-<img src="images/1Table_top_10_amt_due.png?raw=true" width = "50%"/> 
+<img src="images/Healthcare1Results.png?raw=true" width = "50%"/> 
 
 <br><br>
-#### Then which countries had the greatest outstanding amount?
+#### The results do show a pattern, but maybe I'm a bit off on this day, and don't want to do much mental math.  
+For a more clear idea of how many people stayed a a week or less, and how many were in hospital for longer:
 <br><br>
-<img src="images/SQL2_Max_owed_to_IDA.png?raw=true" width = "40%"/>    
+<img src="images/HealthSQL2.png?raw=true" width = "40%"/>    
 <br><br>
-<img src="images/2Table_max_owed_to_IDA.png?raw=true" width = "50%"/>   
+<img src="images/Healthcare2Results.png?raw=true" width = "50%"/>   
 
 <br><br>
-#### Which countries had the greatest number of transactions?
+#### Now let's say we want to know how sick patients are in each group.  
+We can look at, on average, how many diagnoses per person there are in each group.
 <br><br>
-<img src="images/SQL3B_Greatest_Number_of_Transactions.png?raw=true" width = "50%"/>    
+<img src="images/HealthSQL3.png?raw=true" width = "50%"/>    
 <br><br>
-<img src="images/3BTable_Greatest_Number_of_Transactions.png?raw=true" width = "60%"/> 
+We do see on average a greater number of diagnoses in the group with the longer length of stay.
+<br><br>
+<img src="images/Healthcare3Results.png?raw=true" width = "60%"/> 
 
 <br><br>
-#### Looking deeper, here are the top project categories in India, which was found to have the most outstanding loan amounts 
+#### In hospital service, costs incurred by procedures can be significant for the facility.  
+Let's take a look at the top 10 specialties to order the most procedures on average.
 <br><br>
-<img src="images/SQL3_most_frequent_projects_India.png?raw=true" width = "50%"/>  
+<img src="images/HealthSQL4.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/3Table_most_frequent_projects_India.png?raw=true" width = "55%"/>   
+<img src="images/Healthcare4Results.png?raw=true" width = "55%"/>   
 
-<br><br>
-#### Which entity or entities hold the most loan amounts in India?
-<br><br>
-<img src="images/SQL4_who_has_most_loans_in_India.png?raw=true" width = "60%"/>   
-<br><br>
-<img src="images/4Table_who_has_most_loans_in_India.png?raw=true" width = "60%"/>   
+The results show that the medical specialties that have the largest average procedure count do not necessarily have the largest number of patients.  
 
+In order for this information to inform business decisions, further exploration is indicated.
 <br><br>
-#### Zooming back out; What percentage of the original loan amount remains unpaid by region?
+<img src="images/HealthSQL4B.png?raw=true" width = "50%"/>  
 <br><br>
-<img src="images/Table6_Percent_loan_outstanding.png?raw=true" width = "70%"/>  
+<img src="images/Healthcare4BResults.png?raw=true" width = "55%"/> 
 <br><br>
-<img src="images/6SQL_percent_loan_outstanding.png?raw=true" width = "60%"/>  
-
+This information can help the facility direct attention toward the specialties that are utilizing the most resources.
+<br>br>
+#### A hospital facility has further interest in understanding if the number of lab procedures might correlate to the number of days in hospital.
 <br><br>
-#### Are the top percentages of unpaid loan amounts in India?
+<img src="images/HealthSQL6.png?raw=true" width = "60%"/>   
 <br><br>
-<img src="images/SQL7_Top_percent_outstanding.png?raw=true" width = "70%"/>  
+<img src="images/Healthcare6Results.png?raw=true" width = "60%"/>   
 <br><br>
-<img src="images/7Table_top_percent_outstanding.png?raw=true" width = "60%"/> 
-<br><br>
-Looks like they are not
-
-<br><br>
-#### Finally, I explored which countries had the longest and shortest scheduled loan durations
-<br><br>
-<img src="images/Longest Loan Times.png?raw=true" width = "80%"/>  
-<br><br>
-<img src="images/Table Longest Loan Times.png?raw=true" width = "25%"/>  
-<br><br>
-<img src="images/Shortest Loan Times.png?raw=true" width = "70%"/>  
-<br><br>
-<img src="images/Table Shortest Loan Times.png?raw=true" width = "30%"/>  
+As expected, there is an increase in the average number of procedures performed the longer the hospital stay.
 
 
 <br><br>
-## RESULTS AND RECOMMENDATIONS
+#### Taking a different angle, a facility is also interested in understanding what is going well and benefitting both patients and the business.  This example looks at information on patients who had an emergency admission, but who stayed less than the average time in the hospital.
+<br><br>
+<img src="images/HealthSQL5.png?raw=true" width = "70%"/>  
+<br><br>
+<img src="images/Healthcare5Results.png?raw=true" width = "60%"/>  
 
-The above analysis reveals the following:
-*  India has the greatest outstanding loan amounts 
-*  India also has the largest number of transactions
-*  Top project categories for loans in India include telecommunications, social safety nets, and infrastructure
-*  The greatest loan amounts in India are held by the Controller of Aid Accounts & Audit
-*  India does not appear in the top 10 for longest loan duration; In fact, India appears once in 9th place for the shortest duration loan.
+<br><br>
+#### In addition to costs, a facility must be aware of any subconscious bias when providing care.  We can, for example, look at specific services and compare how care is provided across different demographics. 
+<br><br>
+<img src="images/HealthSQL7.png?raw=true" width = "70%"/>  
+<br><br>
+<img src="images/Healthcare7Results.png?raw=true" width = "60%"/> 
 
+<br><br>
+#### The facility management team will also be interested in understanding readmission status in the specialty service of interest.   
+<br><br>
+<img src="images/HealthSQL8.png?raw=true" width = "80%"/>  
+<br><br>
+<img src="images/Healthcare8Results.png?raw=true" width = "25%"/>  
+<br><br>
+The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices.  
+
+
+<br><br>
+## RESULTS
+
+The above analysis provides these insights:
+*The majority of hospital admissions are less than 7 days
+*Patients who have longer than 1 week hospital stays have a somewhat greater average number of diagnoses
+*The medical specialties that perform the most procedures, on average, do not necessarily have the largest number of patients
+*On average, the number of procedures performed increases the longer a patient is in hospital
+*There is evidence to explore racial difference in the provision of medical care
 <br><br>
 ## CONCLUSION AND RECOMMENDATIONS
 
-The above insights could be used to further the stated goal of helping meet developing countries needs. 
-<br><br>
+Facilities can utilize insights from analysis such as that performed in this project to understand factors influencing patient care outcomes as well as financial impacts.<br><br>
 Following trends over time for countries receiving loans could reveal successes and failures in the lending process and is worth further exploration.
 <br><br>
-Further research to understand barriers met by loan recipients could provide deeper understanding of each regions specific needs.
+The information gathered can guide policy, strategy, and staff education.
+<br><br>
+Regular analysis is indicated to stay on top of the impacts of these changes as well as health trends that may require updated strategies and policies.
+<br><br>
+Further research is also indicated to understand potential differences in care provided to patients of different races and demographics.
 
