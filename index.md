@@ -5,8 +5,8 @@
 ### Analytics Projects
 ---
 
-[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>]
-#### [Healthcare Project]
+[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Hospital_Data_Project)
+#### [Healthcare Project](/Hospital_Data_Project)
 
 The goal of this project was to explore data on hospital admissions and length of stay in patients with diabetes.
 
