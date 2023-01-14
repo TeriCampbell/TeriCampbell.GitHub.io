@@ -50,9 +50,9 @@ More detail about this dataset can be found here:  https://archive.ics.uci.edu/m
 #### First, a look at the distribution of time spent in the hospital:
  
 <br><br>
-<img src="images/HealthSQL1.png?raw=true"width = "40%"/>   
+<img src="images/HealthSQL1.png?raw=true" width = "40%"/>   
 <br><br>
-<img src="images/Healthcare1Results.png?raw=true"width = "40%"/>  
+<img src="images/Healthcare1Results.png?raw=true "width = "40%"/>  
 
 <br><br>
 #### The results do show a pattern, but maybe I'm a bit off on this day, and don't want to do much mental math.  
