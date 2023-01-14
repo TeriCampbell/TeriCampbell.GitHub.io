@@ -9,7 +9,7 @@
 #### [Healthcare Project](/Hospital_Data_Project)
 
 The goal of this project was to explore data on hospital admissions and length of stay in patients with diabetes.
-
+<br><br>
 ---
 
 [<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project)
