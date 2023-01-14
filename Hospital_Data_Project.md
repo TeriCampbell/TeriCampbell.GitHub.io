@@ -119,7 +119,7 @@ As expected, there is an increase in the average number of procedures performed 
 <br><br>
 <img src="images/HealthSQL8.png?raw=true" width = "80%"/> 
 <br><br>
-<img src="images/Healthcare8Results.png?raw=true" width = "98%"/>   
+<img src="images/Healthcare8Results.png?raw=true" width = "90%"/>   
 <br><br>
 The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices.  
 
