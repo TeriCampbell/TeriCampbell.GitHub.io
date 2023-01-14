@@ -109,16 +109,16 @@ As expected, there is an increase in the average number of procedures performed 
 <br><br>
 #### In addition to costs, a facility must be aware of any subconscious bias when providing care.  We can, for example, look at specific services and compare how care is provided across different demographics. 
 <br><br>
-<img src="images/HealthSQL7.png?raw=true" width = "40%"/>   
+<img src="images/HealthSQL7.png?raw=true" width = "75%"/>   
 <br><br>
-<img src="images/Healthcare7Results.png?raw=true" width = "40%"/> 
+<img src="images/Healthcare7Results.png?raw=true" width = "75%"/> 
 
 <br><br>
 #### The facility management team will also be interested in understanding readmission status in the specialty service of interest.   
 <br><br>
-<img src="images/HealthSQL8.png?raw=true" width = "40%"/> 
+<img src="images/HealthSQL8.png?raw=true" width = "75%"/> 
 <br><br>
-<img src="images/Healthcare8Results.png?raw=true" width = "40%"/>   
+<img src="images/Healthcare8Results.png?raw=true" width = "75%"/>   
 <br><br>
 The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices.  
 
