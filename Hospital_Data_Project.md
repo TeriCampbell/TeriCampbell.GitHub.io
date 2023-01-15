@@ -111,6 +111,9 @@ As expected, there is an increase in the average number of procedures performed 
 <img src="images/HealthSQL7.png?raw=true" width = "80%"/>   
 <br><br>
 <img src="images/Healthcare7Results.png?raw=true" width = "110%"/> 
+<br><br>
+The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices. 
+
 
 <br><br>
 #### The facility management team will also be interested in readmission status in the specialty service of interest.   
@@ -119,7 +122,7 @@ As expected, there is an increase in the average number of procedures performed 
 <br><br>
 <img src="images/Healthcare8Results.png?raw=true" width = "90%"/>   
 <br><br>
-The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices.  
+This easy to read set of results can serve as a template to help with a targeted investigation based on re-admission status.   
 
 
 <br><br>
