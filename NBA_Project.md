@@ -64,14 +64,13 @@ This tree map shows players with the most assists broken down by position.  Poin
 <br><br>
 ## RESULTS AND CONCLUSION
 
-<img src="files/NBA Analysis 2021-22.pdf?raw=true"/>
 
 * Most high score, high assist players are point guards, but Nikola Jokić is an outlier with excellent stats for rebounds, assists, and points scored
 * The strongest position for 3-point efficiency varies by team 
 * Rayjon Tucker stands out as a 3-point scorer while Trae Young stands out for overall points scored
 * The greatest number of assists are made by point guards, followed by shooting guards.  James Harden, a point guard, has the most impressive number of assists for the 2021-22 season
 
-
+Feel free to check it out on Tableau Public here:  https://public.tableau.com/views/NBAProject_16725346382720/NBAAnalysis2021-22?:language=en-US&:display_count=n&:origin=viz_share_link
 
 
 
