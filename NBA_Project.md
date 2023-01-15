@@ -2,18 +2,20 @@
  
 ## INTRODUCTION
 
-**Project description:** The efficacy of our education system can be a topic of debate, as can the means by which we measure how well a given state is able to educate its children.
+**Project description:** Basketball is full of stats on players and teams.
 <br><br>
-This project focused on a dataset for the State, or rather The Commonwealth, of Massachusetts for the year 2017. The number of students who attend college after finishing high school was defined as the measure of success. Additionally, the data challenge asks the analyst to perform the analysis on the assumption that 4th grade math scores are a good indicator of academic success.
-<br><br>
-The overarching question proposed is whether or not the State should build more schools.
+This project is a case study using NBA data for the 2021-22 season.
+
 <br><br>
 **What I Learned**
-* Class size is not a good isolated determinant of student success
+* Nikola Jokić is an outlier with excellent stats for rebounds, assists, and points scored
+* Most high score, high assist players are point guards
+* when measuring 3-point efficiency, the strongest position varies by team 
+* Rayjon Tucker stands out as a 3-point scorer while
+* Trae Young stands out for overall points scored
+* The greatest number of assists are made by point guards, followed by shooting guards
+* James Harden, a point guard, has an impressive number of assists 
 
-* Economically disadvantaged students are less likely to attend college
-
-* Schools with fewer english language learner students had increased college attendance representation
 
 <br><br>
 ## DATA
@@ -62,25 +64,16 @@ The next analysis looks at which schools had over 50% passing math grades in the
 Now that these schools have been identified, educators in the high performing schools can be identified.
 
 <br><br>
-## RESULTS AND RECOMMENDATIONS
+## RESULTS AND CONCLUSION
 
 <img src="images/Dashboard_Massachusetts Student Success Evaluation.png?raw=true"/>
 
-Based on the above analysis, the following recommendations are indicated:
-* It is not advised to build more schools for the purpose of decreasing class size, as it is seen that class size alone is not a good indicator of student success.
-* The state should further assess intervention strategies for students who are economically disadvantaged.
-* Further analysis of students who are English Language Learners is indicated to target best interventions as economic status is only one factor identified.
-* Partner with educators in the identified schools that are best at teaching math to improve programs in the low performing schools.
+* Most high score, high assist players are point guards, but Nikola Jokić is an outlier with excellent stats for rebounds, assists, and points scored
+* The strongest position for 3-point efficiency varies by team 
+* Rayjon Tucker stands out as a 3-point scorer while Trae Young stands out for overall points scored
+* The greatest number of assists are made by point guards, followed by shooting guards.  James Harden, a point guard, has the most impressive number of assists for the 2021-22 season
 
-<br><br>
-## CONCLUSION
-The state has some good starting points for making positive changes to the educational system. 
-<br><br>
-There is room to dig deeper into regional access to resources and other factors that may contribute to lower measures of success.
 
-Monitoring math scores and college admissions are one way to measure "success", but college attendance is not necessarily the only method by which an individual can live a happy, healthy, and productive life. 
-
-Further monitoring factors such as gainful employment and income, economic stability, health, etc. could be of interest in order to guide the state in regard to offering both college preparedness and trade skills opportunities at schools.
 
 
 
