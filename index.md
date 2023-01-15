@@ -6,7 +6,7 @@
 ---
 
 
-[<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
+[<img src="images/NBAanalysis.png?raw=true"/>](/Massachusetts Schools internal project)
 #### [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
 
 If you have children, you may wonder what causes one child to succeed and another to struggle. Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
