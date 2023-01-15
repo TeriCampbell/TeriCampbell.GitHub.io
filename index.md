@@ -11,7 +11,7 @@
 
 Many of my friends and family are basketball fans and knowledgeable in every statistic about every player on every sports team.
 
-I hate to publicly admit it, but probably as a result of ineptitude in sports requiring hand-eye coordination, have never been terribly knowledgeable in the world of ball sports.
+I hate to publicly admit it, but probably as a result of ineptitude in sports requiring hand-eye coordination, I have never been terribly knowledgeable in the world of ball sports.
 
 This project is a way for me to jump in with both feet and see what is going on in basketball.  
 <br><br>
