@@ -32,14 +32,14 @@ Data was cleaned, filtered, and analyzed using Tableau Public
 <br><br>
 I started by taking a look at the distribution of players points, assists, and rebounds
 <br><br>
-<img src="images/Bubble_ pts & rebounds.png.png?raw=true"/>
+<img src="images/Bubble_ pts and rebounds.png?raw=true"/>
 <br><br>
 The bubble plot shows assists, points, & rebounds.  Nikola Jokić is a center in a sea of point guards for high points, assists, and rebounds
 <br><br>
 
 My next task was to visualize the distribution of 3-point scorers.
 <br><br>
-<img src="images/3P efficiency.png.png?raw=true"/>
+<img src="images/3P efficiency.png?raw=true"/>
 This heat map highlights 3-point efficiency by team and position. Darker color shows greater succes landing that  downtown shot.
 
 <br><br>
