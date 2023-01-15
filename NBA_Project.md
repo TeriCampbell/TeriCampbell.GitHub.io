@@ -19,49 +19,47 @@ This project is a case study using NBA data for the 2021-22 season.
 
 <br><br>
 ## DATA
+The data can be found here https://www.basketball-reference.com/leagues/NBA_2022_totals.html
 
-I started by uploading the provided MA_Public_Schools_2017 Excel file into Tableau Public. The data set contains 200 rows and 298 fields.
-<br><br>
-A scan of college attendees by zip code
-<img src="images/Distribution of College Attendees.png?raw=true"/>
+The dataset contains 200 rows and 31 fields
+
+This data set contains player stats for the 2021-22 NBA season.  
+
+Data was cleaned, filtered, and analyzed using Tableau Public
 
 <br><br>
 ## ANALYSIS
 <br><br>
-The first task was to determine the lowest performing schools. The data was filtered to remove null values because the dataset includes primary and secondary grades.
+I started by taking a look at the distribution of players points, assists, and rebounds
 <br><br>
-<img src="images/LowestGradRates_MA_Schools.png?raw=true"/>
+<img src="images/Bubble_ pts & rebounds.png.png?raw=true"/>
 <br><br>
-The above visualization shows school graduation rates from lowest to highest. Data for one school, Curtis-Tufts High School, which notably has a 0% graduation rate, was filtered from analysis of graduation rates. The school is an alternative high school for students from Medford High School. Graduating Students received degrees from Medford High School. I also filtered out null graduation values so that data from primary schools would not interfere with the results.
+The bubble plot shows assists, points, & rebounds.  Nikola Jokić is a center in a sea of point guards for high points, assists, and rebounds
 <br><br>
 
-My next task was to assess the impact of class size on college attendance rates.
+My next task was to visualize the distribution of 3-point scorers.
 <br><br>
-On initial observation, I saw a bit of an increase in college attendance as class size increased up to around 20 students per class. But, digging deeper and filtering for economic status, it is noted that economically disadvantaged youths have a decreased college attendance rate as compared to their counterparts.
-<br><br>
-<img src="images/PercentCollegeVsClassSize_Image.png?raw=true"/>
-Percent of College Attendees in Relation to Class Size
+<img src="images/3P efficiency.png.png?raw=true"/>
+This heat map highlights 3-point efficiency by team and position. Darker color shows greater succes landing that  downtown shot.
 
 <br><br>
-Looking deeper at the impact of economic disadvantage:
+I became curious about who the top 3-point scoring players were, and if an older players might be at the top.
 <br><br>
-<img src="images/PercentCollegeVsEconomicDisadvantage_Image.png?raw=true"/>
-Percent of Economically Disadvantaged Students who Attend College
+<img src="images/Top 3P scorers.png?raw=true"/>
+Top 10 3-point scorers in the 2021-22 season.  While I expected older players with more experience to have higher 3-point averages, the top 3-point scorer is 24 year old Rayjon Tucker.
 
 <br><br>
-Clearly this shows that the schools with fewer disadvantaged students have higher rates of college attendance. Further, the students who were English language learners (ELL) in this group were less likely to attend college.
+Naturally, that led to the question; "Who are the top point scoring players on each team?"
 <br><br>
-<img src="images/PercentCollegeVsELL_Image.png?raw=true"/>
-Percent of English Language Learners who Attend College
+<img src="images/Stacked Bar-Points.png?raw=true"/>
+This stacked bar chart is ranking players' points scored by team.  Trae Young of the Atlanta Hawks comes in hot at 2155 points for the season followed by DeMar DeRozan of the Chicago Bulls at 2118.
+
 <br><br>
-It is noted that the fewer ELL students are in a class, the greater the college attendance rate; however, economic status is distributed broadly across the percentage of college attendees when we isolate for ELL students as an isolated group.
+Of course, we all no that "there is no 'I' in 'team'".  Which leads to the question of who is making all of this fast paced action earn the teams points.
 <br><br>
-The assumption made in this challenge is that passing 4th grade math scores are correlated with increased student success.
-The next analysis looks at which schools had over 50% passing math grades in the 4th grade.
+<img src="images/Treemap-Assists.png?raw=true"/>
 <br><br>
-<img src="images/SchoolsPassingMath_Image.png?raw=true"/>
-<br><br>
-Now that these schools have been identified, educators in the high performing schools can be identified.
+This tree map shows players with the most assists broken down by position.  Point guards make the most assists, followed by shooting guards.   James Harden has the most assists for the 2021-22 season.
 
 <br><br>
 ## RESULTS AND CONCLUSION
