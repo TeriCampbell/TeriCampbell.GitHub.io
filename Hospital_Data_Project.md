@@ -36,8 +36,8 @@ This data set contains 10 years (1999-2008) of data collected from 130 US hospit
 
 * An inpatient encounter is defined as a hospital admission
 * The admission includes a diabetic encounter
-* Length of stay between 1 and 14 days 
-* The admission period included recorded laboratory test
+* Length of stay was between 1 and 14 days 
+* Laboratory tests were performed during the admission period
 * The admission period included the administration of medications
 
 Data was cleaned, filtered, and analyzed using PostgreSQL
@@ -48,12 +48,10 @@ More detail about this dataset can be found here:  https://archive.ics.uci.edu/m
 ## ANALYSIS
 
 #### First, a look at the distribution of time spent in the hospital:
- 
 <br><br>
 <img src="images/HealthSQL1.png?raw=true" width = "80%"/>   
 <br><br>
 <img src="images/Healthcare1Results.png?raw=true" width = "60%"/>  
-
 <br><br>
 #### The results do show a pattern, but maybe I'm a bit off on this day, and don't want to do much mental math.  
 Here is a more clear categorization of how many people stayed a a week or less, and how many were in hospital for longer:
