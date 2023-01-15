@@ -6,14 +6,14 @@
 ---
 
 
-[<img src="images/NBAanalysis.png?raw=true"/>](/Massachusetts Schools internal project)
-#### [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
+[<img src="images/NBAanalysis.png?raw=true"/>](/NBA_Project)
+#### [Sports Stats Spotlight: NBA Stats Case Study](/NBA_Project)
 
-If you have children, you may wonder what causes one child to succeed and another to struggle. Like myself, you may have heard that smaller class size is important for helping your child to succeed. 
+Many of my friends and family are basketball fans and knowledgeable in every statistic about every player on every sports team.
 
-Come take a peek into this analysis and see how that belief may be unfounded, or at least a story not fully told.
+I hate to publicly admit it, but probably as a result of ineptitude in sports requiring hand-eye coordination, have never been terribly knowledgeable in the world of ball sports.
 
-Stay tuned to the end and let me know if you agree that perhaps our measures of "success" may need updating.
+This project is a way for me to jump in with both feet and see what is going on in basketball.  
 <br><br>
 ---
 
