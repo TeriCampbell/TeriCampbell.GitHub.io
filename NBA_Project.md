@@ -1,4 +1,4 @@
-# Massachusetts Student Success Analysis
+# Sports Stats Spotlight, 2021-22 NBA Case Study
  
 ## INTRODUCTION
 
