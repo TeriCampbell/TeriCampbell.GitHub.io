@@ -36,24 +36,24 @@ Data was cleaned, filtered, and analyzed using Tableau Public
 <br><br>
 The bubble plot shows assists, points, & rebounds.  Nikola Jokić is a center in a sea of point guards for high points, assists, and rebounds
 <br><br>
-
+<br><br>
 **My next task was to visualize the distribution of 3-point scorers.**
 <br><br>
 <img src="images/3P efficiency.png?raw=true"/>
 This heat map highlights 3-point efficiency by team and position. Darker color shows greater succes landing that  downtown shot.
-
+<br><br>
 <br><br>
 **I became curious about who the top 3-point scoring players were, and if an older players might be at the top.**
 <br><br>
 <img src="images/Top 3P scorers.png?raw=true"/>
 Top 10 3-point scorers in the 2021-22 season.  While I expected older players with more experience to have higher 3-point averages, the top 3-point scorer is 24 year old Rayjon Tucker.
-
+<br><br>
 <br><br>
 **Naturally, that led to the question; "Who are the top point scoring players on each team?"**
 <br><br>
 <img src="images/Stacked Bar-Points.png?raw=true"/>
 This stacked bar chart is ranking players' points scored by team.  Trae Young of the Atlanta Hawks comes in hot at 2155 points for the season followed by DeMar DeRozan of the Chicago Bulls at 2118.
-
+<br><br>
 <br><br>
 **Of course, we all no that "there is no 'I' in 'team'".  Which leads to the question of who is making all of this fast paced action earn the teams points.**
 <br><br>
