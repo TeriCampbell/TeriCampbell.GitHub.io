@@ -5,6 +5,12 @@
 ### Analytics Projects
 ---
 
+[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Hospital_Data_Project)
+#### [Healthcare Project](/Hospital_Data_Project)
+
+The goal of this project was to explore data on hospital admissions and length of stay in patients with diabetes.
+<br><br>
+---
 
 [<img src="images/NBAanalysis.png?raw=true"/>](/NBA_Project)
 #### [Sports Stats Spotlight: NBA Stats Case Study](/NBA_Project)
@@ -17,12 +23,6 @@ This project is a way for me to jump in with both feet and see what is going on 
 <br><br>
 ---
 
-[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Hospital_Data_Project)
-#### [Healthcare Project](/Hospital_Data_Project)
-
-The goal of this project was to explore data on hospital admissions and length of stay in patients with diabetes.
-<br><br>
----
 
 [<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project)
 #### [Banking Analysis SQL Project](/bank_project)
