@@ -23,13 +23,12 @@ This project is a way for me to jump in with both feet and see what is going on 
 <br><br>
 ---
 
-
 [<img src="images/IDA_Project_Cover_pic.png?raw=true"/>](/bank_project)
 #### [Banking Analysis SQL Project](/bank_project)
 
 The goal of this project was to gain insights and a snapshot view from loans (credits) extended by the International Development Association (IDA) though the World Bank Group.
 <br><br>
-------
+---
 
 [<img src="images/MA_Student_Success_Image.png?raw=true"/>](/Massachusetts Schools internal project)
 #### [Massachusetts Public School Data Project](/Massachusetts Schools internal project)
