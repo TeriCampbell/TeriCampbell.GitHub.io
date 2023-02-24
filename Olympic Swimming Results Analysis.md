@@ -25,7 +25,7 @@ Limitation:  this study looks exclusively at Olympic Games results and does not 
 <br><br>
 ## DATA
 
-The dataset was downloaded from Kaggle and contains results for summer and winter Olympic Games for the years 1896-2022. It contains 4 tables, 3 of which were useful for the purposes of this project  It is noted that while the name of the data set is “Olympic Summer & Winter Games, 1986-2022”, the description clarifies that the data actually includes “Medals & Results & Athletes from Athens 1896 to Beijing 2022”.  Swimming records data for the 2022 Summer Games is limited to the top 8 finishers.
+The dataset was downloaded from Kaggle and contains results for Summer and Winter Olympic Games for the years 1896-2022. It contains 4 tables, 3 of which were useful for the purposes of this project  It is noted that while the name of the data set is “Olympic Summer & Winter Games, 1986-2022”, the description clarifies that the data actually includes “Medals & Results & Athletes from Athens 1896 to Beijing 2022”.  Swimming records data for the 2022 Summer Games is limited to the top 8 finishers.
 
 Olympic Swimming pool length is 50 meters long.  While some events have evolved over the years, this analysis focused solely on events that were consistent.  Certain events have not been a part of the swimming line up for as long as others, resulting in reduced overall results sections for these events.
 
@@ -37,10 +37,12 @@ Data was cleaned, filtered, and analyzed using Excel, BigQuery Sandbox, and Tabl
 ## ANALYSIS
 
 #### To start, I used SQL for cleaning and exploration and decided to focus on a single event, the Men’s 100m Freestyle.
+First I wanted to see an overview of the entire field of the Men’s 100m Freestyle over all of the years recorded in this dataset.  
 <br><br>
-<img src="images/HealthSQL1.png?raw=true" width = "80%"/>   
+<img src="images/1A_EntireMen's100FreeField.png?raw=true" width = "80%"/>   
 <br><br>
-<img src="images/Healthcare1Results.png?raw=true" width = "60%"/>  
+Interestingly, I was only getting results in 2020 for the top 8 finishers. To see what was going on, I took a quick peek and learned that the data set only contained the times for top 8 finishers for 2020.  I am curious who they are, how old they are, and how fast they are going.
+<img src="images/1B_2020Men's100FreeOnly.png?raw=true" width = "60%"/>  
 <br><br>
 #### The results do show a pattern, but maybe I'm a bit off on this day, and don't want to do much mental math.  
 Here is a more clear categorization of how many people stayed a a week or less, and how many were in hospital for longer:
