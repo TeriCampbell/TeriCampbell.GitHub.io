@@ -52,8 +52,8 @@ To see what was going on, I took a quick peek and learned that the data set only
 #### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  I am curious who they are, how old they are, and how fast they are going. Here are the top 3 finishers across the span of years.
 <br><br>
 <img src="images/Top3SQL.png?raw=true" width = "80%"/>  
+These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.
 <img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
-These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.  <br><br>
 
 <br><br>
 #### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
