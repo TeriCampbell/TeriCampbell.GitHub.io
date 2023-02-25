@@ -44,7 +44,9 @@ First I wanted to see an overview of the entire field of the Men’s 100m Freest
 Interestingly, I was only getting results in 2020 for the top 8 finishers. To see what was going on, I took a quick peek and learned that the data set only contained the times for top 8 finishers for 2020.  I am curious who they are, how old they are, and how fast they are going.
 <img src="images/1B_2020Men's100FreeOnly.png?raw=true" width = "60%"/>  
 <br><br>
-#### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  Here are the top 3 finishers across the span of years.  
+#### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  Here are the top 3 finishers across the span of years. 
+<img src="images/Top3SQL.png?raw=true" width = "80%"/>  
+<br><br>
 <img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
 These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.  <br><br>
 
