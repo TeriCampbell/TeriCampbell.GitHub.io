@@ -45,10 +45,9 @@ Interestingly, I was only getting results in 2020 for the top 8 finishers. To se
 <img src="images/1B_2020Men's100FreeOnly.png?raw=true" width = "60%"/>  
 <br><br>
 #### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  Here are the top 3 finishers across the span of years.  
-These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.  <br><br>
 <img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
-<br><br>
-<img src="images/3BM's100MTop3TimesWithPre2008.png?raw=true" width = "70%"/>  
+These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.  <br><br>
+
 
 <br><br>
 #### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
@@ -61,77 +60,53 @@ The relatively dramatic drop in winning time from 2004 to 2008 of 0.96 seconds i
 <img src="images/Healthcare3Results.png?raw=true" width = "80%"/> 
 
 <br><br>
-#### In hospital service, costs incurred by procedures can be significant for the facility.  
-Let's take a look at the top 10 specialties that order the most procedures on average.
+#### Next I took a look at some age statistics.  
 <br><br>
 <img src="images/HealthSQL4.png?raw=true" width = "80%"/> 
+On initial exploration, one participant, Min-Seok KIM, was initially reported as 7 years of age, when in fact he was 17 for the 2000 olympics; However, Emile HAHOUD of Lebanon was indeed 13 years of age for the 1988 Summer Olympic games. We also see a general trend of average age in this event in the low 20’s across the entire field, with a dip just below 20 in 1980.
 <br><br>
-<img src="images/Healthcare4Results.png?raw=true" width = "80%"/>    
+<img src="images/7MinMaxAvgAgeforM's100Free.png?raw=true" width = "80%"/>    
 
-The results show that the medical specialties that have the largest average procedure count do not necessarily have the largest number of patients.  
+At this point I wanted to better visualize how all of these years of data relate. I now knew some of my dirty data from my SQL exploration, so I started by cleaning up my CSV file in Excel and uploading the cleaned data set into Tableau Public. I also intended to focus specifically on the Swim Data, so in my new file I included only swim data.
 
-In order for this information to inform business decisions, further exploration is indicated.
+This makes it much easier for me to see the relativity in my data set. We can compare the average age of all of the swimming athletes each year and see a similar trend with a general dip in the average age of the swimmers from 1968-1980.
 <br><br>
-<img src="images/HealthSQL4B.png?raw=true" width = "80%"/> 
+<img src="images/7Average Age of Field of All Swimmers.png?raw=true" width = "80%"/> 
 <br><br>
-<img src="images/Healthcare4BResults.png?raw=true" width = "80%"/> 
+A look at average age trends in all events also shows a similar pattern.
 <br><br>
-This information can help the facility direct attention toward the specialties that are utilizing the most resources.
-
-<br><br>
-#### A hospital facility has further interest in understanding if the number of lab procedures might correlate to the number of days in hospital.
-<br><br>
-<img src="images/HealthSQL6.png?raw=true" width = "80%"/> 
-<br><br>
-<img src="images/Healthcare6Results.png?raw=true" width = "50%"/>    
-<br><br>
-As expected, there is an increase in the average number of procedures performed the longer the hospital stay.
+<img src="images/7Events and Average Ages for Top 8 Times.png?raw=true" width = "80%"/> 
 
 
 <br><br>
-#### A facility should understand what is going well and benefitting both patients and the business.  Here we explore data from patients who had an emergency admission, but who stayed less than the average time in the hospital.
-<br><br>
-<img src="images/HealthSQL5.png?raw=true" width = "80%"/>  
-<br><br>
-<img src="images/Healthcare5Results.png?raw=true" width = "80%"/>  
+#### In order to better show changes over time for each swimming event in the Olympics, I next created an interactive dashboard in Tableau that allowed me to see average times and ages across the fields for each year. I included a heat map to highlight the age of the winner for each year as well as a spotlight on times for the selected event. In addition, I created an at-a-glance podium for medal winners scrollable for athlete name, final time, and country the athlete is representing.
+
+This tool allowed me to quickly visualize trends for each event and zoom in on those that were and were not impacted by the buoyant suit era. I could then see if it was an impact on the average of the top 8, or more specific to the winning time.
+
+The dashboard also allowed me to get a quick glance at the ages of the winners each year and compare that to the average age of the field.
 
 <br><br>
-#### In addition to costs, a facility must be aware of any subconscious bias when providing care.  We can, for example, look at specific services and compare how care is provided across different demographics. 
+<img src="images/Men’s100FreeDashboardOverall.png?raw=true" width = "80%"/> 
 <br><br>
-<img src="images/HealthSQL7.png?raw=true" width = "80%"/>   
+<img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "50%"/>    
 <br><br>
-<img src="images/Healthcare7Results.png?raw=true" width = "110%"/> 
-<br><br>
-The above example reveals a need to explore deeper and address underlying contributing factors to what appears to be a racial discrepancy in obstetric and gynecological care practices. 
-
-
-<br><br>
-#### The facility management team will also be interested in readmission status in the specialty service of interest.   
-<br><br>
-<img src="images/HealthSQL8.png?raw=true" width = "80%"/> 
-<br><br>
-<img src="images/Healthcare8Results.png?raw=true" width = "90%"/>   
-<br><br>
-This easy to read set of results can serve as a template to help with a targeted investigation based on re-admission status.   
+The live dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/shared/F883JZJWS?:display_count=n&:origin=viz_share_link   
 
 
 <br><br>
 ## RESULTS
 
-The above analysis provides these insights:
-* The majority of hospital admissions are less than 7 days
-* Patients who have longer than 1 week hospital stays have a somewhat greater average number of diagnoses
-* The medical specialties that perform the most procedures, on average, do not necessarily have the largest number of patients
-* On average, the number of procedures performed increases the longer a patient is in hospital
-* There is evidence to explore racial difference in the provision of medical care
+* I expected to see progressively faster results in each event each year, and as a general trend this is the case.
+* I expected to see that athletes ages, on average, increased slightly over the years. In fact, I found a slight dip in average ages to 18-19 year of age in the late 1960’s to early 1980’s, with ages returning back to the low 20's gradually. Swimmers closer to the upper 30's and early 40's were much less common.
+* I expected that the impact of the buoyant suit era might still be present, with the fastest times in some events still not yet meeting the fastest times from 2008. The Olympic debut in 2008 of the buoyant tech-suit resulted in many large time drops and record Olympic times. 2008 was the only olympic games to feature these suits that were subsequently banned in olympic swimming in 2010. In some cases we don’t see times dip below those seen in 2008 until 2020 (both slowest and fastest times). While a handful of events are still trending down toward the fastest times yet, many have seen results where the fastest times are now below those achieved during the buoyant suit era. It is noted that average times across the top 8 continue to trend downward (faster).
+* On average, the number of procedures performed increases the longer a patient is in hospitalI expected any impact on time from the buoyant suit era would be represented equally across all events and seen in both men’s and women’s events. Indeed, both Men's and Women's swimming were impacted, but the impact on each event varies and is not a 1:1 representation of impact.
 
 <br><br>
-## CONCLUSION AND RECOMMENDATIONS
-Facilities can utilize insights from analysis such as that performed in this project to understand factors influencing patient care outcomes as well as financial impacts.<br><br>
-Following trends over time for countries receiving loans could reveal successes and failures in the lending process and is worth further exploration.
+## CONCLUSION
+Never say "never" when it comes to athletics.
 <br><br>
-The information gathered can guide policy, strategy, and staff education.
+Regarding the change in average age over time, I am interested in what specific contributing factors may be at play. Are different training strategies selecting for ages such as the understanding of training and weight lifting principles? Are there other factors at play such as historical world or financial events that might impact the ability to train and participate in sport?
 <br><br>
-Regular analysis is indicated to stay on top of the impacts of these changes as well as health trends that may require updated strategies and policies.
+Regarding speed, along with the impact of training strategies, are athletes beliefs around what is possible having a significant impact on performance? How is access to professional competition and increased high level competition frequency for swimming changing the sport? Are athletes better in tune with more optimal nutrition and recovery principles?
 <br><br>
-Further research is also indicated to understand potential differences in care provided to patients of different races and demographics.
+In depth analysis is indicated to stay on top of the impacts of trends in training on performance and longevity in the sport. The findings of this analysis will likely have broad sweeping impact on all levels of the sport of swimming.
