@@ -44,20 +44,19 @@ First I wanted to see an overview of the entire field of the Men’s 100m Freest
 Interestingly, I was only getting results in 2020 for the top 8 finishers. To see what was going on, I took a quick peek and learned that the data set only contained the times for top 8 finishers for 2020.  I am curious who they are, how old they are, and how fast they are going.
 <img src="images/1B_2020Men's100FreeOnly.png?raw=true" width = "60%"/>  
 <br><br>
-#### The results do show a pattern, but maybe I'm a bit off on this day, and don't want to do much mental math.  
-Here is a more clear categorization of how many people stayed a a week or less, and how many were in hospital for longer:
+#### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  Here are the top 3 finishers across the span of years.  
+These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.  <br><br>
+<img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
 <br><br>
-<img src="images/HealthSQL2.png?raw=true" width = "80%"/>     
-<br><br>
-<img src="images/Healthcare2Results.png?raw=true" width = "70%"/>  
+<img src="images/3BM's100MTop3TimesWithPre2008.png?raw=true" width = "70%"/>  
 
 <br><br>
-#### Now let's say we want to know how sick patients are in each group.  
-We can look at, on average, how many diagnoses per person there are in each group.
+#### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
+The top time in 2008 was not achieved and beaten until the 2020 Olympic Games. 
 <br><br>
-<img src="images/HealthSQL3.png?raw=true" width = "80%"/>    
+<img src="images/4Men's100FreeWinners.png?raw=true" width = "80%"/>    
 <br><br>
-We do see on average a greater number of diagnoses in the group with the longer length of stay.
+The relatively dramatic drop in winning time from 2004 to 2008 of 0.96 seconds is offset by a still impressive, but more modest, half second drop as the winning Olympic time from 2008 is finally beaten. 
 <br><br>
 <img src="images/Healthcare3Results.png?raw=true" width = "80%"/> 
 
