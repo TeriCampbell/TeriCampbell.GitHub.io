@@ -86,9 +86,9 @@ This tool allowed me to quickly visualize trends for each event and zoom in on t
 The dashboard also allowed me to get a quick glance at the ages of the winners each year and compare that to the average age of the field.
 
 <br><br>
-<img src="images/Men’s100FreeDashboardOverall.png?raw=true" width = "50%"/> 
+<img src="images/Men's100FreeDashboardOverall.png?raw=true" width = "80%"/> 
 <br><br>
-<img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "50%"/>    
+<img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "80%"/>    
 <br><br>
 The live dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/shared/F883JZJWS?:display_count=n&:origin=viz_share_link   
 
