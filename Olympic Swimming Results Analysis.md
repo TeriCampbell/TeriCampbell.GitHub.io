@@ -39,7 +39,7 @@ Data was cleaned, filtered, and analyzed using Excel, BigQuery Sandbox, and Tabl
 #### To start, I used SQL for cleaning and exploration and decided to focus on a single event, the Men’s 100m Freestyle.
 First I wanted to see an overview of the entire field of the Men’s 100m Freestyle over all of the years recorded in this dataset. 
 <br><br>
-<img src="images/AllResults100FreeSQL.png.png?raw=true" width = "80%"/> 
+<img src="images/AllResults100FreeSQL.png?raw=true" width = "80%"/> 
 <br><br>
 <img src="images/1A_EntireMen's100FreeField.png?raw=true" width = "80%"/>   
 <br><br>
