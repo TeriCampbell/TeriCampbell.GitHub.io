@@ -86,7 +86,7 @@ This tool allowed me to quickly visualize trends for each event and zoom in on t
 The dashboard also allowed me to get a quick glance at the ages of the winners each year and compare that to the average age of the field.
 
 <br><br>
-<img src="images/Men’s100FreeDashboardOverall.png?raw=true" width = "80%"/> 
+<img src="images/Men’s100FreeDashboardOverall.png?raw=true" width = "50%"/> 
 <br><br>
 <img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "50%"/>    
 <br><br>
