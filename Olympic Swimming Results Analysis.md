@@ -57,7 +57,6 @@ To see what was going on, I took a quick peek and learned that the data set only
 These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.
 <img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
 
-<br><br>
 #### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
 <img src="images/SQLCode100MFreeOverallWinner.png?raw=true" width = "80%"/>
 The top time in 2008 was not achieved and beaten until the 2020 Olympic Games. 
