@@ -4,8 +4,8 @@
 
 ### Analytics Projects
 ---
-[<img src="images/Men's100FreeDashboardOverall.png?raw=true"/>](/Olympic Swimming Results Analysis.md)
-#### [Olympic Swim Competition Analysis](/Olympic Swimming Results Analysis.md)
+[<img src="images/Men's100FreeDashboardOverall.png?raw=true"/>](/Olympic Swimming Results Analysis)
+#### [Olympic Swim Competition Analysis](/Olympic Swimming Results Analysis)
 
 The next Summer Games come up in 2024.
 
