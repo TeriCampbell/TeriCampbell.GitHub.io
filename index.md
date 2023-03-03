@@ -13,6 +13,7 @@ Growing up as a competitive swimmer, the Summer Olympic Games were always a high
 
 This analysis of Olympic Swimming data explores both age and speed of the athletes over the years. In particular, I wanted to highlight the impact that the buoyant suit era had on olympic swimming results, including whether there was a lasting effect and if the times achieved would ever be beaten.
 <br><br>
+
 ---
 [<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Hospital_Data_Project)
 #### [Healthcare Project](/Hospital_Data_Project)
