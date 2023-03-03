@@ -4,7 +4,7 @@
 
 ### Analytics Projects
 ---
-[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Olympic Swimming Results Analysis)
+[<img src="images/Men's100FreeDashboardOverall.png?raw=true"/>](/Olympic Swimming Results Analysis)
 #### [Healthcare Project](/Hospital_Data_Project)
 
 The next Summer Games come up in 2024.
