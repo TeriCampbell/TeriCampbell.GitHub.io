@@ -4,7 +4,16 @@
 
 ### Analytics Projects
 ---
+[<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Olympic Swimming Results Analysis)
+#### [Healthcare Project](/Hospital_Data_Project)
 
+The next Summer Games come up in 2024.
+
+Growing up as a competitive swimmer, the Summer Olympic Games were always a highlight of the season. The swimming athletes continued to get faster year after year, and at times it appeared that the athletes got younger. Until some star swimmers were highlighted who were in their 30’s and even 40’s. Then came the year that is notorious in the swimming community for the introduction of swim suits with buoyant properties. The suits were worn by swimmers in the 2008 games, but banned for use in the Olympic Games by 2010 due to performance enhancing properties.
+
+This analysis of Olympic Swimming data explores both age and speed of the athletes over the years. In particular, I wanted to highlight the impact that the buoyant suit era had on olympic swimming results, including whether there was a lasting effect and if the times achieved would ever be beaten.
+<br><br>
+---
 [<img src="images/HospitalAdmissionsCoverImage.png?raw=true"/>](/Hospital_Data_Project)
 #### [Healthcare Project](/Hospital_Data_Project)
 
