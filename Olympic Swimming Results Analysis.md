@@ -64,8 +64,6 @@ The top time in 2008 was not achieved and beaten until the 2020 Olympic Games.
 <img src="images/4Men's100FreeWinners.png?raw=true" width = "80%"/>    
 <br><br>
 The relatively dramatic drop in winning time from 2004 to 2008 of 0.96 seconds is offset by a still impressive, but more modest, half second drop as the winning Olympic time from 2008 is finally beaten. 
-<br><br>
-<img src="images/Healthcare3Results.png?raw=true" width = "80%"/> 
 
 <br><br>
 #### Next I took a look at some age statistics.  
