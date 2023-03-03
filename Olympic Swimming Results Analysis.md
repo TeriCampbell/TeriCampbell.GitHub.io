@@ -110,8 +110,6 @@ The interactive dashboard can be accessed on my Tableau Public page here:  https
 
 * I expected that the impact of the buoyant suit era might still be present, with the fastest times in some events still not yet meeting the fastest times from 2008. The Olympic debut in 2008 of the buoyant tech-suit resulted in many large time drops and record Olympic times. 2008 was the only olympic games to feature these suits that were subsequently banned in olympic swimming in 2010. In some cases we don’t see times dip below those seen in 2008 until 2020 (both slowest and fastest times). While a handful of events are still trending down toward the fastest times yet, many have seen results where the fastest times are now below those achieved during the buoyant suit era. It is noted that average times across the top 8 continue to trend downward (faster).
 
-* On average, the number of procedures performed increases the longer a patient is in hospitalI expected any impact on time from the buoyant suit era would be represented equally across all events and seen in both men’s and women’s events. Indeed, both Men's and Women's swimming were impacted, but the impact on each event varies and is not a 1:1 representation of impact.
-
 <br><br>
 ## CONCLUSION
 Never say "never" when it comes to athletics.
