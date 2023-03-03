@@ -69,6 +69,7 @@ The relatively dramatic drop in winning time from 2004 to 2008 of 0.96 seconds i
 #### Next I took a look at some age statistics.  
 <br><br>
 <img src="images/SQLcodeAgeStats100MFreeMen.png?raw=true" width = "80%"/> 
+<br><br>
 On initial exploration, one participant, Min-Seok KIM, was initially reported as 7 years of age, when in fact he was 17 for the 2000 olympics; However, Emile HAHOUD of Lebanon was indeed 13 years of age for the 1988 Summer Olympic games. We also see a general trend of average age in this event in the low 20’s across the entire field, with a dip just below 20 in 1980.
 <br><br>
 <img src="images/7MinMaxAvgAgeforM's100Free.png?raw=true" width = "80%"/>    
