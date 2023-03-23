@@ -60,6 +60,7 @@ These results do show a drop in times for this event in 2008 that was not matche
 #### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
 <br><br>
 <img src="images/SQLCode100MFreeOverallWinner.png?raw=true" width = "80%"/>
+
 The top time in 2008 was not achieved and beaten until the 2020 Olympic Games. 
 <br><br>
 <img src="images/4Men's100FreeWinners.png?raw=true" width = "80%"/>    
