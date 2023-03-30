@@ -103,7 +103,7 @@ As expected, there is an increase in the average number of procedures performed 
 <br><br>
 <img src="images/HealthSQL5.png?raw=true" width = "80%"/>  
 <br><br>
-<img src="images/Healthcare5Results.png?raw=true" width = "110%"/> 
+<img src="images/Healthcare7Results.png?raw=true" width = "110%"/> 
  
 
 <br><br>
