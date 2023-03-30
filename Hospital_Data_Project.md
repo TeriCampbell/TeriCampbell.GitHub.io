@@ -109,7 +109,7 @@ As expected, there is an increase in the average number of procedures performed 
 <br><br>
 #### In addition to costs, a facility must be aware of any subconscious bias when providing care.  We can, for example, look at specific services and compare how care is provided across different demographics. 
 <br><br>
-<img src="images/HealthSQL7.png?raw=true" width = "80%"/>   
+<img src="images/HealthSQL8.png?raw=true" width = "90%"/>   
 <br><br>
 <img src="images/Healthcare8Results.png?raw=true" width = "90%"/> 
 <br><br>
