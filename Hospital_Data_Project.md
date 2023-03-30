@@ -121,7 +121,7 @@ The above example reveals a need to explore deeper and address underlying contri
 <br><br>
 <img src="images/HealthSQL8.png?raw=true" width = "80%"/> 
 <br><br>
-<img src="images/Healthcare8Results.png?raw=true" width = "90%"/>   
+<img src="images/Healthcare9Results.png?raw=true" width = "90%"/>   
 <br><br>
 This easy to read set of results can serve as a template to help with a targeted investigation based on re-admission status.   
 
