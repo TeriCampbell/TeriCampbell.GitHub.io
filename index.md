@@ -4,8 +4,8 @@
 
 ### Analytics Projects
 ---
-[<img src="images/PT_dashboard_wide_screenshot.png?raw=true"/>](/PT Consulting Project)
-#### [PT Consulting Project](/PT Consulting Project)
+[<img src="images/PT_dashboard_wide_screenshot.png?raw=true"/>](/0PT Consulting Project)
+#### [PT Consulting Project](/0PT Consulting Project)
 
 This consulting project explores and provides recommendations regarding potential locations for a client to locate a new Physical Therapy practice in the State of Florida.
 <br><br>
