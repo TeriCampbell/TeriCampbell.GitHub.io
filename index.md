@@ -4,6 +4,13 @@
 
 ### Analytics Projects
 ---
+[<img src="images/PT_dashboard_wide_screenshot.png?raw=true"/>](/Olympic Swimming Results Analysis)
+#### [Olympic Swim Competition Analysis](/Olympic Swimming Results Analysis)
+
+This consulting project explores and provides recommendations regarding potential locations for a client to locate a new Physical Therapy practice in the State of Florida.
+<br><br>
+
+---
 [<img src="images/Men's100FreeDashboardOverall.png?raw=true"/>](/Olympic Swimming Results Analysis)
 #### [Olympic Swim Competition Analysis](/Olympic Swimming Results Analysis)
 
