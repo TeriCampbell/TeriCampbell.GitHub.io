@@ -1,8 +1,18 @@
 # Group Consulting Project:  Locating a New Physical Therapy Business in Florida
  
-## INTRODUCTION
+## Overview
 
-**Project description:**  Growing up as a competitive swimmer, the Summer Olympic Games were always a highlight of the season.  The swimming athletes continued to get faster year after year, and at times it appeared that the athletes got younger.  Until some star swimmers were highlighted who were in their 30’s and even 40’s.  Then came the year that is notorious in the swimming community for the introduction of swim suits with buoyant properties.  The suits were worn by swimmers in the 2008 games, but banned for use in the Olympic Games by 2010 due to performance enhancing properties.
+**Project description:**  
+Overview
+This collaborative group healthcare business consulting project utilized data mining and exploration of open source public datasets in order to provide data-informed recommendations to the client.  
+<br><br>
+Business Problem: The client wants to open up a new physical therapy clinic in Florida. What are the top 3 locations for the client to open a new location?
+<br><br>
+Assumptions: 
+
+1. The client wants a market in which to grow their business
+2. The client will focus on an insurance based payment model and will accept Medicare, which is a growing population.  
+
 <br><br>
 I wanted to examine historical Olympic Swimming data to explore both age and speed of the athletes over the years.  In particular, I wanted to highlight the impact that the buoyant suit era had on olympic swimming results, including whether there was a lasting effect and if the times achieved would ever be beaten.
 
