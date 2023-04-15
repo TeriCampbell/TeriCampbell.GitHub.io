@@ -118,22 +118,27 @@ The interactive dashboard can be accessed on my Tableau Public page here:  https
 
 
 <br><br>
-## RESULTS
+## RESULTS & RECOMMENDATIONS
 
-* I expected to see progressively faster results in each event each year, and as a general trend this is the case.
+Based on this analysis, a recommendation can be made to consider each of these specific locations as locations for a new physical therapy clinic with local demographic findings that match those of other regions that support higher numbers of physical therapists:
 
-* I expected to see that athletes ages, on average, increased slightly over the years. In fact, I found a slight dip in average ages to 18-19 years of age in the late 1960’s to early 1980’s, with ages returning back to the low 20's gradually. Swimmers closer to the upper 30's and early 40's were much less common.
+* Lee County, City of Fort Myers, Zip Code 33967
+* Charlotte County, City of  Punta Gorda, Zip Code 33982
+* Collier County, City of Naples, Zip Code 34117
 
-* I expected that the impact of the buoyant suit era might still be present, with the fastest times in some events still not yet meeting the fastest times from 2008. The Olympic debut in 2008 of the buoyant tech-suit resulted in many large time drops and record Olympic times. 2008 was the only olympic games to feature these suits that were subsequently banned in olympic swimming in 2010. In some cases we don’t see times dip below those seen in 2008 until 2020 (both slowest and fastest times). While a handful of events are still trending down toward the fastest times yet, many have seen results where the fastest times are now below those achieved during the buoyant suit era. It is noted that average times across the top 8 continue to trend downward (faster).
-
-* I expected any impact on time from the buoyant suit era would be represented equally across all events and seen in both men’s and women’s events. Indeed, both Men's and Women's swimming were impacted, but the impact on each event varies and is not a 1:1 relationship.
+Specifically, we can recommend the individual locations of interest for a new physical therapy clinic with growth potential because the regional demographic fits the following identified criteria and each is relatively under-served compared to areas that support a greater percentage of providers:
+* Average age of >38.5
+* Middle to High average household income
+* Low provider to population ratio
+* Higher population
 
 <br><br>
-## CONCLUSION
-Never say "never" when it comes to athletics.
+## CONCLUSION & CONSIDERATIONS
+Other Considerations/options to pursue deeper:
 <br><br>
-Regarding the change in average age over time, I am interested in what specific contributing factors may be at play. Are different training strategies selecting for ages such as the understanding of training and weight lifting principles? Are there other factors at play such as historical world or financial events that might impact the ability to train and participate in sport?
+The data found in these public data sets did not include information on lease prices in each area.
+Looking at the client budget vs rent prices (eg. West Palm Beach seems like a good choice, but perhaps there are lower numbers of providers in that location because overhead is restrictive to profit).
 <br><br>
-Regarding speed, along with the impact of training strategies, are athletes beliefs around what is possible having a significant impact on performance? How is access to professional competition and increased high level competition frequency for swimming changing the sport? Are athletes better in tune with more optimal nutrition and recovery principles?
+Potential data exploration:
+Add in average square footage cost for commercial real-estate for each city.
 <br><br>
-In depth analysis is indicated to stay on top of the impacts of trends in training on performance and longevity in the sport. The findings of this analysis will likely have broad sweeping impact on all levels of the sport of swimming.
