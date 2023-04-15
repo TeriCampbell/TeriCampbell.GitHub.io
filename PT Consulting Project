@@ -51,68 +51,71 @@ Data was cleaned, filtered, and analyzed using spreadsheets, SQL, and Tableau Pu
 
 ## ANALYSIS
 
-#### To start, I used SQL for cleaning and exploration and decided to focus on a single event, the Men’s 100m Freestyle.
-First I wanted to see an overview of the entire field of the Men’s 100m Freestyle over all of the years recorded in this dataset. 
-<br><br>
-<img src="images/AllResults100FreeSQL.png?raw=true" width = "80%"/> 
+#### Joining the number of providers at each location with the demographic table reveals correlations associated with a higher number of providers.
+Introductory exploratory analysis shows that:
+
+* The lowest average age in the top regions that support the greatest number of physical therapists is 38.7
+* The city population range in the top regions lies above 524 
+* The county population range in the top regions is above: 155,000
 
 <br><br>
-<img src="images/1A_EntireMen's100FreeField.png?raw=true" width = "80%"/>   
-<br><br>
-Interestingly, I was only getting results in 2020 for the top 8 finishers. 
-To see what was going on, I took a quick peek and learned that the data set only contained the times for top 8 finishers, and for 2020 only contained records for the top 8 swimmers.  
- 
-<br><br>
-
-#### Zooming in and staying focused on the Men's 100 Freestyle, I now wanted to know who the medalists were.  I am curious who they are, how old they are, and how fast they are going. Here are the top 3 finishers across the span of years.
-<br><br>
-<img src="images/Top3SQL.png?raw=true" width = "80%"/>  
-<br><br>
-<br><br>
-These results do show a drop in times for this event in 2008 that was not matched until the most recent games in 2020.
-<img src="images/3Top3M's100FreeAllYearsHighlights.png?raw=true" width = "80%"/>     
-
-#### Of course, it would be hard to say that I wasn’t interested in the overall winner in the event each year.  
-<br><br>
-<img src="images/SQLCode100MFreeOverallWinner.png?raw=true" width = "80%"/>
-
-The top time in 2008 was not achieved and beaten until the 2020 Olympic Games. 
-<br><br>
-<img src="images/4Men's100FreeWinners.png?raw=true" width = "80%"/>    
-<br><br>
-The relatively dramatic drop in winning time from 2004 to 2008 of 0.96 seconds is offset by a still impressive, but more modest, half second drop as the winning Olympic time from 2008 is finally beaten. 
+<img src="images/PT_SQL_1.png.png?raw=true" width = "80%"/> 
 
 <br><br>
-#### Next I took a look at some age statistics.  
+<img src="images/PT_Results_1.png?raw=true" width = "80%"/>   
 <br><br>
-<img src="images/SQLcodeAgeStats100MFreeMen.png?raw=true" width = "80%"/> 
+TASK:  Identify areas with larger populations and average age over 38.5 that are underserved
 <br><br>
-On initial exploration, one participant, Min-Seok KIM, was initially reported as 7 years of age, when in fact he was 17 for the 2000 olympics; However, Emile HAHOUD of Lebanon was indeed 13 years of age for the 1988 Summer Olympic games. We also see a general trend of average age in this event in the low 20’s across the entire field, with a dip just below 20 in 1980.
-<br><br>
-<img src="images/7MinMaxAvgAgeforM's100Free.png?raw=true" width = "80%"/>    
 
-At this point I wanted to better visualize how all of these years of data relate. I now knew some of my dirty data from my SQL exploration, so I started by cleaning up my CSV file in Excel and uploading the cleaned data set into Tableau Public. I also intended to focus specifically on the Swim Data, so in my new file I included only swim data.
-
-This makes it much easier for me to see the relativity in my data set. We can compare the average age of all of the swimming athletes each year and see a similar trend with a general dip in the average age of the swimmers from 1968-1980.
+#### Zooming in 
 <br><br>
-<img src="images/7Average Age of Field of All Swimmers.png?raw=true" width = "80%"/> 
+<img src="images/x.png?raw=true" width = "80%"/>  
 <br><br>
-A look at average age trends in all events also shows a similar pattern.
 <br><br>
-<img src="images/7Events and Average Ages for Top 8 Times.png?raw=true" width = "80%"/> 
+These results show 
+<img src="images/x.png?raw=true" width = "80%"/>     
 
-
+#### note.  
 <br><br>
-#### In order to better show changes over time for each swimming event in the Olympics, I next created an interactive dashboard in Tableau that allowed me to see average times and ages across the fields for each year. I included a heat map to highlight the age of the winner for each year as well as a spotlight on times for the selected event. In addition, I created an at-a-glance podium for medal winners scrollable for athlete name, final time, and country the athlete is representing.
+<img src="images/Code.png?raw=true" width = "80%"/>
 
-This tool allowed me to quickly visualize trends for each event and zoom in on those that were and were not impacted by the buoyant suit era. I could then see if it was an impact on the average of the top 8, or more specific to the winning time.
-
-The dashboard also allowed me to get a quick glance at the ages of the winners each year and compare that to the average age of the field.
+note
+<br><br>
+<img src="images/image.png?raw=true" width = "80%"/>    
+<br><br>
+note
 
 <br><br>
-<img src="images/Men's100FreeDashboardOverall.png?raw=true" width = "80%"/> 
+#### Next   
 <br><br>
-<img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "80%"/>    
+<img src="images/code.png?raw=true" width = "80%"/> 
+<br><br>
+note
+<br><br>
+<img src="images/image.png?raw=true" width = "80%"/>    
+
+note
+
+note
+<br><br>
+<img src="images/image.png?raw=true" width = "80%"/> 
+<br><br>
+note
+<br><br>
+<img src="images/image.png?raw=true" width = "80%"/> 
+
+
+<br><br>
+####  
+
+note
+
+note
+
+<br><br>
+<img src="images/codeimage.png?raw=true" width = "80%"/> 
+<br><br>
+<img src="images/image.png?raw=true" width = "80%"/>    
 <br><br>
 The interactive dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/shared/F883JZJWS?:display_count=n&:origin=viz_share_link   
 
