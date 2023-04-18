@@ -77,8 +77,9 @@ Introductory exploratory analysis shows that:
 
 #### As compared to an overall average provider rate of 1.66 by zip code  
 <br><br>
-<img src="images/PT_SQL_3.png?raw=true" width = "80%"/>
-<img src="images/PT_Results_3.png?raw=true" width = "80%"/>
+<img src="images/PT_SQL_3.png?raw=true" width = "60%"/>
+<br><br>
+<img src="images/PT_Results_3.png?raw=true" width = "40%"/>
 ####This reveals a successful saturation rate by city and zip. Criteria for inclusion should include regions with an average provider ratio below 1.6.
 
 <br><br>
