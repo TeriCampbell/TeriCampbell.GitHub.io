@@ -5,7 +5,7 @@
 **Overview:**  
 This collaborative group healthcare business consulting project utilized data mining and exploration of open source public datasets in order to provide data-informed recommendations to the client.  
 <br><br>
-###Business Problem: The client wants to open up a new physical therapy clinic in Florida. What are the top 3 locations for the client to open a new location?
+### Business Problem: The client wants to open up a new physical therapy clinic in Florida. What are the top 3 locations for the client to open a new location?
 <br><br>
 **Assumptions:** 
 
