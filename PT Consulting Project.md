@@ -75,20 +75,20 @@ Introductory exploratory analysis shows that:
 <br><br>
 <img src="images/PT_SQL_1.png?raw=true" width = "80%"/>  
 <br><br>
-<img src="images/PT_Results_2.png?raw=true" width = "80%"/>     
+<img src="images/PT_Results_2.png?raw=true" width = "60%"/>     
 
 #### As compared to an overall average provider rate of 1.66 by zip code  
 <br><br>
 <img src="images/PT_SQL_3.png?raw=true" width = "50%"/>
 <br><br>
-<img src="images/PT_Results_3.png?raw=true" width = "20%"/>
+<img src="images/PT_Results_3.png?raw=true" width = "30%"/>
 
----
 <br><br>
 #### This reveals a successful saturation rate by city and zip. Criteria for inclusion should include regions with an average provider ratio below 1.6.
-
 <br><br>
-####Further exploration identifies a city population range between 3 and 1186954, a zip code population range from 30 to 75705, and a county population range from 8308 to 2549075.
+---
+<br><br>
+#### Further exploration identifies a city population range between 3 and 1186954, a zip code population range from 30 to 75705, and a county population range from 8308 to 2549075.
 <br><br>
 ---
 <br><br>
