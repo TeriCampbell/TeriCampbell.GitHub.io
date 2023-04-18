@@ -69,8 +69,8 @@ Introductory exploratory analysis shows that:
 <img src="images/PT_Results_1.png?raw=true" width = "80%"/>   
 <br><br>
 
-----
-
+---
+<br><br>
 #### Exploring the average providers in each clinic in our top performing regions reveals that the top identified regions that support the most physical therapists have an average of 1.6 to  2.67 PT’s per clinic.
 <br><br>
 <img src="images/PT_SQL_1.png?raw=true" width = "80%"/>  
@@ -83,12 +83,15 @@ Introductory exploratory analysis shows that:
 <br><br>
 <img src="images/PT_Results_3.png?raw=true" width = "20%"/>
 
+---
+<br><br>
 #### This reveals a successful saturation rate by city and zip. Criteria for inclusion should include regions with an average provider ratio below 1.6.
 
 <br><br>
 ####Further exploration identifies a city population range between 3 and 1186954, a zip code population range from 30 to 75705, and a county population range from 8308 to 2549075.
 <br><br>
-
+---
+<br><br>
 #### First the question of whether or not household income plays a role must be considered, which can be more easily visualized when categorized.
 
 #### The range for median income falls between $32,497 and $64,876 by county:
@@ -102,7 +105,8 @@ Introductory exploratory analysis shows that:
 <img src="images/PT_Results_4.png?raw=true" width = "80%"/>   
 <br><br>
 #### Average household income above $39,000 is correlated with the greatest ratio of working providers in the population, indicating another aspect of successful business/market fit.
-
+<br><br>
+---
 <br><br>
 #### So far it is identified that the regions that support the greatest number of physical therapists have:
 * Average PT/s Clinic between 1.6-2.67 (for city), overall average 1.66 for zip
@@ -113,6 +117,9 @@ Introductory exploratory analysis shows that:
 <br><br>
 #### TASK: Identify regions with less than 1.66 average therapists per zip while also having > 4700 zip population, County Population >155,000, median age over 38.5, Average Household Income above $39,000, and an unemployment rate below 7.3
 <br><br>
+
+---
+<br><br>
 #### As a final criteria addition, a look at the total number of facilities in the upper end of the established parameters is seen here:
 <img src="images/PT_SQL_5.png?raw=true" width = "80%"/> 
 <img src="images/PT_Results_5.png?raw=true" width = "80%"/> 
@@ -120,6 +127,8 @@ Introductory exploratory analysis shows that:
 #### There is a trend for areas with larger county populations supporting a greater number of facilities.  Target regions for a new clinic should have a larger population, middle-to-high income, but a lower provider to population ratio and generally a lower number of facilities.
 <br><br>  
 
+---
+<br><br>
 #### Finally, Adding in the city population and ordering this from the lowest provider ratio we see the underserved areas population statistics.
 <br><br>
 <img src="images/PT_SQL_6.png?raw=true" width = "80%"/> 
