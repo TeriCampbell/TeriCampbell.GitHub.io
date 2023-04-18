@@ -101,8 +101,8 @@ Introductory exploratory analysis shows that:
 
 #### Using these established criteria parameters gives quick view of average household income in the areas that support the greatest density of PT’s:
 
-<img src="images/PT_SQL_4.png?raw=true" width = "90%"/>    
-<img src="images/PT_Results_4.png?raw=true" width = "70%"/>   
+<img src="images/PT_SQL_4.png?raw=true" width = "95%"/>    
+<img src="images/PT_Results_4.png?raw=true" width = "60%"/>   
 <br><br>
 #### Average household income above $39,000 is correlated with the greatest ratio of working providers in the population, indicating another aspect of successful business/market fit.
 <br><br>
