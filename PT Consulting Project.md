@@ -101,7 +101,7 @@ Introductory exploratory analysis shows that:
 
 #### Using these established criteria parameters gives quick view of average household income in the areas that support the greatest density of PT’s:
 
-<img src="images/PT_SQL_4.png?raw=true" width = "95%"/>    
+<img src="images/PT_SQL_4.png?raw=true" width = "100%"/>    
 <img src="images/PT_Results_4.png?raw=true" width = "60%"/>   
 <br><br>
 
@@ -127,6 +127,7 @@ Introductory exploratory analysis shows that:
 <img src="images/PT_SQL_5.png?raw=true" width = "80%"/> 
 <img src="images/PT_Results_5.png?raw=true" width = "80%"/> 
 <br><br>
+
 #### There is a trend for areas with larger county populations supporting a greater number of facilities.  Target regions for a new clinic should have a larger population, middle-to-high income, but a lower provider to population ratio and generally a lower number of facilities.
 <br><br>  
 
@@ -134,12 +135,12 @@ Introductory exploratory analysis shows that:
 <br><br>
 #### Finally, Adding in the city population and ordering this from the lowest provider ratio we see the underserved areas population statistics.
 <br><br>
-<img src="images/PT_SQL_6.png?raw=true" width = "80%"/> 
-<img src="images/PT_Results_6.png?raw=true" width = "80%"/> 
+<img src="images/PT_SQL_6.png?raw=true" width = "100%"/> 
+<img src="images/PT_Results_6.png?raw=true" width = "100%"/> 
 <br><br>
 #### Further narrowing down to a city population over 19,000, the top potential regions emerge.
 <br><br>
-<img src="images/PT_Results_7.png?raw=true" width = "80%"/> 
+<img src="images/PT_Results_7.png?raw=true" width = "100%"/> 
 <br><br>
 <br><br>
 ## RESULTS & RECOMMENDATIONS
