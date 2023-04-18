@@ -13,6 +13,7 @@ This collaborative group healthcare business consulting project utilized data mi
 2. The client will focus on an insurance based payment model and will accept Medicare, which is a growing population.  
 
 **Findings**
+<br><br>
 Regions that support a greater number of physical therapists have:
 * Average age over 38.5 years
 * Middle to High average household income
