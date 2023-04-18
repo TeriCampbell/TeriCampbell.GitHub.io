@@ -133,7 +133,7 @@ Introductory exploratory analysis shows that:
 
 ---
 <br><br>
-#### Finally, Adding in the city population and ordering this from the lowest provider ratio we see the underserved areas population statistics.
+#### Finally, Adding in the city population and ordering this from the lowest provider ratio we see the population specifics for underserved areas.
 <br><br>
 <img src="images/PT_SQL_6.png?raw=true" width = "100%"/> 
 <img src="images/PT_Results_6.png?raw=true" width = "100%"/> 
