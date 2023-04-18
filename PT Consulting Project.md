@@ -69,7 +69,7 @@ Introductory exploratory analysis shows that:
 <img src="images/PT_Results_1.png?raw=true" width = "80%"/>   
 <br><br>
 
----
+--
 
 #### Exploring the average providers in each clinic in our top performing regions reveals that the top identified regions that support the most physical therapists have an average of 1.6 to  2.67 PT’s per clinic.
 <br><br>
