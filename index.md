@@ -7,7 +7,7 @@
 [<img src="images/PT_dashboard_wide_screenshot.png?raw=true"/>](/PT Consulting Project)
 #### [PT Consulting Project](/PT Consulting Project)
 
-This consulting project explores and provides recommendations regarding potential locations for a client to locate a new Physical Therapy practice in the State of Florida.
+This consulting project explores open source data sets and provides recommendations regarding potential locations for a client to locate a new Physical Therapy practice in the State of Florida.
 <br><br>
 
 ---
