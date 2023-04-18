@@ -153,7 +153,7 @@ Based on this analysis, a recommendation can be made to consider each of these s
 
 Specifically, we can recommend these individual locations as promising locations for a new physical therapy clinic with growth potential because the regional demographics fit the following identified criteria and each is relatively under-served compared to areas that support a greater percentage of providers:
 
-* Average age of >38.5
+* Average age of > 38.5
 * Middle to High average household income
 * Low provider to population ratio
 * Higher population
