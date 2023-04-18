@@ -104,10 +104,12 @@ Introductory exploratory analysis shows that:
 <img src="images/PT_SQL_4.png?raw=true" width = "95%"/>    
 <img src="images/PT_Results_4.png?raw=true" width = "60%"/>   
 <br><br>
+
 #### Average household income above $39,000 is correlated with the greatest ratio of working providers in the population, indicating another aspect of successful business/market fit.
 <br><br>
 ---
 <br><br>
+
 #### So far it is identified that the regions that support the greatest number of physical therapists have:
 * Average PT/s Clinic between 1.6-2.67 (for city), overall average 1.66 for zip
 * Larger population (county population > 155000, city pop > 524, zip pop over 4700
@@ -115,6 +117,7 @@ Introductory exploratory analysis shows that:
 * Average household income above $39,000
 * Unemployment rate < 7.3   
 <br><br>
+
 #### TASK: Identify regions with less than 1.66 average therapists per zip while also having > 4700 zip population, County Population >155,000, median age over 38.5, Average Household Income above $39,000, and an unemployment rate below 7.3
 <br><br>
 
