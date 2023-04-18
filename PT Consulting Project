@@ -17,11 +17,12 @@ Regions that support a greater number of physical therapists have:
 * Average age over 38.5 years
 * Middle to High average household income
 * Larger population
+* County unemployment rate < 7.3
 
 Based on this analysis, a recommendation can be made to consider each of these specific locations as locations for a new physical therapy clinic with local demographic findings that match those of other regions that support higher numbers of physical therapists:
-* Lee County, City of Fort Myers, Zip Code 33967
-* Charlotte County,City of  Punta Gorda, Zip Code 33982
+* Charlotte County, City of Punta Gorda, Zip Code 33982
 * Collier County, City of Naples, Zip Code 34117
+* Bay County, Panama City, Zip Code 32409
 
 
 <br><br>
@@ -58,82 +59,88 @@ Introductory exploratory analysis shows that:
 * The city population range in the top regions lies above 524 
 * The zip code population range lies above 4700
 * The county population range in the top regions is above: 155,000
+* Unemployment rate by county in the top regions is below 7.3
 
 <br><br>
-<img src="images/PT_SQL_1.png.png?raw=true" width = "80%"/> 
+<img src="images/PT_SQL_1.png?raw=true" width = "80%"/> 
 
 <br><br>
 <img src="images/PT_Results_1.png?raw=true" width = "80%"/>   
 <br><br>
 
 
-#### Zooming in 
+#### Exploring the average providers in each clinic in our top performing regions reveals that the top identified regions that support the most physical therapists have an average of 1.6 to  2.67 PT’s per clinic.
 <br><br>
-<img src="images/x.png?raw=true" width = "80%"/>  
+<img src="images/PT_SQL_1.png?raw=true" width = "80%"/>  
 <br><br>
-<br><br>
-These results show 
-<img src="images/x.png?raw=true" width = "80%"/>     
+<img src="images/PT_Results_2.png?raw=true" width = "80%"/>     
 
-#### note.  
+#### As compared to an overall average provider rate of 1.66 by zip code  
 <br><br>
-<img src="images/Code.png?raw=true" width = "80%"/>
-
-note
-<br><br>
-<img src="images/image.png?raw=true" width = "80%"/>    
-<br><br>
-note
+<img src="images/PT_SQL_3.png?raw=true" width = "80%"/>
+<img src="images/PT_Results_3.png?raw=true" width = "80%"/>
+####This reveals a successful saturation rate by city and zip. Criteria for inclusion should include regions with an average provider ratio below 1.6.
 
 <br><br>
-#### Next   
+####Further exploration identifies a city population range between 3 and 1186954, a zip code population range from 30 to 75705, and a county population range from 8308 to 2549075.
 <br><br>
-<img src="images/code.png?raw=true" width = "80%"/> 
-<br><br>
-note
-<br><br>
-<img src="images/image.png?raw=true" width = "80%"/>    
 
-note
+####First the question of whether or not household income plays a role must be considered, which can be more easily visualized when categorized.
 
-note
-<br><br>
-<img src="images/image.png?raw=true" width = "80%"/> 
-<br><br>
-note
-<br><br>
-<img src="images/image.png?raw=true" width = "80%"/> 
+####The range for median income falls between $32,497 and $64,876 by county:
+* low: 30,000-40,000 
+* middle: 40,000-50,000
+* high: over 50,000 
 
+####Using these established criteria parameters gives quick view of average household income in the areas that support the greatest density of PT’s:
+
+<img src="images/PT_SQL_4.png?raw=true" width = "80%"/>    
+<img src="images/PT_Results_4.png?raw=true" width = "80%"/>   
+<br><br>
+####Average household income above $39,000 is correlated with the greatest ratio of working providers in the population, indicating another aspect of successful business/market fit.
 
 <br><br>
-####  
-
-note
-
-note
-
+#### So far it is identified that the regions that support the greatest number of physical therapists have:
+* Average PT/s Clinic between 1.6-2.67 (for city), overall average 1.66 for zip
+* Larger population (county population > 155000, city pop > 524, zip pop over 4700
+* Population median age > 38.5
+* Average household income above $39,000
+* Unemployment rate < 7.3   
 <br><br>
-<img src="images/codeimage.png?raw=true" width = "80%"/> 
+####TASK: Identify regions with less than 1.66 average therapists per zip while also having > 4700 zip population, County Population >155,000, median age over 38.5, Average Household Income above $39,000, and an unemployment rate below 7.3
 <br><br>
-<img src="images/image.png?raw=true" width = "80%"/>    
+####As a final criteria addition, a look at the total number of facilities in the upper end of the established parameters is seen here:
+<img src="images/PT_SQL_5.png?raw=true" width = "80%"/> 
+<img src="images/PT_Results_5.png?raw=true" width = "80%"/> 
 <br><br>
-The interactive dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/shared/F883JZJWS?:display_count=n&:origin=viz_share_link   
+####There is a trend for areas with larger county populations supporting a greater number of facilities.  Target regions for a new clinic should have a larger population, middle-to-high income, but a lower provider to population ratio and generally a lower number of facilities.
+<br><br>  
 
-
+####Finally, Adding in the city population and ordering this from the lowest provider ratio we see the underserved areas population statistics.
+<br><br>
+<img src="images/PT_SQL_6.png?raw=true" width = "80%"/> 
+<img src="images/PT_Results_6.png?raw=true" width = "80%"/> 
+<br><br>
+####Further narrowing down to a city population over 19,000, the top potential regions emerge.
+<br><br>
+<img src="images/PT_Results_7.png?raw=true" width = "80%"/> 
+<br><br>
 <br><br>
 ## RESULTS & RECOMMENDATIONS
 
 Based on this analysis, a recommendation can be made to consider each of these specific locations as locations for a new physical therapy clinic with local demographic findings that match those of other regions that support higher numbers of physical therapists:
 
-* Lee County, City of Fort Myers, Zip Code 33967
 * Charlotte County, City of  Punta Gorda, Zip Code 33982
 * Collier County, City of Naples, Zip Code 34117
+* Bay County, Panama City, Zip Code 32409
 
-Specifically, we can recommend the individual locations of interest for a new physical therapy clinic with growth potential because the regional demographic fits the following identified criteria and each is relatively under-served compared to areas that support a greater percentage of providers:
+Specifically, we can recommend these individual locations as promising locations for a new physical therapy clinic with growth potential because the regional demographics fit the following identified criteria and each is relatively under-served compared to areas that support a greater percentage of providers:
+
 * Average age of >38.5
 * Middle to High average household income
 * Low provider to population ratio
 * Higher population
+* Unemployment Rate < 7.3
 
 <br><br>
 ## CONCLUSION & CONSIDERATIONS
