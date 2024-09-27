@@ -99,7 +99,7 @@ The dashboard also allowed me to get a quick glance at the ages of the winners e
 <br><br>
 <img src="images/DashboardMen's100Free2008Highlight.png?raw=true" width = "80%"/>    
 <br><br>
-The interactive dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/shared/F883JZJWS?:display_count=n&:origin=viz_share_link   
+The interactive dashboard can be accessed on my Tableau Public page here:  https://public.tableau.com/views/OlympicSwimmingAnalysis/OlympicSwimmingResultsAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link  
 
 
 <br><br>
