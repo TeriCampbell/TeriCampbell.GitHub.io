@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unstuck — Wireframe</title>
+  <style>
+    :root {
+      --bg:        #F5F2ED;
+      --surface:   #FFFFFF;
+      --border:    #DDD8D0;
+      --text:      #1A1714;
+      --muted:     #7A736A;
+      --accent:    #2D6A4F;
+      --accent-lt: #E8F4EE;
+      --warn:      #C0392B;
+      --warn-lt:   #FDECEA;
+      --amber:     #E07B39;
+      --amber-lt:  #FEF3EA;
+      --radius:    10px;
+      --shadow:    0 2px 8px rgba(0,0,0,.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+    .top-bar { background: var(--text); color: #fff; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .top-bar .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: .04em; }
+    .top-bar .subtitle { font-size: .75rem; opacity: .55; font-family: 'Courier New', monospace; }
+    .tab-nav { background: var(--surface); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 2px; padding: 0 24px; position: sticky; top: 53px; z-index: 99; }
+    .tab-nav button { background: none; border: none; padding: 12px 16px; font-size: .78rem; font-family: 'Courier New', monospace; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; transition: all .15s; white-space: nowrap; }
+    .tab-nav button:hover { color: var(--text); }
+    .tab-nav button.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .tab-nav .divider { width: 1px; background: var(--border); margin: 8px 4px; align-self: stretch; }
+    .tab-nav .section-label { font-size: .65rem; font-family: 'Courier New', monospace; color: var(--muted); padding: 14px 8px 12px; text-transform: uppercase; letter-spacing: .08em; align-self: center; }
+    .screens { padding: 32px 24px; max-width: 1100px; margin: 0 auto; }
+    .screen { display: none; }
+    .screen.active { display: block; }
+    .screen-header { margin-bottom: 28px; }
+    .screen-header h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 6px; }
+    .screen-header p { color: var(--muted); font-size: .88rem; font-family: 'Courier New', monospace; }
+    .device { background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); max-width: 420px; margin: 0 auto; overflow: hidden; }
+    .device.wide { max-width: 860px; }
+    .device-bar { background: var(--border); padding: 10px 16px; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot.r { background: #FF5F57; }
+    .dot.y { background: #FEBC2E; }
+    .dot.g { background: #28C840; }
+    .url-bar { flex: 1; background: #fff; border-radius: 4px; padding: 4px 10px; font-size: .7rem; font-family: 'Courier New', monospace; color: var(--muted); }
+    .device-body { padding: 24px; }
+    .app-logo { text-align: center; padding: 20px 0 16px; }
+    .app-logo h1 { font-size: 2rem; font-weight: 800; letter-spacing: .04em; }
+    .app-logo p { font-size: .85rem; color: var(--muted); margin-top: 4px; }
+    .btn { display: block; width: 100%; padding: 13px; border: none; border-radius: var(--radius); font-size: .9rem; font-family: Georgia, serif; cursor: default; margin-bottom: 10px; text-align: center; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-secondary { background: var(--surface); color: var(--text); border: 1.5px solid var(--border); }
+    .btn-outline { background: none; color: var(--accent); border: 1.5px solid var(--accent); }
+    .btn-warn { background: var(--warn); color: #fff; }
+    .input-group { margin-bottom: 14px; }
+    .input-group label { display: block; font-size: .78rem; font-family: 'Courier New', monospace; color: var(--muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: .05em; }
+    .input-mock { width: 100%; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: 6px; font-size: .88rem; color: var(--muted); background: var(--bg); font-family: Georgia, serif; }
+    .card { border: 1.5px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 12px; background: var(--surface); }
+    .card h4 { font-size: .95rem; margin-bottom: 4px; }
+    .card p { font-size: .82rem; color: var(--muted); }
+    .tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: .72rem; font-family: 'Courier New', monospace; font-weight: 600; }
+    .tag-green { background: var(--accent-lt); color: var(--accent); }
+    .tag-amber { background: var(--amber-lt); color: var(--amber); }
+    .tag-red { background: var(--warn-lt); color: var(--warn); }
+    .tag-gray { background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
+    .section-title { font-size: .7rem; font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 10px; margin-top: 18px; }
+    .divider-line { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+    .radio-group { display: flex; flex-direction: column; gap: 8px; }
+    .radio-option { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: .88rem; background: var(--surface); }
+    .radio-option.selected { border-color: var(--accent); background: var(--accent-lt); }
+    .radio-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; }
+    .radio-option.selected .radio-dot { border-color: var(--accent); background: var(--accent); }
+    .checkbox-group { display: flex; flex-direction: column; gap: 8px; }
+    .checkbox-option { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px; font-size: .88rem; }
+    .checkbox-option.selected { border-color: var(--accent); background: var(--accent-lt); }
+    .checkbox-box { width: 16px; height: 16px; border-radius: 3px; border: 2px solid var(--border); flex-shrink: 0; }
+    .checkbox-option.selected .checkbox-box { border-color: var(--accent); background: var(--accent); }
+    .progress-bar-wrap { background: var(--bg); border-radius: 20px; height: 6px; overflow: hidden; margin-top: 6px; }
+    .progress-bar { height: 100%; border-radius: 20px; background: var(--accent); }
+    .stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+    .stat-box { flex: 1; background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius); padding: 14px; text-align: center; }
+    .stat-box .num { font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+    .stat-box .lbl { font-size: .7rem; font-family: 'Courier New', monospace; color: var(--muted); margin-top: 2px; }
+    .notice { padding: 14px 16px; border-radius: var(--radius); font-size: .84rem; margin-bottom: 14px; }
+    .notice-green { background: var(--accent-lt); border-left: 4px solid var(--accent); }
+    .notice-amber { background: var(--amber-lt); border-left: 4px solid var(--amber); }
+    .notice-red { background: var(--warn-lt); border-left: 4px solid var(--warn); }
+    .task-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: .88rem; }
+    .task-row:last-child { border-bottom: none; }
+    .annotation { background: #FFFDE7; border: 1px dashed #F9A825; border-radius: 6px; padding: 10px 14px; font-size: .78rem; font-family: 'Courier New', monospace; color: #5D4037; margin-top: 16px; }
+    .annotation strong { display: block; margin-bottom: 4px; color: #E65100; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="logo">Unstuck</div>
+    <div class="subtitle">Wireframe v3 — 15 screens</div>
+  </div>
+  <div class="subtitle">AI PM Capstone · Product Faculty Cohort 9</div>
+</div>
+
+<nav class="tab-nav">
+  <span class="section-label">Student</span>
+  <button class="active" onclick="show('s1',this)">01 Home</button>
+  <button onclick="show('s2',this)">02 Sign Up</button>
+  <button onclick="show('s3',this)">03 Trusted Contact</button>
+  <button onclick="show('s4',this)">04 Dashboard</button>
+  <button onclick="show('s5',this)">05 Situation</button>
+  <button onclick="show('s6',this)">06 Intake</button>
+  <button onclick="show('s7',this)">07 Clarify</button>
+  <button onclick="show('s8',this)">08 Plan</button>
+  <button onclick="show('s9',this)">09 Toolkit</button>
+  <button onclick="show('s10',this)">10 Check-in</button>
+  <button onclick="show('s11',this)">11 Progress</button>
+  <button onclick="show('s12',this)">12 Crisis</button>
+  <div class="divider"></div>
+  <span class="section-label">Counselor</span>
+  <button onclick="show('c1',this)">13 C-Dashboard</button>
+  <button onclick="show('c2',this)">14 Resources</button>
+  <button onclick="show('c3',this)">15 Contact</button>
+</nav>
+
+<div class="screens">
+
+  <!-- S1: HOME -->
+  <div class="screen active" id="s1">
+    <div class="screen-header">
+      <h2>01 — Home / Landing</h2>
+      <p>Entry point for new and returning users. No free text input.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app</div></div>
+      <div class="device-body">
+        <div class="app-logo">
+          <h1>Unstuck</h1>
+          <p>Figure out where to start.</p>
+        </div>
+        <hr class="divider-line">
+        <p class="section-title">Get started</p>
+        <div class="btn btn-primary">Continue with Google</div>
+        <div class="btn btn-secondary">Sign up with email</div>
+        <hr class="divider-line">
+        <div class="btn btn-outline">Log in to existing account</div>
+        <div class="annotation"><strong>Design note</strong>New users proceed to Screen 02. Returning users go directly to Screen 04. No free text at any point.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S2: SIGN UP -->
+  <div class="screen" id="s2">
+    <div class="screen-header">
+      <h2>02 — Account Creation and Age Gate</h2>
+      <p>Structured onboarding. Month and year of birth required for COPPA-compliant age verification.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/signup</div></div>
+      <div class="device-body">
+        <p class="section-title">Create your account</p>
+        <div class="input-group">
+          <label>Email address</label>
+          <div class="input-mock">student@email.com</div>
+        </div>
+        <hr class="divider-line">
+        <p class="section-title">Age verification</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+          <div class="input-group" style="margin-bottom:0;">
+            <label>Month of birth</label>
+            <div class="input-mock">Month ▾</div>
+          </div>
+          <div class="input-group" style="margin-bottom:0;">
+            <label>Year of birth</label>
+            <div class="input-mock">Year ▾</div>
+          </div>
+        </div>
+        <div class="notice notice-amber">Users under 13 require a parent or guardian to complete setup on their behalf.</div>
+        <hr class="divider-line">
+        <p class="section-title">Your school (optional)</p>
+        <div class="input-group">
+          <label>State</label>
+          <div class="input-mock">Select state ▾</div>
+        </div>
+        <div class="input-group">
+          <label>School type</label>
+          <div class="input-mock">Public / Private / Homeschool ▾</div>
+        </div>
+        <div class="input-group">
+          <label>Grade level</label>
+          <div class="input-mock">Select grade ▾</div>
+        </div>
+        <div class="btn btn-primary">Create account</div>
+        <div class="annotation"><strong>Design note</strong>Month and year of birth together allow the app to determine whether the user has passed their 13th birthday. Year alone is insufficient for COPPA compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S3: TRUSTED CONTACT -->
+  <div class="screen" id="s3">
+    <div class="screen-header">
+      <h2>03 — Trusted Contact and Permissions Setup</h2>
+      <p>Student controls all visibility settings. Multiple contacts supported. Can be skipped and configured later.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/setup</div></div>
+      <div class="device-body">
+        <p class="section-title">Add a trusted contact (optional)</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:14px;">A counselor, tutor, parent, or advisor you trust. You control exactly what they can see.</p>
+        <div class="input-group">
+          <label>Contact name</label>
+          <div class="input-mock">e.g. Ms. Smith</div>
+        </div>
+        <div class="input-group">
+          <label>Contact email</label>
+          <div class="input-mock">counselor@school.edu</div>
+        </div>
+        <hr class="divider-line">
+        <p class="section-title">What can they see?</p>
+        <p style="font-size:.78rem;color:var(--muted);margin-bottom:10px;">When you request help, your contact will always be notified automatically. The settings below control what they can view at any time.</p>
+        <div class="checkbox-group">
+          <div class="checkbox-option"><div class="checkbox-box"></div>View my current plan and task list</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>View my progress and check-in history</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>View my toolkit and enrolled resources</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>View my calendar with deadline markers</div>
+        </div>
+        <div class="notice notice-green" style="margin-top:14px;">Your contact will see only what you select. You can change or remove these settings any time.</div>
+        <div class="btn btn-outline" style="margin-top:10px;">+ Add another trusted contact</div>
+        <div class="btn btn-primary" style="margin-top:4px;">Save and continue</div>
+        <div class="btn btn-secondary">Skip for now</div>
+        <div class="annotation"><strong>Design note</strong>Multiple trusted contacts are supported, each with individual permission settings. Contact email is confirmed here and cannot be changed mid-session. When a student requests help, the contact is notified automatically with the student's name only. No session content is shared.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S4: DASHBOARD -->
+  <div class="screen" id="s4">
+    <div class="screen-header">
+      <h2>04 — Student Dashboard</h2>
+      <p>Returning user home. Shows active plan, toolkit, and progress summary built from check-in responses.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/dashboard</div></div>
+      <div class="device-body">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <div>
+            <div style="font-size:.75rem;font-family:'Courier New',monospace;color:var(--muted);">Good evening</div>
+            <div style="font-size:1.1rem;font-weight:700;">Matt</div>
+          </div>
+          <div class="tag tag-amber">3 items active</div>
+        </div>
+        <div class="notice notice-green" style="font-size:.8rem;">This dashboard reflects what you have reported in your check-in responses. It is not automatic tracking.</div>
+        <p class="section-title">Current focus</p>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div><h4>Schoolhouse.world bootcamp</h4><p>SAT prep · Enroll tonight</p></div>
+            <div class="tag tag-red">Hard cutoff</div>
+          </div>
+          <div class="progress-bar-wrap" style="margin-top:10px;"><div class="progress-bar" style="width:0%;"></div></div>
+        </div>
+        <p class="section-title">Up next</p>
+        <div class="task-row"><span>AP Biology review</span><span class="tag tag-amber">2 weeks</span></div>
+        <div class="task-row"><span>College essay draft</span><span class="tag tag-amber">Friday</span></div>
+        <div class="task-row"><span>Homework — 3 items</span><span class="tag tag-green">This week</span></div>
+        <hr class="divider-line">
+        <div class="btn btn-primary">Start a new session</div>
+        <div class="btn btn-outline">View my toolkit</div>
+        <div class="annotation"><strong>Design note</strong>Dashboard is built from check-in responses only. A clear note tells the student this so they understand the app is not tracking them passively.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S5: SITUATION -->
+  <div class="screen" id="s5">
+    <div class="screen-header">
+      <h2>05 — Situation Selection</h2>
+      <p>Multi-select checkboxes. Multiple selections produce one combined plan. No free text.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/start</div></div>
+      <div class="device-body">
+        <div class="notice notice-green">That is a lot to manage at once. Let us get it sorted.</div>
+        <p class="section-title">What is going on right now? Select all that apply.</p>
+        <div class="checkbox-group">
+          <div class="checkbox-option selected"><div class="checkbox-box"></div>I have multiple deadlines and do not know where to start</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I have one specific thing I need to start and cannot get going</div>
+          <div class="checkbox-option selected"><div class="checkbox-box"></div>I need to prepare for the SAT or AP exams</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need help with my college essay</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need help with college applications</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need to prioritize my junior year workload</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need to prepare for an upcoming test or exam</div>
+        </div>
+        <div class="btn btn-primary" style="margin-top:16px;">Continue</div>
+        <div class="annotation"><strong>Design note</strong>Multi-select. All selections feed into a single combined plan. Input screening runs silently from this point. No free text entered by student.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S6: INTAKE -->
+  <div class="screen" id="s6">
+    <div class="screen-header">
+      <h2>06 — Intake Flow</h2>
+      <p>Structured task entry. Date picker, dropdown selectors. No free text.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/intake</div></div>
+      <div class="device-body">
+        <p class="section-title">Tell me what is on your plate</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:16px;">Add each item you are working on. We will use this to build your plan.</p>
+        <div class="card" style="border-color:var(--accent);">
+          <p class="section-title" style="margin-top:0;">Item 1</p>
+          <div class="input-group">
+            <label>What is it?</label>
+            <div class="input-mock">SAT preparation ▾</div>
+          </div>
+          <div class="input-group">
+            <label>Due date or test date</label>
+            <div class="input-mock">📅 April 28, 2026</div>
+          </div>
+          <div class="input-group">
+            <label>Deadline type</label>
+            <div class="radio-group">
+              <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Hard cutoff — cannot be recovered if missed</div>
+              <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Teacher-assigned — some flexibility</div>
+              <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Self-imposed goal</div>
+            </div>
+          </div>
+        </div>
+        <div class="btn btn-outline">+ Add another item</div>
+        <div class="btn btn-primary" style="margin-top:8px;">Done adding items</div>
+        <div class="annotation"><strong>Design note</strong>Task name is a category-appropriate dropdown. Date uses a native date picker. Deadline type uses radio buttons. All structured, no free text.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S7: CLARIFY -->
+  <div class="screen" id="s7">
+    <div class="screen-header">
+      <h2>07 — Clarifying Questions</h2>
+      <p>Structured dropdowns and radio buttons only. AI uses responses to sequence the plan intelligently.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/clarify</div></div>
+      <div class="device-body">
+        <p class="section-title">A few quick questions</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:16px;">These help build a plan that fits your evening.</p>
+        <div class="input-group">
+          <label>How much time do you have tonight?</label>
+          <div class="input-mock">Select ▾ (1 hr / 2 hrs / 3 hrs / 4+ hrs)</div>
+        </div>
+        <div class="input-group">
+          <label>Have you started any of these tasks yet?</label>
+          <div class="radio-group">
+            <div class="radio-option" style="padding:9px 12px;font-size:.85rem;"><div class="radio-dot"></div>No, not started any of them</div>
+            <div class="radio-option selected" style="padding:9px 12px;font-size:.85rem;"><div class="radio-dot"></div>Started one or two</div>
+            <div class="radio-option" style="padding:9px 12px;font-size:.85rem;"><div class="radio-dot"></div>Partially done with most</div>
+          </div>
+        </div>
+        <div class="input-group">
+          <label>Are any homework assignments particularly difficult?</label>
+          <div class="input-mock">Select ▾ (No / One of them / Most of them)</div>
+        </div>
+        <div class="input-group">
+          <label>Have any deadlines changed since you entered them?</label>
+          <div class="input-mock">Select ▾ (No changes / Yes, one changed / Yes, multiple changed)</div>
+        </div>
+        <div class="btn btn-primary">Build my plan</div>
+        <div class="annotation"><strong>Design note</strong>No text entry. All answers are dropdowns or radio buttons. The AI uses these structured responses to sequence tasks intelligently.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S8: PLAN -->
+  <div class="screen" id="s8">
+    <div class="screen-header">
+      <h2>08 — Plan Delivery</h2>
+      <p>AI-generated plan. Warm acknowledgment first. One action highlighted. Full scope visible. Resources surfaced contextually.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/plan</div></div>
+      <div class="device-body">
+        <div class="notice notice-green">There is a lot on your plate right now. That is real, and it is manageable. Here is where to start tonight.</div>
+        <p class="section-title">Start here — right now</p>
+        <div class="card" style="border-color:var(--accent);background:var(--accent-lt);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+            <h4>Enroll in Schoolhouse.world SAT bootcamp</h4>
+            <div class="tag tag-red">10 min</div>
+          </div>
+          <p>This session starts this week and fills quickly. Enrolling now secures your spot. Missing this window cannot be recovered.</p>
+          <div style="margin-top:12px;"><div class="btn btn-primary" style="margin-bottom:6px;">Open Schoolhouse.world →</div></div>
+          <div style="font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:6px;">or</div>
+          <div class="btn btn-secondary" style="font-size:.82rem;margin-bottom:0;">Ask a parent to help with this →</div>
+          <div class="notice notice-green" style="margin-top:10px;font-size:.78rem;">If a parent is set up as a trusted contact, they will receive the enrollment link and you can move on to your next item. If not, you will be prompted to add one first.</div>
+        </div>
+        <p class="section-title">Tonight's plan</p>
+        <div class="task-row"><span>1. Schoolhouse.world enrollment</span><div class="tag tag-red">Now</div></div>
+        <div class="task-row"><span>2. Homework — based on difficulty and time</span><div class="tag tag-amber">Tonight</div></div>
+        <div class="task-row"><span>3. College essay — outline only</span><div class="tag tag-amber">Tomorrow</div></div>
+        <p class="section-title">Coming up</p>
+        <div class="task-row"><span>SAT prep begins Wednesday</span><div class="tag tag-green">Wed</div></div>
+        <div class="task-row"><span>AP Biology review starts after SAT</span><div class="tag tag-green">May+</div></div>
+        <hr class="divider-line">
+        <div class="btn btn-secondary">Share this plan with a trusted contact</div>
+        <div class="annotation"><strong>Design note</strong>Acknowledgment is warm and situational but does not reference school calendar data the app does not have. One action highlighted as current focus. Full scope visible. Resources surface contextually within the plan.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S9: TOOLKIT -->
+  <div class="screen" id="s9">
+    <div class="screen-header">
+      <h2>09 — Toolkit View</h2>
+      <p>Personal resource hub. Shows what the student has signed up for, what each tool does, and what their next action is.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/toolkit</div></div>
+      <div class="device-body">
+        <p class="section-title">Your toolkit</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:14px;">Everything you have signed up for and why it is here.</p>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <h4>Schoolhouse.world</h4><div class="tag tag-amber">Enroll now</div>
+          </div>
+          <p>Free SAT bootcamp with peer tutors using official College Board materials. Sessions run 4 weeks and fill quickly.</p>
+          <div style="margin-top:10px;"><div class="btn btn-outline" style="font-size:.8rem;padding:8px;">Open Schoolhouse.world →</div></div>
+        </div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <h4>Khan Academy</h4><div class="tag tag-green">Active</div>
+          </div>
+          <p>Daily SAT skill practice matched to the Digital SAT format.</p>
+          <div style="margin-top:10px;"><div class="btn btn-outline" style="font-size:.8rem;padding:8px;">Open Khan Academy →</div></div>
+        </div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <h4>College Board Bluebook</h4><div class="tag tag-gray">Set up needed</div>
+          </div>
+          <p>Official full-length Digital SAT practice tests. After a test, Bluebook links results to Khan Academy for review.</p>
+          <div style="margin-top:10px;"><div class="btn btn-outline" style="font-size:.8rem;padding:8px;">Set up Bluebook →</div></div>
+        </div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <h4>AP Classroom</h4><div class="tag tag-gray">Ask your teacher</div>
+          </div>
+          <p>Official AP Biology practice tests and AP Daily videos. Ask your teacher to unlock a full practice exam.</p>
+        </div>
+        <div class="annotation"><strong>Design note</strong>Toolkit is populated automatically when resources are surfaced in a plan. Student never manually adds items. Plain language explains what each tool is for and why it was added.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S10: CHECK-IN -->
+  <div class="screen" id="s10">
+    <div class="screen-header">
+      <h2>10 — Check-in Response</h2>
+      <p>Accessed via tokenized email link. No login required. Task-specific plain language questions. Checkbox responses only.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/checkin?token=abc123</div></div>
+      <div class="device-body">
+        <div class="app-logo" style="padding:10px 0 14px;">
+          <h1 style="font-size:1.4rem;">Unstuck</h1>
+          <p>Quick check-in — how is it going?</p>
+        </div>
+        <div class="notice notice-green" style="font-size:.82rem;">Your responses here keep your plan current. If something has changed, your next plan will reflect it.</div>
+        <p class="section-title">How did each item go?</p>
+        <div class="card">
+          <h4 style="margin-bottom:10px;">Did you complete your Schoolhouse.world enrollment?</h4>
+          <div class="radio-group">
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, done</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
+            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>No, not yet</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Attempted but could not complete</div>
+          </div>
+          <div class="notice notice-amber" style="margin-top:10px;font-size:.8rem;">Would you like to contact your counselor or trusted contact for help with this?</div>
+        </div>
+        <div class="card">
+          <h4 style="margin-bottom:10px;">Are you on track with your homework assignments based on our prior plan?</h4>
+          <div class="radio-group">
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, done</div>
+            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>No, not yet</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Attempted but could not complete</div>
+          </div>
+        </div>
+        <div class="btn btn-primary">Submit check-in</div>
+        <div class="annotation"><strong>Design note</strong>No login required. Tokenized link authenticates the student. Questions reference specific tasks from the prior plan in plain language. Contact option appears only on No or Attempted but could not complete responses. No free text.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S11: PROGRESS -->
+  <div class="screen" id="s11">
+    <div class="screen-header">
+      <h2>11 — Progress Summary</h2>
+      <p>Built entirely from check-in responses. Shows what is done, what remains, and time left before each deadline.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/progress</div></div>
+      <div class="device-body">
+        <div class="notice notice-green">Based on your check-in responses, you made real progress this week. Here is what is still ahead.</div>
+        <p class="section-title">Completed</p>
+        <div class="task-row" style="color:var(--accent);"><span>✓ Homework assignments</span><div class="tag tag-green">Done</div></div>
+        <div class="task-row" style="color:var(--accent);"><span>✓ College essay outline</span><div class="tag tag-green">Done</div></div>
+        <p class="section-title">Still ahead</p>
+        <div class="task-row"><span>Schoolhouse.world enrollment</span><div class="tag tag-red">Urgent</div></div>
+        <div class="task-row"><span>SAT prep — daily sessions</span><div class="tag tag-amber">Starts Wed</div></div>
+        <div class="task-row"><span>AP Biology review</span><div class="tag tag-green">After SAT</div></div>
+        <hr class="divider-line">
+        <p class="section-title">Confidence check</p>
+        <div class="radio-group">
+          <div class="radio-option" style="padding:9px 12px;font-size:.84rem;"><div class="radio-dot"></div>More confident than when I started</div>
+          <div class="radio-option selected" style="padding:9px 12px;font-size:.84rem;"><div class="radio-dot"></div>About the same</div>
+          <div class="radio-option" style="padding:9px 12px;font-size:.84rem;"><div class="radio-dot"></div>Still feeling stuck</div>
+        </div>
+        <div class="btn btn-primary" style="margin-top:14px;">Update my plan</div>
+        <div class="annotation"><strong>Design note</strong>Opening line explicitly attributes the summary to check-in responses so the student knows the app is not tracking them passively. Confidence check is a structured radio, not free text.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S12: CRISIS -->
+  <div class="screen" id="s12">
+    <div class="screen-header">
+      <h2>12 — Crisis Resources</h2>
+      <p>Triggered by behavioral pattern detection. Normal product flow stops. Warm, non-judgmental language. No task plan delivered.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/support</div></div>
+      <div class="device-body">
+        <div class="notice notice-amber" style="margin-bottom:20px;">It sounds like you are carrying a lot right now. Before we work on next steps, we want to make sure you have the support you deserve.</div>
+        <p class="section-title">People who can help right now</p>
+        <div class="card" style="border-color:var(--warn);">
+          <h4>988 Suicide and Crisis Lifeline</h4>
+          <p>Call or text 988 — available 24 hours a day</p>
+          <div class="btn btn-warn" style="margin-top:10px;">Call or text 988</div>
+        </div>
+        <div class="card">
+          <h4>Crisis Text Line</h4>
+          <p>Text HOME to 741741</p>
+          <div class="btn btn-secondary" style="margin-top:10px;">Text HOME to 741741</div>
+        </div>
+        <div class="card">
+          <h4>Talk to someone you trust</h4>
+          <p>A parent, counselor, teacher, or friend you feel safe with.</p>
+        </div>
+        <hr class="divider-line">
+        <div class="btn btn-secondary">Notify my counselor or trusted contact</div>
+        <div class="annotation"><strong>Design note</strong>Triggered by behavioral pattern detection across structured check-in responses, not text analysis. No task plan is generated. Counselor notification requires explicit student confirmation.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C1: COUNSELOR DASHBOARD -->
+  <div class="screen" id="c1">
+    <div class="screen-header">
+      <h2>13 — Counselor Dashboard</h2>
+      <p>Anonymized aggregate data only. Individual student data visible only with explicit student permission.</p>
+    </div>
+    <div class="device wide">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/counselor/dashboard</div></div>
+      <div class="device-body">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+          <div>
+            <div style="font-size:.75rem;font-family:'Courier New',monospace;color:var(--muted);">Lincoln High School · Spring 2026</div>
+            <div style="font-size:1.2rem;font-weight:700;">Ms. Smith's Dashboard</div>
+          </div>
+          <div class="input-mock" style="width:auto;padding:7px 14px;">Grade: All ▾</div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-box"><div class="num">84</div><div class="lbl">Active students</div></div>
+          <div class="stat-box"><div class="num">312</div><div class="lbl">Sessions this month</div></div>
+          <div class="stat-box"><div class="num">67%</div><div class="lbl">Resource engagement</div></div>
+          <div class="stat-box"><div class="num">3</div><div class="lbl">Contact requests</div></div>
+        </div>
+        <div class="two-col">
+          <div>
+            <p class="section-title">Sessions by category</p>
+            <div class="task-row"><span>SAT preparation</span><div class="tag tag-red">38%</div></div>
+            <div class="task-row"><span>Junior year workload</span><div class="tag tag-amber">24%</div></div>
+            <div class="task-row"><span>College application</span><div class="tag tag-amber">18%</div></div>
+            <div class="task-row"><span>AP exam prep</span><div class="tag tag-green">12%</div></div>
+            <div class="task-row"><span>Other</span><div class="tag tag-gray">8%</div></div>
+          </div>
+          <div>
+            <p class="section-title">AI pattern observation</p>
+            <div class="notice notice-amber">SAT preparation sessions among juniors spiked 40% this week. Resource engagement with Schoolhouse.world is low. Consider proactive outreach to the junior class before the next bootcamp session opens.</div>
+            <p class="section-title" style="margin-top:14px;">Resource engagement</p>
+            <div class="task-row"><span>Khan Academy</span><div class="tag tag-green">High</div></div>
+            <div class="task-row"><span>Schoolhouse.world</span><div class="tag tag-red">Low</div></div>
+            <div class="task-row"><span>College Board Bluebook</span><div class="tag tag-amber">Medium</div></div>
+          </div>
+        </div>
+        <hr class="divider-line">
+        <div class="btn btn-outline" style="max-width:220px;">Configure resources →</div>
+        <div class="annotation"><strong>Design note</strong>No individual student names or session content visible by default. AI pattern observation is generated from aggregate data. Grade level filter allows focus on juniors or seniors specifically.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C2: RESOURCE CONFIG -->
+  <div class="screen" id="c2">
+    <div class="screen-header">
+      <h2>14 — Resource Configuration</h2>
+      <p>Counselor adds school-specific resources surfaced to students at the right moment in their plan. AI suggests based on session patterns.</p>
+    </div>
+    <div class="device wide">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/counselor/resources</div></div>
+      <div class="device-body">
+        <p class="section-title">School-specific resources</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:16px;">These resources are surfaced to your students automatically when they open a relevant session.</p>
+        <div class="two-col">
+          <div>
+            <p class="section-title">SAT and test preparation</p>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;"><h4>District SAT prep workshop</h4><div class="tag tag-green">Active</div></div>
+              <p>Free district workshop — Saturdays in April</p>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;"><h4>School tutoring center</h4><div class="tag tag-green">Active</div></div>
+              <p>Mon, Wed, Fri 3-5pm · Room 204</p>
+            </div>
+            <div class="btn btn-outline" style="font-size:.82rem;">+ Add SAT resource</div>
+          </div>
+          <div>
+            <p class="section-title">College application resources</p>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;"><h4>College application night</h4><div class="tag tag-green">Active</div></div>
+              <p>September 15 · Lincoln High auditorium</p>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;"><h4>Counseling office checklist</h4><div class="tag tag-green">Active</div></div>
+              <p>Lincoln High college application checklist PDF</p>
+            </div>
+            <div class="btn btn-outline" style="font-size:.82rem;">+ Add college app resource</div>
+          </div>
+        </div>
+        <hr class="divider-line">
+        <p class="section-title">AI resource suggestions</p>
+        <div class="notice notice-amber">Based on current session data, students in college application sessions may benefit from a FAFSA completion resource. Would you like to add one?</div>
+        <div style="display:flex;gap:10px;margin-top:10px;">
+          <div class="btn btn-primary" style="flex:1;margin:0;">Add FAFSA resource</div>
+          <div class="btn btn-secondary" style="flex:1;margin:0;">Dismiss</div>
+        </div>
+        <div class="annotation"><strong>Design note</strong>Resource configuration is documented in the AI Solution Hypothesis (Solution 4) and the counselor journey map. Resources shown here are fabricated for the prototype demonstration. AI suggestions are based on aggregate session patterns, not individual student data.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C3: CONTACT REQUEST -->
+  <div class="screen" id="c3">
+    <div class="screen-header">
+      <h2>15 — Contact Request Notification</h2>
+      <p>Triggered when a student confirms a counselor contact request. Student name shared with explicit consent. Calendar integration planned for future release.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/counselor/notifications</div></div>
+      <div class="device-body">
+        <p class="section-title">Contact request</p>
+        <div class="card" style="border-color:var(--amber);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+            <h4>Student support request</h4><div class="tag tag-amber">New</div>
+          </div>
+          <p style="margin-bottom:8px;">A student on your caseload has requested support and asked Unstuck to notify you.</p>
+          <div class="task-row" style="border:none;padding:6px 0;"><span style="color:var(--muted);font-size:.82rem;">Student name</span><span style="font-weight:600;">Matt C.</span></div>
+          <div class="task-row" style="border:none;padding:6px 0;"><span style="color:var(--muted);font-size:.82rem;">Requested at</span><span>Today, 10:42 PM</span></div>
+          <div class="task-row" style="border:none;padding:6px 0;"><span style="color:var(--muted);font-size:.82rem;">Session content</span><span style="color:var(--muted);">Not shared</span></div>
+          <hr class="divider-line">
+          <p style="font-size:.82rem;color:var(--muted);">Follow up through your existing school channels. Do not reply through Unstuck.</p>
+        </div>
+        <div class="notice notice-green">The student confirmed this notification before it was sent. Their name was shared with their explicit consent.</div>
+        <div class="btn btn-primary" style="margin-top:14px;">Mark as acknowledged</div>
+        <div class="btn btn-secondary">View all notifications</div>
+        <div class="notice notice-amber" style="margin-top:4px;font-size:.78rem;">Planned future feature: integration with counselor managed calendar so contact requests can be scheduled directly from this screen.</div>
+        <div class="annotation"><strong>Design note</strong>No session content or conversation history is shared. Student name only. Ms. Smith follows up through school channels, not through Unstuck. No direct messaging between counselor and student through the platform.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function show(id, btn) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
