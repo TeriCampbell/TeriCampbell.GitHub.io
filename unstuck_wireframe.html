@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unstuck — Wireframe v4</title>
+  <title>Unstuck — Wireframe v5</title>
   <style>
     :root {
       --bg: #F5F2ED; --surface: #FFFFFF; --border: #DDD8D0;
@@ -94,7 +94,7 @@
 <div class="top-bar">
   <div>
     <div class="logo">Unstuck</div>
-    <div class="subtitle">Wireframe v4 — 15 screens</div>
+    <div class="subtitle">Wireframe v5 — 17 screens</div>
   </div>
   <div class="subtitle">AI PM Capstone · Product Faculty Cohort 9</div>
 </div>
@@ -113,11 +113,13 @@
   <button onclick="show('s10',this)">10 Check-in</button>
   <button onclick="show('s11',this)">11 Progress</button>
   <button onclick="show('s12',this)">12 Crisis</button>
+  <button onclick="show('s13',this)">13 Plan Update</button>
+  <button onclick="show('s14',this)">14 Flagged User</button>
   <div class="divider"></div>
   <span class="section-label">Counselor</span>
-  <button onclick="show('c1',this)">13 C-Dashboard</button>
-  <button onclick="show('c2',this)">14 Resources</button>
-  <button onclick="show('c3',this)">15 Contact</button>
+  <button onclick="show('c1',this)">15 C-Dashboard</button>
+  <button onclick="show('c2',this)">16 Resources</button>
+  <button onclick="show('c3',this)">17 Contact</button>
 </nav>
 
 <div class="screens">
@@ -244,7 +246,19 @@
           <div class="btn btn-secondary">Something has changed, I need to update my plan</div>
         </div>
         <div class="btn btn-outline" style="margin-top:4px;">View my toolkit</div>
-        <div class="annotation"><strong>Design note</strong>Two distinct buttons reflect two distinct return user states. "I am on track" triggers plan continuation flow. "Something has changed" opens a free text field (280 chars) for the student to describe what changed, then routes to structured intake. Dashboard is for returning users only.</div>
+        <hr class="divider-line">
+        <p class="section-title">Ask me later</p>
+        <div class="card" style="border-color:var(--amber);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+            <div><h4>Schoolhouse.world SAT bootcamp</h4><p>Free four-week structured SAT prep program.</p></div>
+            <div class="tag tag-red">Decide by Mar 15</div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:10px;">
+            <div class="btn btn-primary" style="flex:1;margin:0;font-size:.8rem;padding:8px;">Include</div>
+            <div class="btn btn-secondary" style="flex:1;margin:0;font-size:.8rem;padding:8px;">Exclude</div>
+          </div>
+        </div>
+        <div class="annotation"><strong>Design note</strong>Two distinct buttons reflect two distinct return user states. "I am on track" triggers plan continuation flow. "Something has changed" routes to the dedicated plan update screen (Screen 13). Ask me later section shows deferred resources with decision deadline flags where applicable. Items that are no longer actionable given deadline proximity are removed automatically.</div>
       </div>
     </div>
   </div>
@@ -253,7 +267,7 @@
   <div class="screen" id="s5">
     <div class="screen-header">
       <h2>05 — Situation Selection</h2>
-      <p>Multi-select checkboxes. Each selection reveals two optional guided free text fields (280 chars each). LLM reads checkbox selection and free text together. No canned responses.</p>
+      <p>Multi-select checkboxes. Each selection reveals one optional guided free text field (280 chars). LLM reads checkbox selection and free text together. No canned responses.</p>
     </div>
     <div class="device">
       <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/start</div></div>
@@ -266,9 +280,6 @@
               <label>What is the most urgent thing on your plate right now? (optional)</label>
               <div class="input-text">SAT is coming up and I have not started prep yet...</div>
               <div class="char-count">247 / 280</div>
-              <label style="margin-top:8px;">Is there anything we should know that might affect your plan? (optional)</label>
-              <div class="input-text"></div>
-              <div class="char-count">0 / 280</div>
             </div>
           </div>
           <div class="checkbox-option"><div class="checkbox-box"></div>I have one specific thing I need to start and cannot get going</div>
@@ -279,7 +290,7 @@
           <div class="checkbox-option"><div class="checkbox-box"></div>I need to prepare for an upcoming test or exam</div>
         </div>
         <div class="btn btn-primary" style="margin-top:16px;">Continue</div>
-        <div class="annotation"><strong>Design note</strong>Free text fields appear only under selected checkboxes. Both fields are optional. The LLM reads checkbox selections and any free text together to generate a genuinely responsive acknowledgment and plan, not a canned string. All free text is screened on submission. Character limit 280 per field. College essay selection note: Unstuck helps with planning and resources only, not content generation or admissions advice.</div>
+        <div class="annotation"><strong>Design note</strong>One optional free text field appears under each selected checkbox. Field is hidden entirely for flagged users with no placeholder or explanation. The LLM reads checkbox selections and any free text together to generate a genuinely responsive acknowledgment and plan, not a canned string. All free text is screened on submission before reaching the master prompt. Character limit 280. College essay selection note: Unstuck surfaces resources and timeline guidance only. It does not generate essay content or advise on what to write.</div>
       </div>
     </div>
   </div>
@@ -319,7 +330,7 @@
   <div class="screen" id="s7">
     <div class="screen-header">
       <h2>07 — Clarifying Questions</h2>
-      <p>Structured dropdowns and radio buttons. One optional free text field at bottom for constraints dropdowns cannot capture.</p>
+      <p>Structured dropdowns and radio buttons only. Changed deadlines and scheduling conflicts are handled through the dedicated plan update screen.</p>
     </div>
     <div class="device">
       <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/clarify</div></div>
@@ -337,14 +348,8 @@
         </div>
         <div class="input-group"><label>Are any assignments particularly difficult?</label><div class="input-mock">Select ▾ (No / One of them / Most of them)</div></div>
         <div class="input-group"><label>Have any deadlines changed since you entered them?</label><div class="input-mock">Select ▾ (No changes / Yes, one changed / Yes, multiple changed)</div></div>
-        <hr class="divider-line">
-        <div class="input-group">
-          <label>Is there anything about your situation that would affect your plan? (optional)</label>
-          <div class="input-text"></div>
-          <div class="char-count">0 / 140</div>
-        </div>
         <div class="btn btn-primary">Build my plan</div>
-        <div class="annotation"><strong>Design note</strong>The optional free text field at the bottom captures constraints the dropdowns cannot: a changed deadline, a specific obstacle, a scheduling conflict. Character limit 140 (one sentence). All free text screened on submission. Time references use available time, not time of day.</div>
+        <div class="annotation"><strong>Design note</strong>All inputs are structured. No free text on this screen. Changed deadlines and scheduling conflicts are handled through the dedicated plan update screen (Screen 13) for returning users. Time references use available time, not time of day.</div>
       </div>
     </div>
   </div>
@@ -353,34 +358,54 @@
   <div class="screen" id="s8">
     <div class="screen-header">
       <h2>08 — Plan Delivery</h2>
-      <p>AI-generated plan. Genuine acknowledgment based on LLM reading of inputs. One action highlighted. Full scope visible. Resources surfaced contextually.</p>
+      <p>Two-layer output: full scope plan (toggleable monthly/weekly/daily) and rolling seven-day immediate next steps view. Model returns structured data, UI renders toggle views. Resources surfaced with include/exclude/ask me later options.</p>
     </div>
     <div class="device">
       <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/plan</div></div>
       <div class="device-body">
-        <div class="notice notice-green">There is a lot on your plate right now. That is real, and it is manageable. Here is where to start.</div>
-        <p class="section-title">Start here</p>
+        <div class="notice notice-green">You have a lot moving at once. The essay due next week is the most immediate deadline. Here is a plan that sequences everything in order of urgency.</div>
+
+        <p class="section-title" style="margin-top:16px;">Full scope plan</p>
+        <div style="display:flex;gap:6px;margin-bottom:12px;">
+          <div class="tag tag-green" style="cursor:default;padding:5px 12px;">Monthly</div>
+          <div class="tag tag-gray" style="cursor:default;padding:5px 12px;">Weekly</div>
+          <div class="tag tag-gray" style="cursor:default;padding:5px 12px;">Daily</div>
+        </div>
+        <div class="task-row"><span>College essay draft</span><span class="tag tag-red">Due next week</span></div>
+        <div class="task-row"><span>AP Biology review</span><span class="tag tag-amber">3 weeks</span></div>
+        <div class="task-row"><span>SAT preparation</span><span class="tag tag-amber">4 weeks</span></div>
+
+        <hr class="divider-line">
+
+        <p class="section-title">Next seven days</p>
         <div class="card" style="border-color:var(--accent);background:var(--accent-lt);">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
-            <h4>Enroll in Schoolhouse.world SAT bootcamp</h4>
-            <div class="tag tag-red">10 min</div>
-          </div>
-          <p>This session starts soon and fills quickly. Enrolling now secures your spot. Missing this window cannot be recovered.</p>
-          <div style="margin-top:12px;">
-            <div class="btn btn-primary" style="margin-bottom:6px;">Open Schoolhouse.world →</div>
-            <div class="btn btn-secondary" style="font-size:.82rem;margin-bottom:0;">Ask a parent to help with this →</div>
-            <div class="notice notice-green" style="margin-top:8px;font-size:.78rem;">If a parent is set up as a trusted contact, they will receive the enrollment link and you can move on to your next item. If not, you will be prompted to add one first.</div>
+          <h4 style="margin-bottom:6px;">1. Open your essay draft and write one paragraph</h4>
+          <p>Starting is the only goal for this session. One paragraph is enough.</p>
+        </div>
+        <div class="card">
+          <h4 style="margin-bottom:6px;">2. Sign up for the Schoolhouse.world SAT bootcamp</h4>
+          <p>Free four-week structured SAT prep. Your four-week window makes this the right moment to enroll.</p>
+          <div style="font-size:.78rem;color:var(--accent);margin:8px 0 2px;">schoolhouse.world/bootcamp →</div>
+          <div style="display:flex;gap:6px;margin-top:8px;">
+            <div class="btn btn-primary" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Include</div>
+            <div class="btn btn-secondary" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Exclude</div>
+            <div class="btn btn-outline" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Ask me later</div>
           </div>
         </div>
-        <p class="section-title">What is ahead</p>
-        <div class="task-row"><span>1. Schoolhouse.world enrollment</span><div class="tag tag-red">Now</div></div>
-        <div class="task-row"><span>2. Homework — sequenced by priority</span><div class="tag tag-amber">Next</div></div>
-        <div class="task-row"><span>3. College essay — outline only</span><div class="tag tag-amber">Coming up</div></div>
-        <div class="task-row"><span>SAT prep begins Wednesday</span><div class="tag tag-green">Ahead</div></div>
-        <div class="task-row"><span>AP Biology review starts after SAT</span><div class="tag tag-green">Ahead</div></div>
+        <div class="card">
+          <h4 style="margin-bottom:6px;">3. Complete one Khan Academy SAT diagnostic test</h4>
+          <p>Establishes your baseline score before prep begins.</p>
+          <div style="font-size:.78rem;color:var(--accent);margin:8px 0 2px;">khanacademy.org/sat →</div>
+          <div style="display:flex;gap:6px;margin-top:8px;">
+            <div class="btn btn-primary" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Include</div>
+            <div class="btn btn-secondary" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Exclude</div>
+            <div class="btn btn-outline" style="flex:1;margin:0;font-size:.78rem;padding:7px;">Ask me later</div>
+          </div>
+        </div>
+
         <hr class="divider-line">
         <div class="btn btn-secondary">Share this plan with a trusted contact</div>
-        <div class="annotation"><strong>Design note</strong>Acknowledgment is generated by the LLM reading the student's checkbox selections and free text inputs. It is not a canned string. No time-of-day language. College essay planning note: Unstuck surfaces resources and timeline guidance only. It does not generate essay content or advise on what to write.</div>
+        <div class="annotation"><strong>Design note</strong>Full scope view is scrollable and toggleable between monthly, weekly, and daily perspectives. Model returns structured data, UI renders toggle views. Rolling seven-day view reflects deadline proximity and available time. Each resource includes a tappable URL link and include/exclude/ask me later options rendered by the UI. No time-of-day language. College essay step: planning support only, no content generation. Out-of-scope time commitments (such as extracurricular events) are a planned future state input capability not yet present in the current flow.</div>
       </div>
     </div>
   </div>
@@ -524,10 +549,67 @@
     </div>
   </div>
 
+  <!-- S13: PLAN UPDATE -->
+  <div class="screen" id="s13">
+    <div class="screen-header">
+      <h2>13 — Plan Update</h2>
+      <p>Dedicated screen for returning students updating their plan. Change-state pre-selects plus optional free text for standard users. Free text hidden for flagged users. Model receives full prior plan, check-in history, and update inputs together.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/update</div></div>
+      <div class="device-body">
+        <p class="section-title">What has changed?</p>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:14px;">Select everything that applies. Your existing plan and check-in history are already loaded.</p>
+        <div class="checkbox-group">
+          <div class="checkbox-option selected"><div class="checkbox-box"></div>A deadline has changed</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I completed something early</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need to add a new item</div>
+          <div class="checkbox-option selected"><div class="checkbox-box"></div>Something came up that affects my available time</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>One or more items are no longer relevant</div>
+        </div>
+        <hr class="divider-line">
+        <div class="input-group">
+          <label>What has changed? (optional)</label>
+          <div class="input-text">My essay deadline moved up to Thursday and I have a family thing Saturday</div>
+          <div class="char-count">71 / 280</div>
+        </div>
+        <div class="btn btn-primary" style="margin-top:8px;">Update my plan</div>
+        <div class="annotation"><strong>Design note</strong>Both pre-select selections and free text feed into the model together. The model receives the full prior plan, check-in history, and update inputs and regenerates both the full scope view and the rolling seven-day view. Student does not re-enter previously captured information. Free text field is hidden entirely for flagged users with no placeholder or explanation. Pre-selects carry the full weight of the interaction for flagged users. All free text screened on submission.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S14: FLAGGED USER -->
+  <div class="screen" id="s14">
+    <div class="screen-header">
+      <h2>14 — Flagged User State</h2>
+      <p>Free text fields hidden across all screens for flagged users. No placeholder, no explanation. Full checkbox and pre-select functionality preserved. Complete plan still generated from structured inputs.</p>
+    </div>
+    <div class="device">
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/start</div></div>
+      <div class="device-body">
+        <p class="section-title">What is going on right now? Select all that apply.</p>
+        <div class="checkbox-group">
+          <div>
+            <div class="checkbox-option selected"><div class="checkbox-box"></div>I have multiple deadlines and do not know where to start</div>
+          </div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I have one specific thing I need to start and cannot get going</div>
+          <div class="checkbox-option selected"><div class="checkbox-box"></div>I need to prepare for the SAT or AP exams</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need help with my college essay</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need help with college applications</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need to prioritize my workload</div>
+          <div class="checkbox-option"><div class="checkbox-box"></div>I need to prepare for an upcoming test or exam</div>
+        </div>
+        <div class="btn btn-primary" style="margin-top:16px;">Continue</div>
+        <div class="annotation"><strong>Design note</strong>This screen shows the flagged user state on the situation screen. Free text field is absent with no placeholder or explanation. The screen appears identical to the standard checkbox-only view. The model receives structured checkbox inputs and generates a complete and useful plan. The flagged user state applies across all screens including check-in and plan update. A pathway to restore free text access following a defined review process is a planned future state capability.</div>
+      </div>
+    </div>
+  </div>
+
   <!-- C1: COUNSELOR DASHBOARD -->
   <div class="screen" id="c1">
     <div class="screen-header">
-      <h2>13 — Counselor Dashboard</h2>
+      <h2>15 — Counselor Dashboard</h2>
       <p>Anonymized aggregate data only. Individual student data visible only with explicit student permission.</p>
     </div>
     <div class="device wide">
@@ -574,7 +656,7 @@
   <!-- C2: RESOURCE CONFIG -->
   <div class="screen" id="c2">
     <div class="screen-header">
-      <h2>14 — Resource Configuration</h2>
+      <h2>16 — Resource Configuration</h2>
       <p>Counselor adds school-specific resources. AI suggests based on session patterns. Documented in AI Solution Hypothesis Solution 4.</p>
     </div>
     <div class="device wide">
@@ -623,7 +705,7 @@
   <!-- C3: CONTACT REQUEST -->
   <div class="screen" id="c3">
     <div class="screen-header">
-      <h2>15 — Contact Request Notification</h2>
+      <h2>17 — Contact Request Notification</h2>
       <p>Triggered when student confirms counselor contact request. Student name shared with explicit consent. Calendar integration planned for future release.</p>
     </div>
     <div class="device">
