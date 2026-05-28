@@ -4,7 +4,7 @@
 
 ### AI Projects
 ---
-It is Saturday afternoon on the last day of spring break.  Your teenaged son, Matt, had planned to get on top of SAT prep for the test that is only 4 weeks away, complete a college essay draft due for his English class a the end of the week that he has not even started, and prepare for upcoming AP exams that are on the tail of the SAT.  You walk into his bedroom to find him scrolling on his phone and ask about his progress and are met with a blank stare and silence.
+It is Saturday afternoon on the last day of spring break.  Your teenaged son, Matt, had planned to get on top of SAT prep for the test that is only 4 weeks away, complete a college essay draft due for his English class a the end of the week that he has not even started, and prepare for upcoming AP exams that are on the tail of the SAT.  You walk into his bedroom to find him scrolling on his phone and ask about his progress. You are met with a blank stare and silence.
 
 Matt needs help, and is not interested in getting it from his parents.  
 
