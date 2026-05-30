@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unstuck — Wireframe v5</title>
+  <title>Unstuck — Interactive wireframe</title>
   <style>
     :root {
       --bg: #F5F2ED; --surface: #FFFFFF; --border: #DDD8D0;
@@ -87,6 +87,14 @@
     .annotation strong { display: block; margin-bottom: 4px; color: #E65100; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
     .dash-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+    .counselor-kpis { flex-wrap: wrap; }
+    .counselor-kpis .stat-box { flex: 1 1 130px; min-width: 120px; }
+    .counselor-filter-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; align-items: flex-end; }
+    .counselor-filter-row label { display: flex; flex-direction: column; gap: 4px; font-size: .7rem; font-family: 'Courier New', monospace; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+    .counselor-cat-metrics { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+    .counselor-pattern { font-size: .84rem; line-height: 1.5; color: var(--text); }
+    .wireframe-foot { font-size: .78rem; margin-top: 16px; }
+    .wireframe-foot a { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -94,7 +102,7 @@
 <div class="top-bar">
   <div>
     <div class="logo">Unstuck</div>
-    <div class="subtitle">Wireframe v5 — 17 screens</div>
+    <div class="subtitle">Interactive wireframe — 17 screens (May 2026)</div>
   </div>
   <div class="subtitle">AI PM Capstone · Product Faculty Cohort 9</div>
 </div>
@@ -445,44 +453,38 @@
     </div>
   </div>
 
-  <!-- S10: CHECK-IN -->
+  <!-- S10: CHECK-IN — matches Vercel capstone app (May 2026) -->
   <div class="screen" id="s10">
     <div class="screen-header">
       <h2>10 — Check-in Response</h2>
-      <p>Accessed via tokenized email link. No login required. Task-specific plain language questions. Conditional free text on "attempted but could not complete" only.</p>
+      <p><strong>Capstone (live):</strong> <code>/intake/check-in</code> — tasks from saved plan; button answers; page-level counselor request. <strong>V2:</strong> email <code>/checkin?token=…</code>; 140-char barrier per task.</p>
     </div>
     <div class="device">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/checkin?token=abc123</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/intake/check-in</div></div>
       <div class="device-body">
-        <div class="app-logo" style="padding:10px 0 14px;"><h1 style="font-size:1.4rem;">Unstuck</h1><p>Quick check-in — how is your plan going?</p></div>
-        <div class="notice notice-green" style="font-size:.82rem;">Your responses keep your plan current. If something has changed, your next plan will reflect it.</div>
-        <p class="section-title">How did each item go?</p>
+        <p style="font-size:.72rem;font-family:'Courier New',monospace;color:var(--muted);">Screen 10 · Check-in</p>
+        <h1 style="font-size:1.35rem;margin:8px 0;">How are your tasks going?</h1>
+        <p style="font-size:.84rem;color:var(--muted);margin-bottom:14px;">Pick one answer for each task below. Counselor contact is optional and separate.</p>
         <div class="card">
-          <h4 style="margin-bottom:10px;">Did you complete your Schoolhouse.world enrollment?</h4>
-          <div class="radio-group">
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, done</div>
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
-            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>No, not yet</div>
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Attempted but could not complete</div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
+            <h4 style="margin:0;">Sign up for Schoolhouse.world SAT bootcamp</h4>
+            <span class="tag tag-gray">Due 2026-04-28</span>
           </div>
-          <div class="notice notice-amber" style="margin-top:10px;font-size:.8rem;">Would you like to contact your counselor or trusted contact for help with this?</div>
-        </div>
-        <div class="card">
-          <h4 style="margin-bottom:10px;">Are you on track with your homework assignments based on your prior plan?</h4>
-          <div class="radio-group">
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, done</div>
-            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>No, not yet</div>
-            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Attempted but could not complete</div>
-          </div>
-          <div class="free-text-group" style="margin-top:10px;">
-            <label>What got in the way? (optional — appears only on "attempted but could not complete")</label>
-            <div class="input-text"></div>
-            <div class="char-count">0 / 140</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">Yes, I finished this</div>
+            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;background:var(--accent-lt);">In progress</div>
+            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">Not yet</div>
+            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">I tried but could not finish</div>
           </div>
         </div>
+        <p class="section-title" style="margin-top:18px;">Need support from an adult?</p>
+        <p style="font-size:.8rem;color:var(--muted);">Optional. This does not change your task answers above.</p>
+        <div class="btn btn-outline" style="font-size:.82rem;max-width:320px;">I want to contact my school counselor</div>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:8px;">Demo: request is saved; counselor is not emailed yet.</p>
+        <p style="font-size:.8rem;margin:16px 0;">1 of 3 tasks answered · finish all tasks to submit</p>
         <div class="btn btn-primary">Submit check-in</div>
-        <div class="annotation"><strong>Design note</strong>No login required. Tokenized link authenticates the student. Free text field (140 chars) appears conditionally only when "attempted but could not complete" is selected. Contact option appears only on No or Attempted responses. All free text screened on submission.</div>
+        <p style="font-size:.78rem;margin-top:12px;"><a href="#">← Back to dashboard</a></p>
+        <div class="annotation"><strong>Design note (production)</strong> Matches <code>Screen10CheckIn.tsx</code>. Without <code>visitor_id</code> on device: “No saved plan on this device.” Manual pilot link = this URL, not /dashboard.</div>
       </div>
     </div>
   </div>
@@ -606,51 +608,58 @@
     </div>
   </div>
 
-  <!-- C1: COUNSELOR DASHBOARD -->
+  <!-- C1: COUNSELOR DASHBOARD — aligned to Vercel capstone app (May 2026 demo seed) -->
   <div class="screen" id="c1">
     <div class="screen-header">
       <h2>15 — Counselor Dashboard</h2>
-      <p>Anonymized aggregate data only. Individual student data visible only with explicit student permission.</p>
+      <p>Matches live app at <code>unstuck-app-flame.vercel.app/counselor/dashboard</code>. Sample KPIs below = demo seed (<code>DEMO</code> school), Feb–May 2026. No school name on screen; screens 16–17 deferred.</p>
     </div>
     <div class="device wide">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/counselor/dashboard</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/counselor/dashboard</div></div>
       <div class="device-body">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-          <div>
-            <div style="font-size:.75rem;font-family:'Courier New',monospace;color:var(--muted);">Lincoln High School · Spring 2026</div>
-            <div style="font-size:1.2rem;font-weight:700;">Ms. Smith's Dashboard</div>
-          </div>
-          <div class="input-mock" style="width:auto;padding:7px 14px;">Grade: All ▾</div>
+        <p style="font-size:.72rem;font-family:'Courier New',monospace;color:var(--muted);margin-bottom:12px;">Screen 15 · Counselor dashboard</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:12px;">
+          <h2 style="font-size:1.25rem;font-weight:700;margin:0;">Counselor dashboard</h2>
+          <div class="input-mock" style="width:auto;padding:8px 14px;flex-shrink:0;font-size:.85rem;">All grades ▾</div>
         </div>
-        <div class="stat-row">
-          <div class="stat-box"><div class="num">84</div><div class="lbl">Active students</div></div>
-          <div class="stat-box"><div class="num">312</div><div class="lbl">Sessions this month</div></div>
-          <div class="stat-box"><div class="num">67%</div><div class="lbl">Resource engagement</div></div>
-          <div class="stat-box"><div class="num">3</div><div class="lbl">Contact requests</div></div>
+        <div class="counselor-filter-row">
+          <label>From<div class="input-mock" style="padding:8px 12px;min-width:140px;">2026-02-01</div></label>
+          <label>To<div class="input-mock" style="padding:8px 12px;min-width:140px;">2026-05-30</div></label>
+          <label>Day of week<div class="input-mock" style="padding:8px 12px;min-width:120px;">All days ▾</div></label>
+        </div>
+        <div class="stat-row counselor-kpis">
+          <div class="stat-box"><div class="num">33</div><div class="lbl">Students with a plan</div></div>
+          <div class="stat-box"><div class="num">33</div><div class="lbl">New plan sessions</div></div>
+          <div class="stat-box"><div class="num">7</div><div class="lbl">Return plan sessions</div></div>
+          <div class="stat-box"><div class="num">100%</div><div class="lbl">Resource engagement</div></div>
+          <div class="stat-box"><div class="num">0</div><div class="lbl">Contact requests</div></div>
         </div>
         <div class="two-col">
           <div>
             <p class="section-title">Sessions by category</p>
-            <div class="task-row"><span>SAT preparation</span><div class="tag tag-red">38%</div></div>
-            <div class="task-row"><span>Junior year workload</span><div class="tag tag-amber">24%</div></div>
-            <div class="task-row"><span>College application</span><div class="tag tag-amber">18%</div></div>
-            <div class="task-row"><span>AP exam prep</span><div class="tag tag-green">12%</div></div>
-            <div class="task-row"><span>Other</span><div class="tag tag-gray">8%</div></div>
+            <div class="task-row" style="font-size:.72rem;color:var(--muted);padding-bottom:8px;">
+              <span>Category</span>
+              <span class="counselor-cat-metrics"><span>Sessions</span><span>% of total</span></span>
+            </div>
+            <div class="task-row"><span>SAT preparation</span><span class="counselor-cat-metrics"><span class="tag tag-gray">17</span><span class="tag tag-amber">43%</span></span></div>
+            <div class="task-row"><span>College essay</span><span class="counselor-cat-metrics"><span class="tag tag-gray">12</span><span class="tag tag-amber">30%</span></span></div>
+            <div class="task-row"><span style="max-width:58%;line-height:1.35;">I have multiple deadlines and do not know where to start</span><span class="counselor-cat-metrics"><span class="tag tag-gray">11</span><span class="tag tag-amber">28%</span></span></div>
+            <div class="task-row"><span>I need help prioritizing my workload</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>Test or exam preparation</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>College applications</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>I am stuck on a single task</span><span class="counselor-cat-metrics"><span class="tag tag-gray">2</span><span class="tag tag-gray">5%</span></span></div>
           </div>
           <div>
-            <p class="section-title">AI pattern observation</p>
-            <div class="notice notice-amber">SAT preparation sessions among juniors spiked 40% this week. Resource engagement with Schoolhouse.world is low. Consider proactive outreach to the junior class before the next bootcamp session opens.</div>
-            <p class="section-title" style="margin-top:14px;">Resource engagement</p>
-            <div class="task-row"><span>Khan Academy</span><div class="tag tag-green">High</div></div>
-            <div class="task-row"><span>Schoolhouse.world</span><div class="tag tag-red">Low</div></div>
-            <div class="task-row"><span>College Board Bluebook</span><div class="tag tag-amber">Medium</div></div>
+            <p class="section-title">Patterns &amp; Actionable Insights</p>
+            <p class="counselor-pattern">SAT preparation is the most common need in this view (43%). SAT preparation shows up often. Consider a junior class reminder before the next bootcamp window. Engagement with Schoolhouse.world is low relative to other resources.</p>
+            <p class="section-title" style="margin-top:18px;">Resource engagement</p>
+            <div class="task-row"><span>Khan Academy SAT</span><div class="tag tag-green">High</div></div>
           </div>
         </div>
-        <hr class="divider-line">
-        <div class="btn btn-outline" style="max-width:220px;">Configure resources →</div>
-        <div class="annotation"><strong>Design note</strong>No individual student names or session content visible by default. AI pattern observation generated from aggregate data. Grade level filter allows focus on juniors or seniors specifically.</div>
+        <p class="wireframe-foot"><a href="#">← Back to home</a></p>
       </div>
     </div>
+    <p class="annotation" style="margin-top:12px;"><strong>Design note</strong>Live app uses the same layout; numbers change when filters or pilot data change. Rule-based insights (not a counselor LLM). No “Configure resources” on screen 15 in capstone build.</p>
   </div>
 
   <!-- C2: RESOURCE CONFIG -->
