@@ -87,14 +87,6 @@
     .annotation strong { display: block; margin-bottom: 4px; color: #E65100; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
     .dash-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
-    .counselor-kpis { flex-wrap: wrap; }
-    .counselor-kpis .stat-box { flex: 1 1 130px; min-width: 120px; }
-    .counselor-filter-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; align-items: flex-end; }
-    .counselor-filter-row label { display: flex; flex-direction: column; gap: 4px; font-size: .7rem; font-family: 'Courier New', monospace; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-    .counselor-cat-metrics { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
-    .counselor-pattern { font-size: .84rem; line-height: 1.5; color: var(--text); }
-    .wireframe-foot { font-size: .78rem; margin-top: 16px; }
-    .wireframe-foot a { color: var(--accent); }
   </style>
 </head>
 <body>
@@ -136,22 +128,28 @@
   <div class="screen active" id="s1">
     <div class="screen-header">
       <h2>01 — Home / Landing</h2>
-      <p>Entry point for new and returning users.</p>
+      <p>Capstone: first-intake landing on Vercel. Auto-redirect to dashboard when plan saved. OAuth below = V2.</p>
     </div>
     <div class="device">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app</div></div>
       <div class="device-body">
         <div class="app-logo">
           <h1>Unstuck</h1>
-          <p>Figure out where to start.</p>
         </div>
-        <hr class="divider-line">
-        <p class="section-title">Get started</p>
-        <div class="btn btn-primary">Continue with Google</div>
-        <div class="btn btn-secondary">Sign up with email</div>
-        <hr class="divider-line">
-        <div class="btn btn-outline">Log in to existing account</div>
-        <div class="annotation"><strong>Design note</strong>New users proceed to Screen 02 then 03 then land directly on Screen 05 (Situation) since they have no dashboard content yet. Returning users go to Screen 04 (Dashboard).</div>
+        <p style="font-size:.85rem;line-height:1.45;margin-bottom:10px;">Welcome to Unstuck, your go-to source to cultivate sense and order in the face of sometimes overwhelming school-related demands.</p>
+        <p style="font-size:.92rem;font-weight:600;margin-bottom:8px;">What can I help you start to unwind right now?</p>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:8px;">The first step is to tell me what you have on your plate now and coming up. Our focus here is on school-related tasks, including college testing and preparation.</p>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:8px;">This is your starting page, and you will only see it when setting up a new plan. The study and task plan you create lives on your dashboard, use it to check in on tasks, view your plan, or update your situation.</p>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:12px;">Any suggested resources related to your tasks will be in your Toolkit and accessed from your dashboard. We also help you keep track of what each recommended resource is for.</p>
+        <p style="font-size:.8rem;color:var(--muted);margin-bottom:12px;">On your next visit, you will go straight to your dashboard.</p>
+        <div class="btn btn-primary">Start intake: grade and school</div>
+        <div class="btn btn-secondary" style="margin-top:8px;">Go to my dashboard</div>
+        <p style="font-size:.72rem;color:var(--muted);margin-top:12px;">Capstone review and demo links (collapsed)</p>
+        <div class="annotation"><strong>Design note (production May 2026)</strong> New users: Home → Screen 02 (grade + pilot code) → 05–08. Saved plan on device: opening <code>/</code> auto-redirects to Screen 04. Dashboard <strong>Home</strong> uses <code>allowHome</code> to show this screen again with both CTAs. Vision: Google/email auth (gray) deferred.</div>
+        <hr class="divider-line" style="opacity:.35;margin-top:16px;">
+        <p class="section-title" style="opacity:.5;font-size:.78rem;">V2 — not in capstone app</p>
+        <div class="btn btn-secondary" style="opacity:.45;max-width:100%;">Continue with Google</div>
+        <div class="btn btn-secondary" style="opacity:.45;max-width:100%;">Sign up with email</div>
       </div>
     </div>
   </div>
@@ -159,12 +157,22 @@
   <!-- S2: SIGN UP -->
   <div class="screen" id="s2">
     <div class="screen-header">
-      <h2>02 — Account Creation and Age Gate</h2>
-      <p>Month and year of birth required for COPPA-compliant age verification.</p>
+      <h2>02 — Grade and pilot school (production) + account vision</h2>
+      <p>Capstone app uses grade + pilot code only at <code>/intake</code>. Full signup below = V2.</p>
     </div>
     <div class="device">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/signup</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/intake</div></div>
       <div class="device-body">
+        <p style="font-size:.72rem;font-family:'Courier New',monospace;color:var(--muted);margin-bottom:6px;">Screen 02 · Account setup · Step 1 of 5</p>
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">Welcome — let&apos;s get started</h3>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:8px;"><strong>Unstuck</strong> helps you break down what is on your plate into a clear plan you can follow this week.</p>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:12px;">This takes about 5 minutes: grade and school code → what is going on → your tasks → a few quick questions → your personalized plan.</p>
+        <p style="font-size:.82rem;margin-bottom:12px;">First, tell us your grade and pilot school code (from your counselor or pilot message). We do not ask you to type your school name.</p>
+        <div class="input-group"><label>Grade level</label><div class="input-mock">11th grade ▾</div></div>
+        <div class="input-group"><label>Pilot school code</label><div class="input-mock">DEMO</div></div>
+        <div class="btn btn-primary">Continue</div>
+        <hr class="divider-line" style="opacity:.35;margin:18px 0;">
+        <p class="section-title" style="opacity:.5;font-size:.78rem;">V2 — account creation and age gate (not in capstone)</p>
         <p class="section-title">Create your account</p>
         <div class="input-group">
           <label>Email address</label>
@@ -226,7 +234,7 @@
       <p>Returning users only. New users bypass this screen and land on Screen 05 after setup. Two distinct action buttons reflect two distinct return user states.</p>
     </div>
     <div class="device">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/dashboard</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/dashboard</div></div>
       <div class="device-body">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
           <div>
@@ -250,23 +258,13 @@
         <div class="task-row"><span>Homework — 3 items</span><span class="tag tag-green">This week</span></div>
         <hr class="divider-line">
         <div class="dash-actions">
-          <div class="btn btn-primary">I am on track, what is my next step</div>
+          <div class="btn btn-primary">Check in on my tasks</div>
           <div class="btn btn-secondary">Something has changed, I need to update my plan</div>
+          <div class="btn btn-secondary">View my plan</div>
+          <div class="btn btn-outline">View my toolkit</div>
+          <div class="btn btn-outline">Home</div>
         </div>
-        <div class="btn btn-outline" style="margin-top:4px;">View my toolkit</div>
-        <hr class="divider-line">
-        <p class="section-title">Ask me later</p>
-        <div class="card" style="border-color:var(--amber);">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-            <div><h4>Schoolhouse.world SAT bootcamp</h4><p>Free four-week structured SAT prep program.</p></div>
-            <div class="tag tag-red">Decide by Mar 15</div>
-          </div>
-          <div style="display:flex;gap:8px;margin-top:10px;">
-            <div class="btn btn-primary" style="flex:1;margin:0;font-size:.8rem;padding:8px;">Include</div>
-            <div class="btn btn-secondary" style="flex:1;margin:0;font-size:.8rem;padding:8px;">Exclude</div>
-          </div>
-        </div>
-        <div class="annotation"><strong>Design note</strong>Two distinct buttons reflect two distinct return user states. "I am on track" triggers plan continuation flow. "Something has changed" routes to the dedicated plan update screen (Screen 13). Ask me later section shows deferred resources with decision deadline flags where applicable. Items that are no longer actionable given deadline proximity are removed automatically.</div>
+        <div class="annotation"><strong>Design note (production)</strong> Return landing. Check-in → Screen 10. Update plan → Screen 05 pre-fill (not Screen 13). View plan → <code>/intake/return</code>. No "Start new session" on dashboard. <strong>Home</strong> opens Screen 01 with <code>allowHome</code>.</div>
       </div>
     </div>
   </div>
@@ -369,7 +367,7 @@
       <p>Two-layer output: full scope plan (toggleable monthly/weekly/daily) and rolling seven-day immediate next steps view. Model returns structured data, UI renders toggle views. Resources surfaced with include/exclude/ask me later options.</p>
     </div>
     <div class="device">
-      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck.app/plan</div></div>
+      <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/intake/plan</div></div>
       <div class="device-body">
         <div class="notice notice-green">You have a lot moving at once. The essay due next week is the most immediate deadline. Here is a plan that sequences everything in order of urgency.</div>
 
@@ -412,8 +410,10 @@
         </div>
 
         <hr class="divider-line">
-        <div class="btn btn-secondary">Share this plan with a trusted contact</div>
-        <div class="annotation"><strong>Design note</strong>Full scope view is scrollable and toggleable between monthly, weekly, and daily perspectives. Model returns structured data, UI renders toggle views. Rolling seven-day view reflects deadline proximity and available time. Each resource includes a tappable URL link and include/exclude/ask me later options rendered by the UI. No time-of-day language. College essay step: planning support only, no content generation. Out-of-scope time commitments (such as extracurricular events) are a planned future state input capability not yet present in the current flow.</div>
+        <p class="section-title">What to do next</p>
+        <p style="font-size:.82rem;color:var(--muted);margin-bottom:10px;">Plan saved to your dashboard on this device.</p>
+        <div class="btn btn-primary">Go to my dashboard</div>
+        <div class="annotation"><strong>Design note (production)</strong> After save: <strong>What to do next</strong> + dashboard CTA (no Home link). Per-step mailto for trusted contact on resources. Full scope + seven-day steps as shipped. Monthly/weekly/daily toggles = vision; capstone shows scrollable lists.</div>
       </div>
     </div>
   </div>
@@ -453,38 +453,52 @@
     </div>
   </div>
 
-  <!-- S10: CHECK-IN — matches Vercel capstone app (May 2026) -->
+  <!-- S10: CHECK-IN -->
   <div class="screen" id="s10">
     <div class="screen-header">
-      <h2>10 — Check-in Response</h2>
-      <p><strong>Capstone (live):</strong> <code>/intake/check-in</code> — tasks from saved plan; button answers; page-level counselor request. <strong>V2:</strong> email <code>/checkin?token=…</code>; 140-char barrier per task.</p>
+      <h2>10 — Check-in</h2>
+      <p><strong>Capstone (live):</strong> <code>/intake/check-in</code> — same UI as a future email link. <strong>V2:</strong> token URL + 140-char barrier per task.</p>
     </div>
     <div class="device">
       <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/intake/check-in</div></div>
       <div class="device-body">
-        <p style="font-size:.72rem;font-family:'Courier New',monospace;color:var(--muted);">Screen 10 · Check-in</p>
-        <h1 style="font-size:1.35rem;margin:8px 0;">How are your tasks going?</h1>
-        <p style="font-size:.84rem;color:var(--muted);margin-bottom:14px;">Pick one answer for each task below. Counselor contact is optional and separate.</p>
+        <p style="font-size:.72rem;font-family:'Courier New',monospace;color:var(--muted);margin-bottom:8px;">Screen 10 · Check-in</p>
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:10px;">How are your tasks going?</h3>
+        <p style="font-size:.82rem;color:var(--muted);line-height:1.4;margin-bottom:8px;">You are checking in on the plan you already built on this device. Your answers update what you see on your dashboard — they are not automatic grade tracking.</p>
+        <p style="font-size:.82rem;margin-bottom:14px;">Pick one answer for each task below. Counselor contact is optional and separate.</p>
         <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
-            <h4 style="margin:0;">Sign up for Schoolhouse.world SAT bootcamp</h4>
-            <span class="tag tag-gray">Due 2026-04-28</span>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:10px;">
+            <h4>Open your essay draft and write one paragraph</h4>
+            <div class="tag tag-gray">Due Fri</div>
           </div>
-          <div style="display:flex;flex-wrap:wrap;gap:6px;">
-            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">Yes, I finished this</div>
-            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;background:var(--accent-lt);">In progress</div>
-            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">Not yet</div>
-            <div class="btn btn-outline" style="font-size:.75rem;padding:6px 10px;">I tried but could not finish</div>
+          <div class="radio-group">
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, I finished this</div>
+            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Not yet</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>I tried but could not finish</div>
           </div>
         </div>
-        <p class="section-title" style="margin-top:18px;">Need support from an adult?</p>
-        <p style="font-size:.8rem;color:var(--muted);">Optional. This does not change your task answers above.</p>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:10px;">
+            <h4>Sign up for the Schoolhouse.world SAT bootcamp</h4>
+            <div class="tag tag-amber">Due next week</div>
+          </div>
+          <div class="radio-group">
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Yes, I finished this</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>In progress</div>
+            <div class="radio-option selected" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>Not yet</div>
+            <div class="radio-option" style="padding:8px 12px;font-size:.82rem;"><div class="radio-dot"></div>I tried but could not finish</div>
+          </div>
+        </div>
+        <hr class="divider-line">
+        <p class="section-title">Need support from an adult?</p>
+        <p style="font-size:.8rem;color:var(--muted);margin-bottom:10px;">Optional. This does not change your task answers above.</p>
         <div class="btn btn-outline" style="font-size:.82rem;max-width:320px;">I want to contact my school counselor</div>
         <p style="font-size:.78rem;color:var(--muted);margin-top:8px;">Demo: request is saved; counselor is not emailed yet.</p>
-        <p style="font-size:.8rem;margin:16px 0;">1 of 3 tasks answered · finish all tasks to submit</p>
-        <div class="btn btn-primary">Submit check-in</div>
-        <p style="font-size:.78rem;margin-top:12px;"><a href="#">← Back to dashboard</a></p>
-        <div class="annotation"><strong>Design note (production)</strong> Matches <code>Screen10CheckIn.tsx</code>. Without <code>visitor_id</code> on device: “No saved plan on this device.” Manual pilot link = this URL, not /dashboard.</div>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:6px;">2 of 2 tasks answered · ready to submit</p>
+        <div class="btn btn-primary" style="margin-top:10px;">Submit check-in</div>
+        <div class="btn btn-outline" style="font-size:.82rem;margin-top:6px;">← Back to dashboard</div>
+        <div class="annotation"><strong>Design note (production)</strong> Pilot link: <code>/intake/check-in</code>. Per-task status only (4 options). Counselor toggle is page-level, not per task. V2: tokenized email link (grayed in journey docs).</div>
       </div>
     </div>
   </div>
@@ -608,11 +622,11 @@
     </div>
   </div>
 
-  <!-- C1: COUNSELOR DASHBOARD — aligned to Vercel capstone app (May 2026 demo seed) -->
+  <!-- C1: COUNSELOR DASHBOARD -->
   <div class="screen" id="c1">
     <div class="screen-header">
       <h2>15 — Counselor Dashboard</h2>
-      <p>Matches live app at <code>unstuck-app-flame.vercel.app/counselor/dashboard</code>. Sample KPIs below = demo seed (<code>DEMO</code> school), Feb–May 2026. No school name on screen; screens 16–17 deferred.</p>
+      <p>Matches live app at <code>unstuck-app-flame.vercel.app/counselor/dashboard</code>. Sample KPIs = demo seed (<code>DEMO</code>). Screens 16–17 deferred.</p>
     </div>
     <div class="device wide">
       <div class="device-bar"><div class="dot r"></div><div class="dot y"></div><div class="dot g"></div><div class="url-bar">unstuck-app-flame.vercel.app/counselor/dashboard</div></div>
@@ -622,12 +636,12 @@
           <h2 style="font-size:1.25rem;font-weight:700;margin:0;">Counselor dashboard</h2>
           <div class="input-mock" style="width:auto;padding:8px 14px;flex-shrink:0;font-size:.85rem;">All grades ▾</div>
         </div>
-        <div class="counselor-filter-row">
-          <label>From<div class="input-mock" style="padding:8px 12px;min-width:140px;">2026-02-01</div></label>
-          <label>To<div class="input-mock" style="padding:8px 12px;min-width:140px;">2026-05-30</div></label>
-          <label>Day of week<div class="input-mock" style="padding:8px 12px;min-width:120px;">All days ▾</div></label>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px;">
+          <label style="font-size:.78rem;"><span style="display:block;font-size:.7rem;color:var(--muted);margin-bottom:4px;">From</span><div class="input-mock" style="padding:8px 12px;min-width:130px;">2026-02-01</div></label>
+          <label style="font-size:.78rem;"><span style="display:block;font-size:.7rem;color:var(--muted);margin-bottom:4px;">To</span><div class="input-mock" style="padding:8px 12px;min-width:130px;">2026-05-30</div></label>
+          <label style="font-size:.78rem;"><span style="display:block;font-size:.7rem;color:var(--muted);margin-bottom:4px;">Day of week</span><div class="input-mock" style="padding:8px 12px;min-width:120px;">All days ▾</div></label>
         </div>
-        <div class="stat-row counselor-kpis">
+        <div class="stat-row" style="flex-wrap:wrap;">
           <div class="stat-box"><div class="num">33</div><div class="lbl">Students with a plan</div></div>
           <div class="stat-box"><div class="num">33</div><div class="lbl">New plan sessions</div></div>
           <div class="stat-box"><div class="num">7</div><div class="lbl">Return plan sessions</div></div>
@@ -637,29 +651,27 @@
         <div class="two-col">
           <div>
             <p class="section-title">Sessions by category</p>
-            <div class="task-row" style="font-size:.72rem;color:var(--muted);padding-bottom:8px;">
-              <span>Category</span>
-              <span class="counselor-cat-metrics"><span>Sessions</span><span>% of total</span></span>
-            </div>
-            <div class="task-row"><span>SAT preparation</span><span class="counselor-cat-metrics"><span class="tag tag-gray">17</span><span class="tag tag-amber">43%</span></span></div>
-            <div class="task-row"><span>College essay</span><span class="counselor-cat-metrics"><span class="tag tag-gray">12</span><span class="tag tag-amber">30%</span></span></div>
-            <div class="task-row"><span style="max-width:58%;line-height:1.35;">I have multiple deadlines and do not know where to start</span><span class="counselor-cat-metrics"><span class="tag tag-gray">11</span><span class="tag tag-amber">28%</span></span></div>
-            <div class="task-row"><span>I need help prioritizing my workload</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
-            <div class="task-row"><span>Test or exam preparation</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
-            <div class="task-row"><span>College applications</span><span class="counselor-cat-metrics"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
-            <div class="task-row"><span>I am stuck on a single task</span><span class="counselor-cat-metrics"><span class="tag tag-gray">2</span><span class="tag tag-gray">5%</span></span></div>
+            <div class="task-row" style="font-size:.72rem;color:var(--muted);padding-bottom:8px;"><span>Category</span><span style="display:flex;gap:12px;"><span>Sessions</span><span>% of total</span></span></div>
+            <div class="task-row"><span>SAT preparation</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">17</span><span class="tag tag-amber">43%</span></span></div>
+            <div class="task-row"><span>College essay</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">12</span><span class="tag tag-amber">30%</span></span></div>
+            <div class="task-row"><span style="max-width:58%;line-height:1.35;">I have multiple deadlines and do not know where to start</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">11</span><span class="tag tag-amber">28%</span></span></div>
+            <div class="task-row"><span>I need help prioritizing my workload</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>Test or exam preparation</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>College applications</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">4</span><span class="tag tag-amber">10%</span></span></div>
+            <div class="task-row"><span>I am stuck on a single task</span><span style="display:flex;gap:6px;"><span class="tag tag-gray">2</span><span class="tag tag-gray">5%</span></span></div>
           </div>
           <div>
             <p class="section-title">Patterns &amp; Actionable Insights</p>
-            <p class="counselor-pattern">SAT preparation is the most common need in this view (43%). SAT preparation shows up often. Consider a junior class reminder before the next bootcamp window. Engagement with Schoolhouse.world is low relative to other resources.</p>
+            <div class="notice notice-amber" style="font-size:.82rem;">SAT preparation is the most common need in this view (43%). SAT preparation shows up often. Consider a junior class reminder before the next bootcamp window. Engagement with Schoolhouse.world is low relative to other resources.</div>
             <p class="section-title" style="margin-top:18px;">Resource engagement</p>
             <div class="task-row"><span>Khan Academy SAT</span><div class="tag tag-green">High</div></div>
+            <div class="task-row"><span>Schoolhouse.world SAT bootcamp</span><div class="tag tag-red">Low</div></div>
           </div>
         </div>
-        <p class="wireframe-foot"><a href="#">← Back to home</a></p>
+        <p style="font-size:.78rem;margin-top:14px;color:var(--accent);">← Back to home</p>
+        <div class="annotation"><strong>Design note (production)</strong> Rule-based insights (not a counselor LLM). No school name on screen. No “Configure resources” button. KPI numbers change with filters + <code>npm run seed:demo</code>.</div>
       </div>
     </div>
-    <p class="annotation" style="margin-top:12px;"><strong>Design note</strong>Live app uses the same layout; numbers change when filters or pilot data change. Rule-based insights (not a counselor LLM). No “Configure resources” on screen 15 in capstone build.</p>
   </div>
 
   <!-- C2: RESOURCE CONFIG -->
