@@ -104,32 +104,59 @@
         </section>
 
         <!-- 4 4D -->
-        <section>
-          <h2>4D in practice: decisions, tradeoffs, and implementation</h2>
-          <div class="phase-grid">
-            <div class="phase-box discovery">
-              <strong>Discovery</strong>
-              Personas, overload pattern, market sizing, counselor constraints, pilot assumptions.
+        <section class="slide-lifecycle">
+          <h2>Unstuck on a continuous 4D loop</h2>
+          <div class="lifecycle-loop" aria-label="Discovery, Design, Develop, Deploy cycle">
+            <svg class="lifecycle-svg" viewBox="0 0 520 520" aria-hidden="true">
+              <defs>
+                <marker id="lifecycle-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                  <path d="M0,0 L8,4 L0,8 Z" fill="#9a9590"></path>
+                </marker>
+              </defs>
+              <circle cx="260" cy="260" r="188" fill="none" stroke="#e0dbd3" stroke-width="4" stroke-dasharray="10 8"></circle>
+              <path class="lifecycle-arc" d="M 260 72 A 188 188 0 0 1 448 260" marker-end="url(#lifecycle-arrow)"></path>
+              <path class="lifecycle-arc" d="M 448 260 A 188 188 0 0 1 260 448" marker-end="url(#lifecycle-arrow)"></path>
+              <path class="lifecycle-arc" d="M 260 448 A 188 188 0 0 1 72 260" marker-end="url(#lifecycle-arrow)"></path>
+              <path class="lifecycle-arc" d="M 72 260 A 188 188 0 0 1 260 72" marker-end="url(#lifecycle-arrow)"></path>
+            </svg>
+            <div class="lifecycle-hub">
+              <div class="lifecycle-hub-core">
+                <span class="lifecycle-hub-icon" aria-hidden="true">↻</span>
+                <strong>Iterate</strong>
+              </div>
+              <span class="lifecycle-hub-tagline">Learn · Ship · Learn</span>
             </div>
-            <div class="phase-box design">
-              <strong>Design</strong>
-              Structured intake model, safety boundaries, wireframes, eval criteria, interaction choices.
-              <br />
+            <article class="lifecycle-node lifecycle-discovery">
+              <h3>Discovery</h3>
+              <p class="lifecycle-risk">De-risk value</p>
+              <p>Matt and Ms. Smith, paralysis problem, counselor caseload gap.</p>
+            </article>
+            <article class="lifecycle-node lifecycle-design">
+              <h3>Design</h3>
+              <p class="lifecycle-risk">De-risk usability</p>
+              <p>Wireframe, structured intake, safety evals.</p>
               <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a>
-            </div>
-            <div class="phase-box develop">
-              <strong>Develop</strong>
-              React and Vite front end, Vercel APIs, Supabase data layer, Claude prompts, rule enforcement.
-              <br />
-              <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a> ·
-              <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">build spec</a>
-            </div>
-            <div class="phase-box deploy">
-              <strong>Deploy</strong>
-              Pilot rollout, monitoring, smoke tests, PRD sync, and school-focused value narrative.
-            </div>
+            </article>
+            <article class="lifecycle-node lifecycle-develop">
+              <h3>Develop</h3>
+              <p class="lifecycle-risk">De-risk feasibility</p>
+              <ul class="lifecycle-stack">
+                <li><strong>Claude</strong>: runtime LLM (plans + screening)</li>
+                <li><strong>Cursor</strong>: AI-assisted build</li>
+                <li><strong>React</strong>: student + counselor UI</li>
+                <li><strong>Vercel</strong>: live app + API host</li>
+                <li><strong>Supabase</strong>: Postgres database</li>
+                <li><strong>GitHub</strong>: source repo + version history</li>
+              </ul>
+              <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a>
+            </article>
+            <article class="lifecycle-node lifecycle-deploy">
+              <h3>Deploy</h3>
+              <p class="lifecycle-risk">De-risk business</p>
+              <p>Individual student users, School pilots, license model, counselor dashboard tier.</p>
+            </article>
           </div>
-          <aside class="notes">Shows command of PM process, not curriculum labels only.</aside>
+          <aside class="notes">Framework slide for faculty; video demo is Develop (Matt flow).</aside>
         </section>
 
         <!-- 5 Features -->
