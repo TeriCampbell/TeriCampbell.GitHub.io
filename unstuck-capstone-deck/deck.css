@@ -75,18 +75,117 @@
   font-style: italic;
 }
 
-.reveal .hero-number {
-  font-size: 3.1em;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  margin: 0.2em 0 0.1em;
+.reveal .slide2-layout {
+  align-items: stretch;
 }
 
-.reveal .hero-label {
-  font-size: 0.65em;
+.reveal .ratio-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45em;
+}
+
+.reveal .ratio-context {
+  font-size: 0.52em;
   color: var(--muted);
-  max-width: 14em;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.reveal .ratio-viz {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.65em 0.75em;
+}
+
+.reveal .ratio-viz-title {
+  font-size: 0.58em;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.55em;
+}
+
+.reveal .ratio-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+}
+
+.reveal .ratio-row {
+  display: grid;
+  grid-template-columns: 7.2em 1fr 2.4em;
+  gap: 0.35em;
+  align-items: center;
+  font-size: 0.48em;
+}
+
+.reveal .ratio-row-label {
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.reveal .ratio-track {
+  position: relative;
+  height: 1.1em;
+  background: #f0ede8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.reveal .ratio-bar {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.reveal .ratio-bar-target {
+  background: var(--accent);
+}
+
+.reveal .ratio-bar-actual {
+  background: #8b4a2b;
+}
+
+.reveal .ratio-gap-band {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(139, 74, 43, 0.35);
+  border-left: 2px dashed #8b4a2b;
+  pointer-events: none;
+}
+
+.reveal .ratio-value {
+  font-weight: 700;
+  font-size: 1.15em;
+  color: var(--text);
+  text-align: right;
+}
+
+.reveal .ratio-gap-label {
+  margin: 0.55em 0 0.15em;
+  font-size: 0.62em;
+  font-weight: 700;
+  color: #8b4a2b;
+  line-height: 1.2;
+}
+
+.reveal .ratio-source {
+  margin: 0;
+  font-size: 0.4em;
+  color: var(--muted);
+  line-height: 1.3;
+}
+
+.reveal .ratio-insight {
+  font-size: 0.56em;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0.5em 0.6em;
+  background: var(--accent-lt);
+  border-radius: 8px;
+  color: var(--text);
 }
 
 .reveal .two-col {
