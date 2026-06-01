@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Unstuck — Capstone deck</title>
+    <title>Unstuck - Capstone deck</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
     <link rel="stylesheet" href="deck.css" />
   </head>
@@ -12,166 +12,188 @@
       <div class="slides">
         <!-- 1 Title -->
         <section class="title-slide" data-background-color="#faf9f7">
-          <h1>Unstuck</h1>
-          <p class="subtitle">AI planning for students who do not know where to start</p>
-          <p class="meta">Teri Campbell · Product Faculty · AI PM Cohort 9 · Builder · May 2026</p>
-          <img
-            class="screenshot"
-            src="assets/screenshots/01-home.png"
-            alt="Unstuck Home screen on production"
-          />
+          <div class="title-wrap">
+            <div class="title-copy">
+              <h1>Unstuck</h1>
+              <p class="subtitle">AI planning for students who do not know where to start</p>
+              <p class="meta">Teri Campbell · Product Faculty · AI PM Cohort 9 · Builder · May 2026</p>
+            </div>
+            <img
+              class="screenshot zoomable"
+              src="assets/screenshots/01-home.png"
+              alt="Unstuck Home screen on production"
+            />
+          </div>
           <aside class="notes">Warm open. Live product, not a concept slide.</aside>
         </section>
 
         <!-- 2 Problem -->
         <section>
-          <h2>Matt is stuck before he is behind.</h2>
+          <h2>Why this problem is worth solving now</h2>
           <div class="two-col">
             <div>
               <ul>
-                <li>Junior: SAT, AP exams, essay, and homework — same week</li>
-                <li>Paralysis is <strong>where to start</strong>, not motivation</li>
-                <li>Khan, College Board, Schoolhouse — signed up, then forgotten</li>
+                <li>High school students juggle many deadlines. Overwhelm can escalate quickly once they feel behind.</li>
+                <li>Unstuck addresses the paralysis around where to start with one clear next action.</li>
+                <li>Plans include resource links and context, so students can find the right support later.</li>
+                <li>Adult support links can trigger account setup help or counselor check-ins when needed.</li>
               </ul>
-              <p class="footer-note">“Build it. My daughter needs this now.” — pilot friend</p>
+              <p class="footer-note">"Build it. My daughter needs this now." - pilot friend</p>
             </div>
             <div>
               <p class="hero-number">372:1</p>
               <p class="hero-label">Students per counselor nationally (ASCA recommends 250:1)</p>
+              <p class="mini-note">Counselors cannot scale 1:1 support during every stress spike. Unstuck helps fill the gap between appointments.</p>
+              <p class="mini-note">Most planning tools are generic. Unstuck is purpose-built for student paralysis, school context, and counselor visibility.</p>
             </div>
           </div>
-          <aside class="notes">Discovery. One big number (SWD). Evidence line in footer.</aside>
+          <aside class="notes">Problem framing with context, not only persona detail.</aside>
         </section>
 
         <!-- 3 Solution -->
         <section>
-          <h2>The first step before productivity.</h2>
+          <h2>Two users, two value propositions, one product system</h2>
           <div class="two-col">
             <div class="path-card">
               <h3>Student path</h3>
-              <p>Structured intake → time-aware plan → <strong>one next action</strong> at a time. Toolkit + check-in keep momentum.</p>
+              <p>Structured intake to time-aware plan to one next action. Toolkit and check-in keep momentum and follow-through.</p>
+              <p class="ai-line">Spec-driven generation with screening and allowlisted resources creates consistent, safer outputs for student use.</p>
             </div>
-            <div class="path-card">
+            <div class="path-card blue">
               <h3>School path</h3>
-              <p>Counselor dashboard: <strong>anonymized aggregates</strong> — themes and resource use, not surveillance.</p>
+              <p>Counselor dashboard turns session, plan, check-in, and event data into anonymized aggregate patterns.</p>
+              <p class="mini-note">Signal source: sessions + plans + check_ins + events. Output: category trends, engagement, and actionable pattern summaries.</p>
             </div>
           </div>
-          <p class="ai-line">Spec-driven AI with screening and allowlisted resources — not open chat.</p>
-          <aside class="notes">Solution without hype. Two paths, one product.</aside>
+          <aside class="notes">Clear role split and unique value for each profile.</aside>
         </section>
 
         <!-- 4 4D -->
         <section>
-          <h2>How we built it — 4D lifecycle</h2>
+          <h2>4D in practice: decisions, tradeoffs, and implementation</h2>
           <div class="phase-grid">
             <div class="phase-box discovery">
               <strong>Discovery</strong>
-              De-risk value<br />
-              Personas, market, AI hypothesis
+              Personas, overload pattern, market sizing, counselor constraints, pilot assumptions.
             </div>
             <div class="phase-box design">
               <strong>Design</strong>
-              De-risk usability<br />
-              <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a> (17 screens)
+              Structured intake model, safety boundaries, wireframes, eval criteria, interaction choices.
+              <br />
+              <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a>
             </div>
             <div class="phase-box develop">
               <strong>Develop</strong>
-              De-risk feasibility<br />
-              <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a> +
+              React and Vite front end, Vercel APIs, Supabase data layer, Claude prompts, rule enforcement.
+              <br />
+              <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a> ·
               <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">build spec</a>
             </div>
             <div class="phase-box deploy">
               <strong>Deploy</strong>
-              De-risk business<br />
-              Pilot → license; eval + smoke
+              Pilot rollout, monitoring, smoke tests, PRD sync, and school-focused value narrative.
             </div>
           </div>
-          <aside class="notes">Faculty framework slide. Video spends most time in Develop.</aside>
+          <aside class="notes">Shows command of PM process, not curriculum labels only.</aside>
         </section>
 
         <!-- 5 Features -->
         <section>
-          <h2>What ships today</h2>
+          <h2>How the shipped product addresses Matt's core problem</h2>
+          <div class="value-prop">
+            Students need a clear first move when they are overwhelmed. Schools need aggregate signal when counselors cannot scale 1:1.
+          </div>
           <div class="collage">
-            <img class="screenshot screenshot-sm" src="assets/screenshots/08-plan.png" alt="Plan delivery" />
-            <img class="screenshot screenshot-sm" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
-            <img class="screenshot screenshot-sm" src="assets/screenshots/15-counselor.png" alt="Counselor dashboard" />
+            <img class="screenshot screenshot-sm zoomable" src="assets/screenshots/08-plan.png" alt="Plan delivery" />
+            <img class="screenshot screenshot-sm zoomable" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
           </div>
           <table class="swd-table features-table">
             <tr>
-              <td>Intake + plan</td>
-              <td>No blank-page panic</td>
-              <td>Structured data for patterns</td>
+              <td>Structured intake and plan</td>
+              <td>Student gets one clear next action</td>
+              <td>Activation and plan completion signal</td>
             </tr>
             <tr>
-              <td>Dashboard + toolkit</td>
-              <td>Continuity across visits</td>
-              <td>Resource follow-through</td>
+              <td>Dashboard and toolkit</td>
+              <td>Context and links persist across visits</td>
+              <td>Resource follow-through and return behavior</td>
             </tr>
             <tr>
               <td>Check-in</td>
-              <td>Low-friction weekly pulse</td>
-              <td>Early counselor signal</td>
+              <td>Low friction progress loop</td>
+              <td>Efficacy and support-needed signal</td>
             </tr>
             <tr>
-              <td>Safety + counselor view</td>
-              <td>Trust for minors</td>
-              <td><strong>Institutional tier</strong></td>
+              <td>Counselor dashboard</td>
+              <td>Aggregate themes, not student surveillance</td>
+              <td>Institutional value proposition</td>
             </tr>
           </table>
-          <aside class="notes">Features table compressed. Collage = proof.</aside>
+          <p class="mini-note">Click any screenshot to zoom for readability.</p>
+          <aside class="notes">Counselor onboarding is deferred. Dashboard value is still demonstrable with live aggregates.</aside>
         </section>
 
         <!-- 6 Matt journey -->
         <section>
-          <h2>Sunday night → Friday check-in</h2>
+          <h2>Matt journey: actions, data captured, and why it matters</h2>
           <div class="journey-strip">
             <figure>
-              <img src="assets/screenshots/01-home.png" alt="Home" />
+              <img class="zoomable" src="assets/screenshots/01-home.png" alt="Home" />
               <figcaption>Home</figcaption>
             </figure>
             <figure>
-              <img src="assets/screenshots/05-situation.png" alt="Situation" />
+              <img class="zoomable" src="assets/screenshots/05-situation.png" alt="Situation" />
               <figcaption>Situation</figcaption>
             </figure>
             <figure>
-              <img src="assets/screenshots/06-tasks.png" alt="Tasks" />
+              <img class="zoomable" src="assets/screenshots/06-tasks.png" alt="Tasks" />
               <figcaption>Tasks</figcaption>
             </figure>
             <figure>
-              <img src="assets/screenshots/08-plan.png" alt="Plan" />
+              <img class="zoomable" src="assets/screenshots/08-plan.png" alt="Plan" />
               <figcaption>Plan</figcaption>
             </figure>
             <figure>
-              <img src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
+              <img class="zoomable" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
               <figcaption>Dashboard</figcaption>
             </figure>
             <figure>
-              <img src="assets/screenshots/09-toolkit.png" alt="Toolkit" />
+              <img class="zoomable" src="assets/screenshots/09-toolkit.png" alt="Toolkit" />
               <figcaption>Toolkit</figcaption>
             </figure>
+          </div>
+          <div class="kpi-row">
+            <div class="kpi-chip">
+              <strong>What Matt contributes</strong>
+              Structured selections, tasks, check-ins, and resource clicks.
+            </div>
+            <div class="kpi-chip">
+              <strong>Why data matters</strong>
+              Student continuity, counselor aggregate insight, and product efficacy measurement.
+            </div>
           </div>
           <p class="footer-note" style="font-style: normal">
             Production: <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">unstuck-app-flame.vercel.app</a>
           </p>
-          <aside class="notes">Matches video Develop beats. Screenshots May 2026.</aside>
+          <aside class="notes">Journey context over screenshot count.</aside>
         </section>
 
         <!-- 7 Ms Smith -->
         <section>
-          <h2>Schools buy signal at scale.</h2>
+          <h2>Why a school would buy this at scale</h2>
           <div class="two-col">
             <div>
-              <ul>
-                <li>Pilot schools share aggregate outcome data</li>
-                <li>Categories, engagement, plain-language patterns</li>
-                <li>Year 2: per-student license backed by pilot proof</li>
+              <ul class="compact-list">
+                <li><strong>Tangible school value:</strong> triage visibility, category trends, and resource utilization signal.</li>
+                <li><strong>Pilot plan:</strong> reduced-cost school trial with aggregate outcomes and usage evidence.</li>
+                <li><strong>Buyer value:</strong> configured school context plus growing historical patterns increases switching cost.</li>
+                <li><strong>Pilot proof target:</strong> repeated dashboard use, first-plan activation, check-in completion, and resource follow-through.</li>
               </ul>
-              <p class="footer-note" style="font-style: normal">Moat: configured pilot + historical aggregates.</p>
+              <p class="footer-note" style="font-style: normal">Moat: school-specific configuration plus longitudinal aggregate data.</p>
             </div>
             <div>
               <img
-                class="screenshot"
+                class="screenshot zoomable"
                 src="assets/screenshots/15-counselor.png"
                 alt="Counselor dashboard with KPIs"
               />
@@ -182,65 +204,71 @@
 
         <!-- 8 Results -->
         <section>
-          <h2>Built, tested, live.</h2>
+          <h2>Success metrics and value progression</h2>
+          <div class="value-prop">
+            Value proposition: turn student paralysis into consistent next-step action, then convert that behavior into school-level decision signal.
+          </div>
           <div class="scorecard">
             <div class="score-tile">
-              <div class="status">Pass</div>
-              <div>Safety eval N2–N4</div>
+              <div class="status">Activation</div>
+              <div>Intake to first plan completion rate</div>
             </div>
             <div class="score-tile">
-              <div class="status">Pass</div>
-              <div>Production smoke May 2026</div>
+              <div class="status">Engagement</div>
+              <div>Return visits, check-ins, resource clicks</div>
             </div>
             <div class="score-tile">
-              <div class="status">Live</div>
-              <div>App + build spec + wireframe</div>
+              <div class="status">Institutional</div>
+              <div>Dashboard usage and category insight signal</div>
             </div>
           </div>
-          <ul style="font-size: 0.58em; margin-top: 0.8em">
-            <li>Typical + edge cases exercised (T1+, build spec eval)</li>
-            <li>Master prompt v1.3 + screening v1.1 published</li>
-            <li>Repos: unstuck-app · unstuck-build-spec</li>
+          <ul style="font-size: 0.54em; margin-top: 0.75em">
+            <li>Safety and quality guardrail: N2 to N4 screening behavior checks.</li>
+            <li>Operational signal grows as user volume grows. This strengthens school buyer value.</li>
+            <li>Monitoring path: app events, check-ins, aggregate dashboard trends.</li>
           </ul>
-          <aside class="notes">Metrics without dense JSON. Link eval in speech/video.</aside>
+          <aside class="notes">Results means measurable product behavior and value, not only shipped status.</aside>
         </section>
 
         <!-- 9 Ask -->
         <section>
-          <h2>Ready for counselor-led pilot.</h2>
+          <h2>What is next: phased rollout plan</h2>
           <ul>
-            <li><strong>Now:</strong> 2–3 high schools, spring junior cohort, 6-week pilot</li>
-            <li><strong>Success:</strong> first-plan action, check-in completion, dashboard use, resource clicks</li>
-            <li><strong>12 months:</strong> outcome data → paid licenses</li>
+            <li><strong>Now:</strong> immediate student utility with current live product.</li>
+            <li><strong>Next:</strong> structured pilot with reduced cost per student to collect outcome evidence.</li>
+            <li><strong>Then:</strong> school value proposition pitch based on measured activation, engagement, and counselor insight signal.</li>
           </ul>
           <div class="timeline">
-            <div class="step"><strong>Pilot</strong><br />Q3</div>
-            <div class="step"><strong>Data</strong><br />Q4</div>
-            <div class="step"><strong>License</strong><br />Year 2</div>
+            <div class="step"><strong>Student use</strong><br />Now</div>
+            <div class="step"><strong>Pilot proof</strong><br />Q3 to Q4</div>
+            <div class="step"><strong>School licenses</strong><br />Year 2</div>
           </div>
           <p class="links-row">
             <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">App</a>
             <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a>
             <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">Build spec</a>
-            <span id="video-link">Video — add Vimeo URL when ready</span>
+            <span id="video-link">Video: add Vimeo URL when ready</span>
           </p>
-          <aside class="notes">Close matches video Deploy beat. Update video-link when uploaded.</aside>
+          <aside class="notes">Roadmap slide, not a pure ask slide.</aside>
         </section>
 
         <!-- 10 Appendix -->
         <section>
-          <h2>Appendix — links</h2>
-          <ul style="font-size: 0.65em">
-            <li><a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">App (Home)</a></li>
-            <li><a href="https://unstuck-app-flame.vercel.app/counselor/dashboard" target="_blank" rel="noopener">Counselor dashboard</a></li>
-            <li><a href="https://unstuck-app-flame.vercel.app/demo" target="_blank" rel="noopener">Safety demo</a></li>
-            <li><a href="https://tericampbell.github.io/unstuck-build-spec/index.html" target="_blank" rel="noopener">Build spec hub</a></li>
-            <li><a href="https://tericampbell.github.io/unstuck-build-spec/eval.html" target="_blank" rel="noopener">Eval spec</a></li>
+          <h2>Appendix</h2>
+          <ul class="trim-links" style="font-size: 0.74em">
+            <li><a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a></li>
+            <li><a href="https://tericampbell.github.io/unstuck-build-spec/index.html" target="_blank" rel="noopener">Build spec</a></li>
+            <li>Video: add Vimeo link</li>
           </ul>
           <p class="footer-note">Use arrow keys or on-screen controls to move through slides. ← →</p>
           <aside class="notes">Optional for reviewers who want every URL in one place.</aside>
         </section>
       </div>
+    </div>
+
+    <div id="zoomOverlay" class="zoom-overlay" aria-hidden="true">
+      <button id="zoomClose" class="zoom-close" type="button">Close (Esc)</button>
+      <img id="zoomImage" src="" alt="Zoomed slide image" />
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
@@ -257,6 +285,34 @@
         keyboard: true,
         touch: true,
         help: true,
+      });
+
+      const overlay = document.getElementById("zoomOverlay");
+      const overlayImage = document.getElementById("zoomImage");
+      const closeBtn = document.getElementById("zoomClose");
+
+      function closeZoom() {
+        overlay.classList.remove("open");
+        overlay.setAttribute("aria-hidden", "true");
+        overlayImage.src = "";
+      }
+
+      document.querySelectorAll("img.zoomable").forEach((img) => {
+        img.addEventListener("click", () => {
+          overlayImage.src = img.src;
+          overlayImage.alt = img.alt;
+          overlay.classList.add("open");
+          overlay.setAttribute("aria-hidden", "false");
+        });
+      });
+
+      closeBtn.addEventListener("click", closeZoom);
+      overlay.addEventListener("click", (event) => {
+        if (event.target === overlay) closeZoom();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeZoom();
       });
     </script>
   </body>

@@ -1,4 +1,4 @@
-/* Unstuck capstone deck — Storytelling-with-Data inspired, warm & clear */
+/* Unstuck capstone deck, Storytelling with Data inspired */
 
 :root {
   --bg: #faf9f7;
@@ -7,6 +7,8 @@
   --muted: #5c564e;
   --accent: #2d6a4f;
   --accent-lt: #e8f4ee;
+  --accent-blue: #2e5f95;
+  --border: #e8e4dc;
   --discovery: #2d6a4f;
   --design: #5c4d7a;
   --develop: #1d5c7a;
@@ -22,7 +24,7 @@
 
 .reveal .slides section {
   text-align: left;
-  padding: 0.5em 1em;
+  padding: 0.45em 0.9em;
 }
 
 .reveal h1,
@@ -40,21 +42,21 @@
 }
 
 .reveal h2 {
-  font-size: 1.55em;
-  margin-bottom: 0.6em;
+  font-size: 1.45em;
+  margin-bottom: 0.45em;
 }
 
 .reveal .subtitle {
-  font-size: 0.95em;
+  font-size: 0.86em;
   color: var(--muted);
-  margin-top: 0.25em;
+  margin-top: 0.2em;
   line-height: 1.4;
 }
 
 .reveal .meta {
-  font-size: 0.55em;
+  font-size: 0.5em;
   color: var(--muted);
-  margin-top: 1.2em;
+  margin-top: 0.7em;
 }
 
 .reveal ul {
@@ -63,18 +65,18 @@
 }
 
 .reveal li {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
 }
 
 .reveal .footer-note {
-  font-size: 0.5em;
+  font-size: 0.46em;
   color: var(--muted);
-  margin-top: 1em;
+  margin-top: 0.7em;
   font-style: italic;
 }
 
 .reveal .hero-number {
-  font-size: 3.5em;
+  font-size: 3.1em;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
@@ -90,26 +92,35 @@
 .reveal .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5em;
+  gap: 1.1em;
   align-items: start;
 }
 
 .reveal .path-card {
   background: var(--surface);
-  border: 1px solid #e8e4dc;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 0.75em 1em;
-  font-size: 0.72em;
+  padding: 0.7em 0.9em;
+  font-size: 0.65em;
 }
 
 .reveal .path-card h3 {
-  font-size: 1.1em;
+  font-size: 1.04em;
   color: var(--accent);
   margin: 0 0 0.4em;
 }
 
+.reveal .path-card.blue {
+  background: #f3f8fd;
+  border-color: #d8e4f3;
+}
+
+.reveal .path-card.blue h3 {
+  color: var(--accent-blue);
+}
+
 .reveal .ai-line {
-  font-size: 0.62em;
+  font-size: 0.56em;
   color: var(--muted);
   margin-top: 0.8em;
   padding: 0.5em 0.75em;
@@ -125,7 +136,7 @@
 
 .reveal table.swd-table th,
 .reveal table.swd-table td {
-  border: 1px solid #e8e4dc;
+  border: 1px solid var(--border);
   padding: 0.45em 0.55em;
   vertical-align: top;
 }
@@ -137,7 +148,7 @@
 }
 
 .reveal table.features-table {
-  font-size: 0.48em;
+  font-size: 0.44em;
 }
 
 .reveal table.features-table td:first-child {
@@ -150,15 +161,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5em;
-  font-size: 0.5em;
+  font-size: 0.45em;
   margin-top: 0.6em;
 }
 
 .reveal .phase-box {
   border-radius: 8px;
-  padding: 0.5em;
+  padding: 0.55em;
   color: #fff;
-  min-height: 5.5em;
+  min-height: 7.1em;
 }
 
 .reveal .phase-box strong {
@@ -178,16 +189,17 @@
 }
 
 .reveal .screenshot {
-  max-height: 52vh;
+  max-height: 50vh;
   width: auto;
   max-width: 100%;
   border-radius: 8px;
-  border: 1px solid #e8e4dc;
+  border: 1px solid var(--border);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  cursor: zoom-in;
 }
 
 .reveal .screenshot-sm {
-  max-height: 38vh;
+  max-height: 33vh;
 }
 
 .reveal .journey-strip {
@@ -202,21 +214,21 @@
   margin: 0;
   flex: 0 0 auto;
   text-align: center;
-  font-size: 0.32em;
+  font-size: 0.34em;
   color: var(--muted);
 }
 
 .reveal .journey-strip img {
-  height: 32vh;
+  height: 26vh;
   width: auto;
   border-radius: 6px;
-  border: 1px solid #e8e4dc;
+  border: 1px solid var(--border);
 }
 
 .reveal .collage {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 0.4em;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
   margin-top: 0.4em;
 }
 
@@ -272,7 +284,7 @@
 }
 
 .reveal .links-row {
-  font-size: 0.48em;
+  font-size: 0.46em;
   margin-top: 0.8em;
 }
 
@@ -282,15 +294,108 @@
 }
 
 .reveal .title-slide {
-  text-align: center !important;
+  text-align: left !important;
+}
+
+.reveal .title-wrap {
+  display: grid;
+  grid-template-columns: 0.95fr 1.2fr;
+  gap: 1.1em;
+  align-items: center;
+}
+
+.reveal .title-copy h1 {
+  margin-bottom: 0.2em;
 }
 
 .reveal .title-slide .screenshot {
-  margin-top: 0.6em;
-  max-height: 45vh;
+  margin-top: 0;
+  max-height: 62vh;
 }
 
-/* reveal.js controls — visible “deck” feel */
+.reveal .kpi-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6em;
+  margin-top: 0.5em;
+}
+
+.reveal .kpi-chip {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.45em 0.6em;
+  background: var(--surface);
+  font-size: 0.48em;
+}
+
+.reveal .kpi-chip strong {
+  display: block;
+  color: var(--accent);
+}
+
+.reveal .value-prop {
+  font-size: 0.58em;
+  color: var(--text);
+  background: var(--accent-lt);
+  border-radius: 8px;
+  padding: 0.52em 0.68em;
+  margin-top: 0.5em;
+}
+
+.reveal .mini-note {
+  font-size: 0.46em;
+  color: var(--muted);
+}
+
+.reveal .compact-list li {
+  margin-bottom: 0.18em;
+}
+
+.reveal .trim-links li {
+  margin-bottom: 0.2em;
+}
+
+.reveal .zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.8rem;
+}
+
+.reveal .zoom-overlay.open {
+  display: flex;
+}
+
+.reveal .zoom-overlay img {
+  max-width: min(94vw, 1700px);
+  max-height: 88vh;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.reveal .zoom-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.9rem;
+}
+
+.reveal .zoom-close:hover {
+  border-color: #fff;
+}
+
+/* reveal.js controls, visible deck feel */
 .reveal .controls {
   color: var(--accent);
 }
