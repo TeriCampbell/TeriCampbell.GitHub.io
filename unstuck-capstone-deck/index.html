@@ -159,43 +159,86 @@
           <aside class="notes">Framework slide for faculty; video demo is Develop (Matt flow).</aside>
         </section>
 
-        <!-- 5 Features -->
-        <section>
-          <h2>How the shipped product addresses Matt's core problem</h2>
-          <div class="value-prop">
-            Students need a clear first move when they are overwhelmed. Schools need aggregate signal when counselors cannot scale 1:1.
+        <!-- 5 Solution story -->
+        <section class="slide-features">
+          <h2>How Unstuck helps Matt move</h2>
+          <p class="slide5-lead">Matt is overwhelmed with school requirements and cannot pick where to start.</p>
+          <ul class="slide5-matt-fix">
+            <li>Unstuck turns overload into a <strong>sequenced plan</strong> and <strong>one next action</strong></li>
+            <li>Dashboard + toolkit keep context when he comes back</li>
+            <li>Check-in closes the loop; he can ask for counselor help on his terms</li>
+          </ul>
+          <div class="slide5-big-picture">
+            <h3>Big picture</h3>
+            <ul class="slide5-big-list">
+              <li><strong>A problem worth solving:</strong> paralysis shows up before grades slip; counselors cannot scale 1:1 at 372:1</li>
+              <li class="slide5-tradeoff-item">
+                <strong>What is effective and feasible:</strong>
+                <ul class="slide5-tradeoffs">
+                  <li>Structured intake and allowlisted resources, not open chat or RAG</li>
+                  <li>Haiku for screening and task prefill; Sonnet for plans (affordability vs depth)</li>
+                  <li>SAT and resource rules enforced in code, not prompt-only</li>
+                  <li>Pilot-ready now with anonymous sessions; OAuth and email check-in deferred</li>
+                </ul>
+              </li>
+              <li><strong>Measuring success:</strong> first plan saved, return visits (visitor_id), check-in outcomes, resource link clicks (events), and counselor-contact signal from check-in</li>
+            </ul>
           </div>
-          <div class="collage">
-            <img class="screenshot screenshot-sm zoomable" src="assets/screenshots/08-plan.png" alt="Plan delivery" />
-            <img class="screenshot screenshot-sm zoomable" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
+          <div class="slide5-ships-wrap">
+            <div class="slide5-ships-block">
+              <h3>Ships today (student path)</h3>
+              <ul class="slide5-ships">
+                <li><strong>Situation:</strong> structured intake and screened optional text</li>
+                <li><strong>Tasks and Clarify:</strong> deadlines and context for the plan</li>
+                <li><strong>Plan:</strong> one next action and allowlisted resources</li>
+                <li><strong>Dashboard:</strong> return hub and focus task</li>
+                <li><strong>Toolkit:</strong> resources tied to the plan</li>
+                <li><strong>Check-in:</strong> weekly progress loop</li>
+                <li><strong>Safety:</strong> distress screening on free-text fields</li>
+              </ul>
+            </div>
+            <div class="slide5-ships-block">
+              <h3>Ships next</h3>
+              <ul class="slide5-ships">
+                <li><strong>Counselor onboarding:</strong> verified school accounts and rollout workflow</li>
+                <li><strong>Parent and adult help:</strong> scoped notifications for resource setup</li>
+                <li><strong>School configuration:</strong> institution-specific resources and compliance packet</li>
+                <li><strong>Identity and reach:</strong> OAuth login and tokenized email check-in links</li>
+                <li><strong>Institutional buyer path:</strong> counselor dashboard beyond demo aggregates (see slide 8)</li>
+              </ul>
+            </div>
           </div>
-          <table class="swd-table features-table">
-            <tr>
-              <td>Structured intake and plan</td>
-              <td>Student gets one clear next action</td>
-              <td>Activation and plan completion signal</td>
-            </tr>
-            <tr>
-              <td>Dashboard and toolkit</td>
-              <td>Context and links persist across visits</td>
-              <td>Resource follow-through and return behavior</td>
-            </tr>
-            <tr>
-              <td>Check-in</td>
-              <td>Low friction progress loop</td>
-              <td>Efficacy and support-needed signal</td>
-            </tr>
-            <tr>
-              <td>Counselor dashboard</td>
-              <td>Aggregate themes, not student surveillance</td>
-              <td>Institutional value proposition</td>
-            </tr>
-          </table>
-          <p class="mini-note">Click any screenshot to zoom for readability.</p>
-          <aside class="notes">Counselor onboarding is deferred. Dashboard value is still demonstrable with live aggregates.</aside>
+          <aside class="notes">Pitch story slide. Product screens on next slide.</aside>
         </section>
 
-        <!-- 6 Matt journey -->
+        <!-- 6 Product screens -->
+        <section class="slide-product-shots">
+          <h2>Ships today: three core screens</h2>
+          <p class="slide6-hint">Click any image for full screen. Re-capture if dashboard shows empty state.</p>
+          <div class="focus-shots-row">
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Situation</p>
+              <div class="focus-crop focus-crop-situation">
+                <img class="zoomable" src="assets/screenshots/05-situation.png" alt="Situation screen" />
+              </div>
+            </figure>
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Plan</p>
+              <div class="focus-crop focus-crop-plan">
+                <img class="zoomable" src="assets/screenshots/08-plan.png" alt="Plan screen" />
+              </div>
+            </figure>
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Dashboard</p>
+              <div class="focus-crop focus-crop-dashboard">
+                <img class="zoomable" src="assets/screenshots/04-dashboard.png" alt="Dashboard screen" />
+              </div>
+            </figure>
+          </div>
+          <aside class="notes">Cropped to center column. Refresh screenshots from production if needed.</aside>
+        </section>
+
+        <!-- 7 Matt journey -->
         <section>
           <h2>Matt journey: actions, data captured, and why it matters</h2>
           <div class="journey-strip">
@@ -240,7 +283,7 @@
           <aside class="notes">Journey context over screenshot count.</aside>
         </section>
 
-        <!-- 7 Ms Smith -->
+        <!-- 8 Ms Smith -->
         <section>
           <h2>Why a school would buy this at scale</h2>
           <div class="two-col">
@@ -264,7 +307,7 @@
           <aside class="notes">Deploy institutional value. DEMO seed data.</aside>
         </section>
 
-        <!-- 8 Results -->
+        <!-- 9 Results -->
         <section>
           <h2>Success metrics and value progression</h2>
           <div class="value-prop">
@@ -292,7 +335,7 @@
           <aside class="notes">Results means measurable product behavior and value, not only shipped status.</aside>
         </section>
 
-        <!-- 9 Ask -->
+        <!-- 10 Ask -->
         <section>
           <h2>What is next: phased rollout plan</h2>
           <ul>
@@ -314,7 +357,7 @@
           <aside class="notes">Roadmap slide, not a pure ask slide.</aside>
         </section>
 
-        <!-- 10 Appendix -->
+        <!-- 11 Appendix -->
         <section>
           <h2>Appendix</h2>
           <ul class="trim-links" style="font-size: 0.74em">

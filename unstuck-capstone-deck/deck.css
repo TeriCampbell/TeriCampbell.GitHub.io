@@ -535,6 +535,157 @@
   margin-top: 0.4em;
 }
 
+/* Slide 5: pitch story */
+.reveal section.slide-features {
+  font-size: 17px;
+}
+
+.reveal section.slide-features h2 {
+  font-size: 32px;
+  margin-bottom: 0.3em;
+}
+
+.reveal .slide5-lead {
+  margin: 0 0 0.35em;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.reveal .slide5-matt-fix {
+  margin: 0 0 0.55em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.reveal .slide5-matt-fix li {
+  margin-bottom: 0.18em;
+}
+
+.reveal .slide5-big-picture h3,
+.reveal .slide5-ships-block h3 {
+  font-size: 20px;
+  color: var(--accent);
+  margin: 0 0 0.3em;
+}
+
+.reveal .slide5-big-list,
+.reveal .slide5-ships {
+  margin: 0;
+  padding-left: 1.15em;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.reveal .slide5-big-list li,
+.reveal .slide5-ships li {
+  margin-bottom: 0.2em;
+}
+
+.reveal .slide5-big-picture {
+  margin-bottom: 0.55em;
+}
+
+.reveal .slide5-ships-wrap {
+  margin-top: 0.85em;
+  padding-top: 0.45em;
+  border-top: 1px solid var(--border);
+}
+
+.reveal .slide5-ships-block + .slide5-ships-block {
+  margin-top: 0.55em;
+}
+
+.reveal .slide5-tradeoff-item {
+  margin-bottom: 0.25em;
+}
+
+.reveal .slide5-tradeoffs {
+  margin: 0.2em 0 0;
+  padding-left: 1.15em;
+  list-style: circle;
+  font-size: 15px;
+  line-height: 1.32;
+}
+
+.reveal .slide5-tradeoffs li {
+  margin-bottom: 0.15em;
+}
+
+/* Slide 6: cropped product screenshots */
+.reveal section.slide-product-shots {
+  font-size: 17px;
+}
+
+.reveal section.slide-product-shots h2 {
+  font-size: 32px;
+  margin-bottom: 0.2em;
+}
+
+.reveal .slide6-hint {
+  margin: 0 0 0.45em;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.reveal .focus-shots-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65em;
+  align-items: end;
+}
+
+.reveal .focus-shot {
+  margin: 0;
+  text-align: center;
+}
+
+.reveal .focus-shot-title {
+  margin: 0 0 0.35em;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.reveal .focus-crop {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  background: #faf9f7;
+  height: 50vh;
+  max-height: 420px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.reveal .focus-crop img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+}
+
+.reveal .focus-crop-situation img {
+  width: 185%;
+  max-width: none;
+  margin-left: -42%;
+  margin-top: -3%;
+}
+
+.reveal .focus-crop-plan img {
+  width: 200%;
+  max-width: none;
+  margin-left: -50%;
+  margin-top: -6%;
+}
+
+.reveal .focus-crop-dashboard img {
+  width: 175%;
+  max-width: none;
+  margin-left: -38%;
+  margin-top: -10%;
+}
+
 .reveal .scorecard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
