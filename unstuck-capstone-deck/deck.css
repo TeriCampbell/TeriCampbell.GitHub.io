@@ -1,0 +1,300 @@
+/* Unstuck capstone deck — Storytelling-with-Data inspired, warm & clear */
+
+:root {
+  --bg: #faf9f7;
+  --surface: #ffffff;
+  --text: #1a1714;
+  --muted: #5c564e;
+  --accent: #2d6a4f;
+  --accent-lt: #e8f4ee;
+  --discovery: #2d6a4f;
+  --design: #5c4d7a;
+  --develop: #1d5c7a;
+  --deploy: #9a6b2e;
+}
+
+.reveal {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.reveal .slides section {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 2.2em;
+  color: var(--accent);
+}
+
+.reveal h2 {
+  font-size: 1.55em;
+  margin-bottom: 0.6em;
+}
+
+.reveal .subtitle {
+  font-size: 0.95em;
+  color: var(--muted);
+  margin-top: 0.25em;
+  line-height: 1.4;
+}
+
+.reveal .meta {
+  font-size: 0.55em;
+  color: var(--muted);
+  margin-top: 1.2em;
+}
+
+.reveal ul {
+  margin: 0.4em 0;
+  line-height: 1.35;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+.reveal .footer-note {
+  font-size: 0.5em;
+  color: var(--muted);
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.reveal .hero-number {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin: 0.2em 0 0.1em;
+}
+
+.reveal .hero-label {
+  font-size: 0.65em;
+  color: var(--muted);
+  max-width: 14em;
+}
+
+.reveal .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.reveal .path-card {
+  background: var(--surface);
+  border: 1px solid #e8e4dc;
+  border-radius: 10px;
+  padding: 0.75em 1em;
+  font-size: 0.72em;
+}
+
+.reveal .path-card h3 {
+  font-size: 1.1em;
+  color: var(--accent);
+  margin: 0 0 0.4em;
+}
+
+.reveal .ai-line {
+  font-size: 0.62em;
+  color: var(--muted);
+  margin-top: 0.8em;
+  padding: 0.5em 0.75em;
+  background: var(--accent-lt);
+  border-radius: 6px;
+}
+
+.reveal table.swd-table {
+  font-size: 0.52em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reveal table.swd-table th,
+.reveal table.swd-table td {
+  border: 1px solid #e8e4dc;
+  padding: 0.45em 0.55em;
+  vertical-align: top;
+}
+
+.reveal table.swd-table th {
+  background: var(--accent-lt);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.reveal table.features-table {
+  font-size: 0.48em;
+}
+
+.reveal table.features-table td:first-child {
+  font-weight: 600;
+  color: var(--accent);
+  width: 22%;
+}
+
+.reveal .phase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  font-size: 0.5em;
+  margin-top: 0.6em;
+}
+
+.reveal .phase-box {
+  border-radius: 8px;
+  padding: 0.5em;
+  color: #fff;
+  min-height: 5.5em;
+}
+
+.reveal .phase-box strong {
+  display: block;
+  font-size: 1.15em;
+  margin-bottom: 0.25em;
+}
+
+.reveal .phase-box.discovery { background: var(--discovery); }
+.reveal .phase-box.design { background: var(--design); }
+.reveal .phase-box.develop { background: var(--develop); }
+.reveal .phase-box.deploy { background: var(--deploy); }
+
+.reveal .phase-box a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.reveal .screenshot {
+  max-height: 52vh;
+  width: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e8e4dc;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reveal .screenshot-sm {
+  max-height: 38vh;
+}
+
+.reveal .journey-strip {
+  display: flex;
+  gap: 0.35em;
+  align-items: flex-end;
+  margin-top: 0.5em;
+  overflow-x: auto;
+}
+
+.reveal .journey-strip figure {
+  margin: 0;
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 0.32em;
+  color: var(--muted);
+}
+
+.reveal .journey-strip img {
+  height: 32vh;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid #e8e4dc;
+}
+
+.reveal .collage {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 0.4em;
+  margin-top: 0.4em;
+}
+
+.reveal .scorecard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+  margin-top: 0.5em;
+  font-size: 0.55em;
+}
+
+.reveal .score-tile {
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.reveal .score-tile .status {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.reveal .timeline {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0.5em;
+  font-size: 0.58em;
+  position: relative;
+}
+
+.reveal .timeline::before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: 8%;
+  right: 8%;
+  height: 3px;
+  background: var(--accent);
+  z-index: 0;
+}
+
+.reveal .timeline .step {
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.5em 0.75em;
+  z-index: 1;
+  text-align: center;
+  max-width: 28%;
+}
+
+.reveal .links-row {
+  font-size: 0.48em;
+  margin-top: 0.8em;
+}
+
+.reveal .links-row a {
+  color: var(--accent);
+  margin-right: 1em;
+}
+
+.reveal .title-slide {
+  text-align: center !important;
+}
+
+.reveal .title-slide .screenshot {
+  margin-top: 0.6em;
+  max-height: 45vh;
+}
+
+/* reveal.js controls — visible “deck” feel */
+.reveal .controls {
+  color: var(--accent);
+}
+
+.reveal .progress span {
+  background: var(--accent);
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unstuck — Capstone deck</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+    <link rel="stylesheet" href="deck.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- 1 Title -->
+        <section class="title-slide" data-background-color="#faf9f7">
+          <h1>Unstuck</h1>
+          <p class="subtitle">AI planning for students who do not know where to start</p>
+          <p class="meta">Teri Campbell · Product Faculty · AI PM Cohort 9 · Builder · May 2026</p>
+          <img
+            class="screenshot"
+            src="assets/screenshots/01-home.png"
+            alt="Unstuck Home screen on production"
+          />
+          <aside class="notes">Warm open. Live product, not a concept slide.</aside>
+        </section>
+
+        <!-- 2 Problem -->
+        <section>
+          <h2>Matt is stuck before he is behind.</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li>Junior: SAT, AP exams, essay, and homework — same week</li>
+                <li>Paralysis is <strong>where to start</strong>, not motivation</li>
+                <li>Khan, College Board, Schoolhouse — signed up, then forgotten</li>
+              </ul>
+              <p class="footer-note">“Build it. My daughter needs this now.” — pilot friend</p>
+            </div>
+            <div>
+              <p class="hero-number">372:1</p>
+              <p class="hero-label">Students per counselor nationally (ASCA recommends 250:1)</p>
+            </div>
+          </div>
+          <aside class="notes">Discovery. One big number (SWD). Evidence line in footer.</aside>
+        </section>
+
+        <!-- 3 Solution -->
+        <section>
+          <h2>The first step before productivity.</h2>
+          <div class="two-col">
+            <div class="path-card">
+              <h3>Student path</h3>
+              <p>Structured intake → time-aware plan → <strong>one next action</strong> at a time. Toolkit + check-in keep momentum.</p>
+            </div>
+            <div class="path-card">
+              <h3>School path</h3>
+              <p>Counselor dashboard: <strong>anonymized aggregates</strong> — themes and resource use, not surveillance.</p>
+            </div>
+          </div>
+          <p class="ai-line">Spec-driven AI with screening and allowlisted resources — not open chat.</p>
+          <aside class="notes">Solution without hype. Two paths, one product.</aside>
+        </section>
+
+        <!-- 4 4D -->
+        <section>
+          <h2>How we built it — 4D lifecycle</h2>
+          <div class="phase-grid">
+            <div class="phase-box discovery">
+              <strong>Discovery</strong>
+              De-risk value<br />
+              Personas, market, AI hypothesis
+            </div>
+            <div class="phase-box design">
+              <strong>Design</strong>
+              De-risk usability<br />
+              <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a> (17 screens)
+            </div>
+            <div class="phase-box develop">
+              <strong>Develop</strong>
+              De-risk feasibility<br />
+              <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a> +
+              <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">build spec</a>
+            </div>
+            <div class="phase-box deploy">
+              <strong>Deploy</strong>
+              De-risk business<br />
+              Pilot → license; eval + smoke
+            </div>
+          </div>
+          <aside class="notes">Faculty framework slide. Video spends most time in Develop.</aside>
+        </section>
+
+        <!-- 5 Features -->
+        <section>
+          <h2>What ships today</h2>
+          <div class="collage">
+            <img class="screenshot screenshot-sm" src="assets/screenshots/08-plan.png" alt="Plan delivery" />
+            <img class="screenshot screenshot-sm" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
+            <img class="screenshot screenshot-sm" src="assets/screenshots/15-counselor.png" alt="Counselor dashboard" />
+          </div>
+          <table class="swd-table features-table">
+            <tr>
+              <td>Intake + plan</td>
+              <td>No blank-page panic</td>
+              <td>Structured data for patterns</td>
+            </tr>
+            <tr>
+              <td>Dashboard + toolkit</td>
+              <td>Continuity across visits</td>
+              <td>Resource follow-through</td>
+            </tr>
+            <tr>
+              <td>Check-in</td>
+              <td>Low-friction weekly pulse</td>
+              <td>Early counselor signal</td>
+            </tr>
+            <tr>
+              <td>Safety + counselor view</td>
+              <td>Trust for minors</td>
+              <td><strong>Institutional tier</strong></td>
+            </tr>
+          </table>
+          <aside class="notes">Features table compressed. Collage = proof.</aside>
+        </section>
+
+        <!-- 6 Matt journey -->
+        <section>
+          <h2>Sunday night → Friday check-in</h2>
+          <div class="journey-strip">
+            <figure>
+              <img src="assets/screenshots/01-home.png" alt="Home" />
+              <figcaption>Home</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/05-situation.png" alt="Situation" />
+              <figcaption>Situation</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/06-tasks.png" alt="Tasks" />
+              <figcaption>Tasks</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/08-plan.png" alt="Plan" />
+              <figcaption>Plan</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
+              <figcaption>Dashboard</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshots/09-toolkit.png" alt="Toolkit" />
+              <figcaption>Toolkit</figcaption>
+            </figure>
+          </div>
+          <p class="footer-note" style="font-style: normal">
+            Production: <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">unstuck-app-flame.vercel.app</a>
+          </p>
+          <aside class="notes">Matches video Develop beats. Screenshots May 2026.</aside>
+        </section>
+
+        <!-- 7 Ms Smith -->
+        <section>
+          <h2>Schools buy signal at scale.</h2>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li>Pilot schools share aggregate outcome data</li>
+                <li>Categories, engagement, plain-language patterns</li>
+                <li>Year 2: per-student license backed by pilot proof</li>
+              </ul>
+              <p class="footer-note" style="font-style: normal">Moat: configured pilot + historical aggregates.</p>
+            </div>
+            <div>
+              <img
+                class="screenshot"
+                src="assets/screenshots/15-counselor.png"
+                alt="Counselor dashboard with KPIs"
+              />
+            </div>
+          </div>
+          <aside class="notes">Deploy institutional value. DEMO seed data.</aside>
+        </section>
+
+        <!-- 8 Results -->
+        <section>
+          <h2>Built, tested, live.</h2>
+          <div class="scorecard">
+            <div class="score-tile">
+              <div class="status">Pass</div>
+              <div>Safety eval N2–N4</div>
+            </div>
+            <div class="score-tile">
+              <div class="status">Pass</div>
+              <div>Production smoke May 2026</div>
+            </div>
+            <div class="score-tile">
+              <div class="status">Live</div>
+              <div>App + build spec + wireframe</div>
+            </div>
+          </div>
+          <ul style="font-size: 0.58em; margin-top: 0.8em">
+            <li>Typical + edge cases exercised (T1+, build spec eval)</li>
+            <li>Master prompt v1.3 + screening v1.1 published</li>
+            <li>Repos: unstuck-app · unstuck-build-spec</li>
+          </ul>
+          <aside class="notes">Metrics without dense JSON. Link eval in speech/video.</aside>
+        </section>
+
+        <!-- 9 Ask -->
+        <section>
+          <h2>Ready for counselor-led pilot.</h2>
+          <ul>
+            <li><strong>Now:</strong> 2–3 high schools, spring junior cohort, 6-week pilot</li>
+            <li><strong>Success:</strong> first-plan action, check-in completion, dashboard use, resource clicks</li>
+            <li><strong>12 months:</strong> outcome data → paid licenses</li>
+          </ul>
+          <div class="timeline">
+            <div class="step"><strong>Pilot</strong><br />Q3</div>
+            <div class="step"><strong>Data</strong><br />Q4</div>
+            <div class="step"><strong>License</strong><br />Year 2</div>
+          </div>
+          <p class="links-row">
+            <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">App</a>
+            <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a>
+            <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">Build spec</a>
+            <span id="video-link">Video — add Vimeo URL when ready</span>
+          </p>
+          <aside class="notes">Close matches video Deploy beat. Update video-link when uploaded.</aside>
+        </section>
+
+        <!-- 10 Appendix -->
+        <section>
+          <h2>Appendix — links</h2>
+          <ul style="font-size: 0.65em">
+            <li><a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">App (Home)</a></li>
+            <li><a href="https://unstuck-app-flame.vercel.app/counselor/dashboard" target="_blank" rel="noopener">Counselor dashboard</a></li>
+            <li><a href="https://unstuck-app-flame.vercel.app/demo" target="_blank" rel="noopener">Safety demo</a></li>
+            <li><a href="https://tericampbell.github.io/unstuck-build-spec/index.html" target="_blank" rel="noopener">Build spec hub</a></li>
+            <li><a href="https://tericampbell.github.io/unstuck-build-spec/eval.html" target="_blank" rel="noopener">Eval spec</a></li>
+          </ul>
+          <p class="footer-note">Use arrow keys or on-screen controls to move through slides. ← →</p>
+          <aside class="notes">Optional for reviewers who want every URL in one place.</aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        controls: true,
+        progress: true,
+        center: true,
+        transition: "slide",
+        width: 1280,
+        height: 720,
+        margin: 0.08,
+        keyboard: true,
+        touch: true,
+        help: true,
+      });
+    </script>
+  </body>
+</html>
