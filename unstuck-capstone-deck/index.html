@@ -33,6 +33,8 @@
           <div class="two-col slide2-layout">
             <div>
               <ul class="compact-list">
+                <li class="slide2-why-now"><strong>Access is uneven and still inadequate.</strong></li>
+                <li class="slide2-why-now"><strong>Districts must prove ROI on counselor spend.</strong></li>
                 <li>High school students juggle many deadlines. Overwhelm can escalate quickly once they feel behind.</li>
                 <li>Unstuck addresses the paralysis around where to start with one clear next action.</li>
                 <li>Plans include resource links and context, so students can find the right support later.</li>
@@ -40,36 +42,129 @@
               </ul>
               <p class="footer-note">"Build it. My daughter needs this now." - pilot friend</p>
             </div>
-            <div class="ratio-panel">
-              <div class="ratio-swd" role="img" aria-label="ASCA recommended 250 students per counselor compared with national average 372; national average about 49 percent higher than ASCA manageable level">
-                <div class="ratio-chart">
-                  <div class="ratio-rows">
-                    <div class="ratio-row-fat">
-                      <span class="ratio-row-label">ASCA recommended max</span>
-                      <div class="ratio-bar-area">
-                        <div class="ratio-fat-gray" style="width: 67.2%"></div>
-                      </div>
-                      <span class="ratio-value">250:1</span>
+            <div class="ratio-panel slide2-charts">
+              <!-- Chart A: national K-12 vs ASCA target (unchanged visual) -->
+              <div
+                class="chart-a"
+                role="img"
+                aria-label="ASCA recommended 250 to 1 compared with national K-12 average 372 to 1 in 2024-25"
+              >
+                <p class="chart-block-title">National K-12 staffing (2024–25)</p>
+                <div class="ratio-rows">
+                  <div class="ratio-row-fat">
+                    <span class="ratio-row-label">ASCA recommended max</span>
+                    <div class="ratio-bar-area">
+                      <div class="ratio-fat-gray" style="width: 67.2%"></div>
                     </div>
-                    <div class="ratio-row-fat">
-                      <span class="ratio-row-label">National average</span>
+                    <span class="ratio-value">250:1</span>
+                  </div>
+                  <div class="ratio-row-fat">
+                    <span class="ratio-row-label">National K-12 avg</span>
+                    <div class="ratio-bar-area">
+                      <div class="ratio-fat-stack">
+                        <div class="ratio-fat-gray" style="width: 67.2%"></div>
+                        <div class="ratio-fat-gap" style="width: 32.8%"></div>
+                      </div>
+                    </div>
+                    <span class="ratio-value">372:1</span>
+                  </div>
+                </div>
+                <p class="ratio-source chart-a-source">
+                  <a href="https://www.schoolcounselor.org/About-School-Counseling/School-Counselor-Roles-Ratios" target="_blank" rel="noopener">ASCA</a>
+                  / NCES. National K-12 about 49% above ASCA 250:1 target. HS band in 35 states: 195:1 to 224:1.
+                </p>
+              </div>
+              <p class="ratio-insight ratio-insight-after-a">
+                Counselors cannot scale 1:1 support during every stress spike. Unstuck helps fill the gap between appointments.
+              </p>
+
+              <div class="slide2-viz-gap" aria-hidden="true"></div>
+
+              <!-- Chart B: HS caseload ladder (0–500); grey to 210, color above -->
+              <div
+                class="chart-b"
+                role="img"
+                aria-label="High school counselor caseloads by school type from 210 national HS average through 499 urban, grey to 210 midpoint and brown above"
+              >
+                <p class="chart-block-title">Counselor access is not equitable</p>
+                <div class="ratio-ladder">
+                  <div class="ratio-ladder-plot">
+                    <div class="ratio-ladder-grid" aria-hidden="true">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <div class="ratio-row-fat ratio-ladder-row">
+                      <span class="ratio-row-label">National HS avg</span>
                       <div class="ratio-bar-area">
-                        <div class="ratio-fat-stack">
-                          <div class="ratio-fat-gray" style="width: 67.2%"></div>
-                          <div class="ratio-fat-gap" style="width: 32.8%"></div>
+                        <div class="ratio-fat-stack" style="width: 42%">
+                          <div class="ratio-fat-gray" style="width: 100%"></div>
                         </div>
                       </div>
-                      <span class="ratio-value">372:1</span>
+                      <span class="ratio-value">210:1</span>
+                    </div>
+                    <div class="ratio-row-fat ratio-ladder-row">
+                      <span class="ratio-row-label">Rural</span>
+                      <div class="ratio-bar-area">
+                        <div class="ratio-fat-stack" style="width: 76%">
+                          <div class="ratio-fat-gray" style="width: 55.26%"></div>
+                          <div class="ratio-fat-gap" style="width: 44.74%"></div>
+                        </div>
+                      </div>
+                      <span class="ratio-value">380:1</span>
+                    </div>
+                    <div class="ratio-row-fat ratio-ladder-row">
+                      <span class="ratio-row-label">Minority &amp; poverty</span>
+                      <div class="ratio-bar-area">
+                        <div class="ratio-fat-stack" style="width: 48.8%">
+                          <div class="ratio-fat-gray" style="width: 86.07%"></div>
+                          <div class="ratio-fat-gap" style="width: 13.93%"></div>
+                        </div>
+                      </div>
+                      <span class="ratio-value">244:1</span>
+                    </div>
+                    <div class="ratio-row-fat ratio-ladder-row">
+                      <span class="ratio-row-label">Urban &amp; overcrowded</span>
+                      <div class="ratio-bar-area">
+                        <div class="ratio-fat-stack" style="width: 99.8%">
+                          <div class="ratio-fat-gray" style="width: 42.08%"></div>
+                          <div class="ratio-fat-gap" style="width: 57.92%"></div>
+                        </div>
+                      </div>
+                      <span class="ratio-value">499:1</span>
+                    </div>
+                    <div class="ratio-row-fat ratio-ladder-row">
+                      <span class="ratio-row-label">High caseload state</span>
+                      <div class="ratio-bar-area">
+                        <div class="ratio-fat-stack" style="width: 86.4%">
+                          <div class="ratio-fat-gray" style="width: 48.61%"></div>
+                          <div class="ratio-fat-gap" style="width: 51.39%"></div>
+                        </div>
+                      </div>
+                      <span class="ratio-value">432:1</span>
                     </div>
                   </div>
-                  <p class="ratio-source">Source: American School Counselor Association (ASCA) recommended ratio; national average commonly cited near 372:1.</p>
+                  <div class="ratio-ladder-xaxis" aria-hidden="true">
+                    <div class="ratio-ladder-xaxis-ticks">
+                      <span>0</span>
+                      <span>100</span>
+                      <span>200</span>
+                      <span>300</span>
+                      <span>400</span>
+                      <span>500</span>
+                    </div>
+                  </div>
+                  <p class="ratio-ladder-xlabel">Number of Students per Single Counselor</p>
                 </div>
-                <div class="ratio-callout">
-                  <p class="ratio-callout-title">Students per school counselor</p>
-                  <p class="ratio-callout-insight">The national average ratio of students per counselor is about 49% higher than what ASCA says is manageable</p>
-                </div>
+                <p class="ratio-source chart-b-source">
+                  Gray = up to 210:1 HS midpoint (ASCA band 195–224, 35 states). Brown = caseload above.
+                  Rural/urban: Brookings (verify). Minority:
+                  <a href="https://www.schoolcounselor.org/getmedia/b079d17d-6265-4166-a120-3b1f56077649/School-Counselors-Matter.pdf" target="_blank" rel="noopener">EdTrust</a>
+                  (+34). California: ASCA 2024–25.
+                </p>
               </div>
-              <p class="ratio-insight">Counselors cannot scale 1:1 support during every stress spike. Unstuck helps fill the gap between appointments.</p>
+              <p class="ratio-insight ratio-insight-equity">
+                Rural schools, schools with a higher population of minority students and students living in poverty, and overcrowded schools struggle to meet student counseling needs.
+              </p>
             </div>
           </div>
           <aside class="notes">Problem framing with context, not only persona detail.</aside>
@@ -94,7 +189,7 @@
               <h3>School path</h3>
               <p class="path-def">Counselor dashboard turns session, plan, check-in, and event data into anonymized aggregate patterns.</p>
               <ul class="path-benefits">
-                <li>At 372:1, counselors cannot give every student a personalized “where to start” conversation. Unstuck extends that guidance between appointments with structured plans students can act on without another 1:1 meeting.</li>
+                <li>Even when high school ratios meet ASCA targets, counselors cannot give every student a personalized “where to start” conversation at every stress spike. Unstuck extends that guidance between appointments with structured plans students can act on without another 1:1 meeting.</li>
                 <li><strong>Dashboard:</strong> actionable anonymized category trends and engagement patterns support targeted strategies to address gaps in performance for metrics that leaders are accountable for, such as test performance, course completion, and attendance.</li>
                 <li><strong>Why schools pay:</strong> intervene sooner across the caseload, align support with regional priorities, and adopt with school-level accountability instead of an informal app recommendation</li>
               </ul>
@@ -171,7 +266,7 @@
           <div class="slide5-big-picture">
             <h3>Big picture</h3>
             <ul class="slide5-big-list">
-              <li><strong>A problem worth solving:</strong> paralysis shows up before grades slip; counselors cannot scale 1:1 at 372:1</li>
+              <li><strong>A problem worth solving:</strong> paralysis shows up before grades slip; counselors cannot scale 1:1 at every stress spike</li>
               <li class="slide5-tradeoff-item">
                 <strong>What is effective and feasible:</strong>
                 <ul class="slide5-tradeoffs">

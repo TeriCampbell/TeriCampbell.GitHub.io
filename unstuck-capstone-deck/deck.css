@@ -78,7 +78,7 @@
 }
 
 .reveal .two-col.slide2-layout {
-  align-items: center;
+  align-items: start;
 }
 
 .reveal .ratio-panel {
@@ -87,12 +87,19 @@
   gap: 0.4em;
 }
 
-/* Slide 2: fat gray bars, brown gap only, callout right */
-.reveal .ratio-swd {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 0.45em;
-  align-items: start;
+.reveal .slide2-charts {
+  gap: 0.55em;
+}
+
+.reveal .chart-block-title {
+  margin: 0 0 0.25em;
+  font-size: 0.5em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.reveal .chart-a-source {
+  margin-top: 0.3em;
 }
 
 .reveal .ratio-chart {
@@ -191,6 +198,122 @@
   padding: 0.5em 0.6em;
   background: var(--accent-lt);
   border-radius: 8px;
+  color: var(--text);
+}
+
+.reveal .ratio-insight-after-a {
+  margin-top: 0.35em;
+}
+
+.reveal .ratio-insight-equity {
+  margin-top: 0.4em;
+  font-weight: 600;
+}
+
+.reveal .slide2-viz-gap {
+  min-height: 1.1em;
+  margin: 0.15em 0;
+}
+
+/* Slide 2 Chart B: 0–500 ladder; shared grey to 210 (42%), color = excess above */
+.reveal .chart-b {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Chart B: same 0.44em scale as Chart A rows; wider label column for longer names */
+.reveal .chart-b .ratio-ladder {
+  margin-bottom: 0.25em;
+  font-size: 0.44em;
+}
+
+.reveal .chart-b .ratio-ladder .ratio-row-fat {
+  font-size: 1em;
+  grid-template-columns: 8.4em 1fr 2.6em;
+}
+
+.reveal .chart-b-source {
+  margin-top: 0.3em;
+}
+
+.reveal .ratio-ladder-plot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.22em;
+  padding: 0.2em 0 0.1em;
+}
+
+.reveal .chart-b .ratio-ladder-grid {
+  position: absolute;
+  left: calc(8.4em + 0.3em);
+  right: calc(2.6em + 0.3em);
+  top: 0;
+  bottom: 1.6em;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reveal .ratio-ladder-grid span {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-left: 1px dashed #ccc;
+}
+
+.reveal .ratio-ladder-grid span:nth-child(1) {
+  left: 20%;
+}
+
+.reveal .ratio-ladder-grid span:nth-child(2) {
+  left: 40%;
+}
+
+.reveal .ratio-ladder-grid span:nth-child(3) {
+  left: 60%;
+}
+
+.reveal .ratio-ladder-grid span:nth-child(4) {
+  left: 80%;
+}
+
+.reveal .ratio-ladder-row {
+  position: relative;
+  z-index: 1;
+}
+
+.reveal .chart-b .ratio-fat-stack .ratio-fat-gray {
+  border-radius: 3px 0 0 3px;
+}
+
+.reveal .chart-b .ratio-fat-stack .ratio-fat-gap {
+  border-radius: 0 3px 3px 0;
+}
+
+.reveal .chart-b .ratio-fat-stack:has(.ratio-fat-gray:only-child) .ratio-fat-gray {
+  border-radius: 3px;
+}
+
+.reveal .chart-b .ratio-ladder-xaxis {
+  display: grid;
+  grid-template-columns: 8.4em 1fr 2.6em;
+  gap: 0.3em;
+  margin-top: 0.15em;
+  color: var(--muted);
+}
+
+.reveal .ratio-ladder-xaxis-ticks {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.05em;
+}
+
+.reveal .chart-b .ratio-ladder-xlabel {
+  margin: 0.2em 0 0;
+  text-align: center;
+  font-weight: 600;
   color: var(--text);
 }
 
@@ -804,6 +927,10 @@
 
 .reveal .compact-list li {
   margin-bottom: 0.18em;
+}
+
+.reveal li.slide2-why-now:nth-child(2) {
+  margin-bottom: 0.5em;
 }
 
 .reveal .trim-links li {
