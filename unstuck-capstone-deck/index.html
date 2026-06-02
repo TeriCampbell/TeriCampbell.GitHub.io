@@ -309,7 +309,7 @@
         <!-- 6 Product screens -->
         <section class="slide-product-shots">
           <h2>Ships today: three core screens</h2>
-          <p class="slide6-hint">Click any image for full screen. Re-capture if dashboard shows empty state.</p>
+          <div class="slide6-spacer" aria-hidden="true"></div>
           <div class="focus-shots-row">
             <figure class="focus-shot">
               <p class="focus-shot-title">Situation</p>
@@ -334,35 +334,10 @@
         </section>
 
         <!-- 7 Matt journey -->
-        <section>
-          <h2>Matt journey: actions, data captured, and why it matters</h2>
-          <div class="journey-strip">
-            <figure>
-              <img class="zoomable" src="assets/screenshots/01-home.png" alt="Home" />
-              <figcaption>Home</figcaption>
-            </figure>
-            <figure>
-              <img class="zoomable" src="assets/screenshots/05-situation.png" alt="Situation" />
-              <figcaption>Situation</figcaption>
-            </figure>
-            <figure>
-              <img class="zoomable" src="assets/screenshots/06-tasks.png" alt="Tasks" />
-              <figcaption>Tasks</figcaption>
-            </figure>
-            <figure>
-              <img class="zoomable" src="assets/screenshots/08-plan.png" alt="Plan" />
-              <figcaption>Plan</figcaption>
-            </figure>
-            <figure>
-              <img class="zoomable" src="assets/screenshots/04-dashboard.png" alt="Dashboard" />
-              <figcaption>Dashboard</figcaption>
-            </figure>
-            <figure>
-              <img class="zoomable" src="assets/screenshots/09-toolkit.png" alt="Toolkit" />
-              <figcaption>Toolkit</figcaption>
-            </figure>
-          </div>
-          <div class="kpi-row">
+        <section class="slide-journey-matt">
+          <h2 class="slide-journey-matt-title">Matt journey: actions, data captured, and why it matters</h2>
+          <div class="slide7-spacer" aria-hidden="true"></div>
+          <div class="slide-journey-matt-kpi-row">
             <div class="kpi-chip">
               <strong>What Matt contributes</strong>
               Structured selections, tasks, check-ins, and resource clicks.
@@ -371,85 +346,152 @@
               <strong>Why data matters</strong>
               Student continuity, counselor aggregate insight, and product efficacy measurement.
             </div>
+            <div class="kpi-chip">
+              <strong>Why this compounds</strong>
+              When a school runs Unstuck, anonymized usage patterns build over time. A generic chatbot cannot copy that history without the same pilot in the same buildings.
+            </div>
           </div>
-          <p class="footer-note" style="font-style: normal">
-            Production: <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">unstuck-app-flame.vercel.app</a>
+          <div class="slide7-spacer" aria-hidden="true"></div>
+          <div class="focus-shots-row slide7-strip" aria-label="Matt intake to plan">
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Home</p>
+              <div class="focus-crop focus-crop-home">
+                <img class="zoomable" src="assets/screenshots/01-home.png" alt="Unstuck Home screen" />
+              </div>
+            </figure>
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Intake · Step 1 of 5</p>
+              <div class="focus-crop focus-crop-intake">
+                <img class="zoomable" src="assets/screenshots/02-intake.png" alt="Intake step 1: grade and school" />
+              </div>
+            </figure>
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Intake · Step 3 of 5</p>
+              <div class="focus-crop focus-crop-tasks">
+                <img
+                  class="zoomable"
+                  src="assets/matt-journey-full/03-tasks.png"
+                  alt="Intake step 3: tasks and deadlines"
+                />
+              </div>
+            </figure>
+            <figure class="focus-shot">
+              <p class="focus-shot-title">Your plan</p>
+              <div class="focus-crop focus-crop-plan-today">
+                <img
+                  class="zoomable"
+                  src="assets/matt-journey-full/05-plan-today.png"
+                  alt="Plan today: SAT bootcamp and first steps"
+                />
+              </div>
+            </figure>
+          </div>
+          <p class="slide-journey-matt-url">
+            <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">unstuck-app-flame.vercel.app</a>
           </p>
-          <aside class="notes">Journey context over screenshot count.</aside>
+          <aside class="notes">Read-along for video: KPI row plus four-crop journey strip. Plan uses plan-today crop, not full scroll.</aside>
         </section>
 
         <!-- 8 Ms Smith -->
-        <section>
+        <section class="slide-buyer-scale">
           <h2>Why a school would buy this at scale</h2>
-          <div class="two-col">
-            <div>
+          <div class="slide8-spacer" aria-hidden="true"></div>
+          <div class="two-col slide8-layout">
+            <div class="slide8-copy">
               <ul class="compact-list">
-                <li><strong>Tangible school value:</strong> triage visibility, category trends, and resource utilization signal.</li>
-                <li><strong>Pilot plan:</strong> reduced-cost school trial with aggregate outcomes and usage evidence.</li>
+                <li><strong>Scale between visits:</strong> Extend structured “where to start” support across the caseload without adding a counselor FTE at every school.</li>
+                <li><strong>Reporting alignment:</strong> Track resource engagement and student activity so pilot exports support grant renewals and board accountability metrics.</li>
+                <li><strong>Triage earlier:</strong> Surface anonymized category and engagement patterns so counselors intervene before crises consume the calendar.</li>
+                <li><strong>Pilot economics:</strong> Reduced-cost district pilot trades aggregate outcomes and usage evidence for scale pricing.</li>
                 <li><strong>Buyer value:</strong> configured school context plus growing historical patterns increases switching cost.</li>
-                <li><strong>Pilot proof target:</strong> repeated dashboard use, first-plan activation, check-in completion, and resource follow-through.</li>
               </ul>
-              <p class="footer-note" style="font-style: normal">Moat: school-specific configuration plus longitudinal aggregate data.</p>
+              <p class="footer-note slide8-moat" style="font-style: normal">Moat: school-specific configuration plus longitudinal aggregate data.</p>
             </div>
-            <div>
+            <div class="slide8-visual">
               <img
-                class="screenshot zoomable"
+                class="screenshot screenshot-slide8 zoomable"
                 src="assets/screenshots/15-counselor.png"
                 alt="Counselor dashboard with KPIs"
               />
             </div>
           </div>
-          <aside class="notes">Deploy institutional value. DEMO seed data.</aside>
+          <aside class="notes">Deploy institutional value. DEMO seed data. Caseload ratios on slide 2 only.</aside>
         </section>
 
         <!-- 9 Results -->
-        <section>
+        <section class="slide-metrics">
           <h2>Success metrics and value progression</h2>
+          <div class="slide9-spacer" aria-hidden="true"></div>
           <div class="value-prop">
-            Value proposition: turn student paralysis into consistent next-step action, then convert that behavior into school-level decision signal.
+            <strong>Value proposition:</strong> Turn student overwhelm and paralysis into consistent next-step action that supports scholastic success; convert that behavior into school-level decision signal that strengthens grant and funding approval requests and builds a foundation for district-wide insight into student need, engagement, and resource use.
           </div>
-          <div class="scorecard">
+          <div class="slide9-spacer" aria-hidden="true"></div>
+          <div class="scorecard slide9-scorecard">
             <div class="score-tile">
               <div class="status">Activation</div>
-              <div>Intake to first plan completion rate</div>
+              <ul class="score-tile-metrics">
+                <li>% intake → first plan saved</li>
+                <li>% completing first plan action</li>
+              </ul>
             </div>
             <div class="score-tile">
               <div class="status">Engagement</div>
-              <div>Return visits, check-ins, resource clicks</div>
+              <ul class="score-tile-metrics">
+                <li>Return visits</li>
+                <li>Check-in completion</li>
+                <li>Resource click-through</li>
+              </ul>
             </div>
             <div class="score-tile">
               <div class="status">Institutional</div>
-              <div>Dashboard usage and category insight signal</div>
+              <ul class="score-tile-metrics">
+                <li>Counselor dashboard weekly use</li>
+                <li>Category trends for triage</li>
+                <li>Reporting-ready aggregate exports</li>
+              </ul>
             </div>
           </div>
-          <ul style="font-size: 0.54em; margin-top: 0.75em">
-            <li>Safety and quality guardrail: N2 to N4 screening behavior checks.</li>
-            <li>Operational signal grows as user volume grows. This strengthens school buyer value.</li>
-            <li>Monitoring path: app events, check-ins, aggregate dashboard trends.</li>
-          </ul>
-          <aside class="notes">Results means measurable product behavior and value, not only shipped status.</aside>
+          <aside class="notes">What we track to know if the pilot works and when to scale, pivot, or stop. Eval gates live in build spec, not on slide.</aside>
         </section>
 
         <!-- 10 Ask -->
-        <section>
+        <section class="slide-rollout">
           <h2>What is next: phased rollout plan</h2>
-          <ul>
-            <li><strong>Now:</strong> immediate student utility with current live product.</li>
-            <li><strong>Next:</strong> structured pilot with reduced cost per student to collect outcome evidence.</li>
-            <li><strong>Then:</strong> school value proposition pitch based on measured activation, engagement, and counselor insight signal.</li>
+          <div class="slide10-spacer" aria-hidden="true"></div>
+          <ul class="slide10-phases">
+            <li>
+              <strong>Now:</strong> immediate student utility with current live product.
+              <ul class="slide10-sub">
+                <li><strong>How:</strong> Word of mouth, friend and parent networks, and counselor champions; capstone demo and portfolio drive early testers, not paid district marketing yet.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Next:</strong> Structured counselor-led school pilot (2–3 sites, ~6-week cohort) at reduced per-student cost to collect activation, engagement, and dashboard evidence.
+              <ul class="slide10-sub">
+                <li><strong>How:</strong> Lead with counselors who want triage signal; parallel district outreach where grants or Title IV-A budgets apply. Materials: one-pager, dashboard walkthrough, pilot agreement outline, metrics readout aligned to success metrics (slide 9).</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Then:</strong> Results-informed marketing for full-price district licenses targeting high-need demographics and caseload pressure, using pilot proof, not a cold pitch without outcome data.
+              <ul class="slide10-sub">
+                <li><strong>How:</strong> Grant- and board-ready exports, per-school case studies, expand from counselor champion to district buyer with slide 8 value story.</li>
+              </ul>
+            </li>
           </ul>
-          <div class="timeline">
-            <div class="step"><strong>Student use</strong><br />Now</div>
-            <div class="step"><strong>Pilot proof</strong><br />Q3 to Q4</div>
-            <div class="step"><strong>School licenses</strong><br />Year 2</div>
+          <div class="slide10-spacer" aria-hidden="true"></div>
+          <div class="timeline slide10-timeline">
+            <div class="step"><strong>Student use</strong><span class="step-when">Now</span></div>
+            <div class="step"><strong>Structured pilot</strong><span class="step-when">Months 1–8</span></div>
+            <div class="step"><strong>District licenses</strong><span class="step-when">Year 2 start</span></div>
           </div>
-          <p class="links-row">
+          <div class="slide10-spacer" aria-hidden="true"></div>
+          <p class="links-row slide10-links">
             <a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">App</a>
             <a href="https://tericampbell.github.io/unstuck_wireframe.html" target="_blank" rel="noopener">Wireframe</a>
             <a href="https://tericampbell.github.io/unstuck-build-spec/" target="_blank" rel="noopener">Build spec</a>
             <span id="video-link">Video: add Vimeo URL when ready</span>
           </p>
-          <aside class="notes">Roadmap slide, not a pure ask slide.</aside>
+          <aside class="notes">Months 1–8 = year-one pilot window (6-week cohorts + metrics readout per PRD). Year 2 start = paid district licenses. How bullets are talk track if asked.</aside>
         </section>
 
         <!-- 11 Appendix -->
@@ -458,9 +500,7 @@
           <ul class="trim-links" style="font-size: 0.74em">
             <li><a href="https://unstuck-app-flame.vercel.app/" target="_blank" rel="noopener">Live app</a></li>
             <li><a href="https://tericampbell.github.io/unstuck-build-spec/index.html" target="_blank" rel="noopener">Build spec</a></li>
-            <li>Video: add Vimeo link</li>
           </ul>
-          <p class="footer-note">Use arrow keys or on-screen controls to move through slides. ← →</p>
           <aside class="notes">Optional for reviewers who want every URL in one place.</aside>
         </section>
       </div>
