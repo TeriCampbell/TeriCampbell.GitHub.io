@@ -15,7 +15,8 @@ This project write up tells the story of building my AI PM Capstone project, “
 
 The problem Matt is facing is not unique.  As more layers add on, the harder it becomes to prioritize and start.
 
-In this project write up, I will detail out my process, tools, and learnings and share the outcome of what I am building.  
+In this project write up, I will provide detail on my process, tools, trade-offs, and learnings and share the outcome of what I am building.  
+
 For now, the prototype is linked here, a backlog is in place in Linear.app, and I am continuing to iterate on this app. 
 
 Stay tuned for all of the details in the near future.  I’m excited to share!
