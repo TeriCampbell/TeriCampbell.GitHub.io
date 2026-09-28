@@ -11,12 +11,12 @@ It is Saturday afternoon on the last day of spring break.  Your teenaged son, Ma
 
 Matt needs help, and is not interested in getting it from his parents.  
 
-This project write up tells the story of building my AI PM Capstone project, “Unstuck”.  (Yes, the name is already in use.  No, I do not plan to use it as an actual product name).
+This project write up tells the story of building my AI PM Capstone project, “Unstuck”. 
 
 The problem Matt is facing is not unique.  As more layers add on, the harder it becomes to prioritize and start.
 
-In this project write up, I will detail out the process, tools, learnings, and share the outcome of what I am building.  
-For now, the prototype is in the build phase, ongoing evals are in progress to test AI integrations, and I am learning and iterating based on the results.  
+In this project write up, I will detail out my process, tools, and learnings and share the outcome of what I am building.  
+For now, the prototype is linked here, a backlog is in place in Linear.app, and I am continuing to iterate on this app. 
 
 Stay tuned for all of the details in the near future.  I’m excited to share!
 
