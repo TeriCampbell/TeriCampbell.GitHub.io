@@ -4,7 +4,19 @@
 
 ### AI Projects
 ---
-[<img src="images/teen-room-scroll.png?raw=true" alt="Teen in a bedroom scrolling on a phone"/>](https://unstuck-app-flame.vercel.app/)
+<a href="https://unstuck-app-flame.vercel.app/">
+<video
+  src="images/teen-room-scroll.mp4"
+  poster="images/teen-room-scroll.png"
+  autoplay
+  muted
+  loop
+  playsinline
+  style="width:100%;height:auto;display:block;"
+>
+  <img src="images/teen-room-scroll.png?raw=true" alt="Teen in a bedroom scrolling on a phone"/>
+</video>
+</a>
 #### [Unstuck](https://unstuck-app-flame.vercel.app/)
 
 It is Saturday afternoon on the last day of spring break.  Your teenaged son, Matt, had planned to get on top of SAT prep for the test that is only 4 weeks away, complete a college essay draft due for his English class at the end of the week that he has not even started, and prepare for upcoming AP exams that are on the tail of the SAT.  You walk into his bedroom to find him scrolling on his phone and ask about his progress. You are met with a blank stare and silence.
